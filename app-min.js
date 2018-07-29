@@ -52,7 +52,7 @@ var today = dt.getUTCFullYear()+"/"+dt.getUTCMonth()+"/"+dt.getUTCDate();
       },
 
       series: [{
-          name: 'hallo',
+          name: 'Waterstand',
           //data: [0,1,4,9,16,25,36,49,64,100]
           //data: datapoints
           data: waterstand,
