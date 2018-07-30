@@ -11,13 +11,13 @@ var today = dt.getUTCFullYear()+"/"+dt.getUTCMonth()+"/"+dt.getUTCDate();
 ////////////// ONLY VIEW DATA OF TODAY ///////////////
 //////////////////////////////////////////////////////
 
-        for (i = 0; i < json.series.data.length; i++){
+        for (i = 0; i < json.series[0].data.length; i++){
           // GET THE DATE FROM THE DATAPOINT
-          var datum = new Date(json.series.data[i].dateTime);
+          var datum = new Date(json.series[0].data[i].dateTime);
           var dag = datum.getUTCFullYear()+"/"+datum.getUTCMonth()+"/"+datum.getUTCDate();
 
           if(dag === today){
-            waterstand.push([json.series.data[i].value]);
+            waterstand.push([json.series[0].data[i].value]);
           }else{
             //DO NOTIN
           }
