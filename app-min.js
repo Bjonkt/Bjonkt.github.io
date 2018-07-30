@@ -2,19 +2,44 @@
 var dt = new Date();
 var today = dt.getUTCFullYear()+"/"+dt.getUTCMonth()+"/"+dt.getUTCDate();
 
-  $(function () {
+//SHOW A PLOT ON PAGE LOAD
+$(function (){
+  plotSelectedLocation();
+})
+
+  function plotSelectedLocation() {
+    // Het stringetje die de waterstand opslaaddt voor highcharts
     var waterstand = [];
-    var url = "getijscheveningen.json";
+
+    // Paar (tijdelijke) strings voor de selectie
+    var selection = document.getElementById("selectedLocation");
+    var title = selection.options[selection.selectedIndex].text;
+
+    var subtitle;
+    if(title==="Scheveningen"){
+      subtitle = "jeej met 159 man in het water naast de hoofdhaven";
+    }else if (title === "IJmuiden") {
+      subtitle = "Soort van chill, maar eigenlijk niet";
+    }else if (title === "Petten") {
+      subtitle = "Daar loopt het zo lekker hol";
+    }else if (title === "Hoek van Holland") {
+      subtitle = "Waar die ene fotograaf Ed altijd zijn foto's maakt "
+    }else {
+      subtitle = "Wordt daar gesurft dan?"
+    }
+
+    var location = selection.options[selection.selectedIndex].value;
+    // En de bij passende url
+    var url = location + ".json";
+
+    // Laden van de data
     $.getJSON(url, function(json) {
 
-//////////////////////////////////////////////////////
-////////////// ONLY VIEW DATA OF TODAY ///////////////
-//////////////////////////////////////////////////////
 
-        for (i = 0; i < json.series[0].data.length; i++){
-          // GET THE DATE FROM THE DATAPOINT
-          var datum = new Date(json.series[0].data[i].dateTime);
-          var dag = datum.getUTCFullYear()+"/"+datum.getUTCMonth()+"/"+datum.getUTCDate();
+      for (i = 0; i < json.series[0].data.length; i++){
+        // GET THE DATE FROM THE DATAPOINT
+        var datum = new Date(json.series[0].data[i].dateTime);
+        var dag = datum.getUTCFullYear()+"/"+datum.getUTCMonth()+"/"+datum.getUTCDate();
 
           if(dag === today){
             waterstand.push([json.series[0].data[i].value]);
@@ -22,15 +47,18 @@ var today = dt.getUTCFullYear()+"/"+dt.getUTCMonth()+"/"+dt.getUTCDate();
             //DO NOTIN
           }
 
-        }
+      }
 
-    // Draw chart
+    // Maken van de Plot met behulp van highcharts
     $('#container').highcharts({
       chart: {
-          type: 'spline'
+          type: 'spline' //Smooth lijntje
       },
       title: {
-          text: 'NAP'
+          text: title
+      },
+      subtitle: {
+        text: subtitle
       },
       xAxis:{
         type: 'datetime'
@@ -60,4 +88,4 @@ var today = dt.getUTCFullYear()+"/"+dt.getUTCMonth()+"/"+dt.getUTCDate();
 
       });
       });
-  });
+  };
