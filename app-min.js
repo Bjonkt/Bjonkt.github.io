@@ -1,13 +1,12 @@
-// WHAT IS TODAYS DATE?
-var dt = new Date();
-var today = dt.getUTCFullYear()+"/"+dt.getUTCMonth()+"/"+dt.getUTCDate();
-
 //SHOW A PLOT ON PAGE LOAD
 $(function (){
   plotSelectedLocation();
 })
 
   function plotSelectedLocation() {
+    // WHAT IS TODAYS DATE?
+    var dt = new Date();
+    var today = dt.getUTCFullYear()+"/"+dt.getUTCMonth()+"/"+dt.getUTCDate();
     // Het stringetje die de waterstand opslaaddt voor highcharts
     var waterstand = [];
 
@@ -61,7 +60,12 @@ $(function (){
         text: subtitle
       },
       xAxis:{
-        type: 'datetime'
+        type: 'datetime',
+        plotLines:[{
+          color: "#FF0000",
+          width: 1,
+          value: Date.UTC(dt.getUTCFullYear(), dt.getUTCMonth(), dt.getUTCDate(), dt.getUTCHours() + 2,dt.getUTCMinutes())
+        }]
       },
       yAxis: {
           title: {
