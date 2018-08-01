@@ -16,7 +16,7 @@ $(function (){
 
     var subtitle;
     if(title==="Scheveningen"){
-      subtitle = "jeej met 159 man in het water naast de hoofdhaven";
+      subtitle = "jeej met 159 man in het water";
     }else if (title === "IJmuiden") {
       subtitle = "Soort van chill, maar eigenlijk niet";
     }else if (title === "Petten") {
