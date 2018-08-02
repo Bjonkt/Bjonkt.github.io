@@ -1,54 +1,68 @@
-//SHOW A PLOT ON PAGE LOAD
+// Global variables for date(default today)  and location because i don't know how to program correctly
+var dt = new Date();
+var selecteddate = dt.getFullYear()+"/"+dt.getMonth()+"/"+dt.getDate();
+var selectedlocation;
+
+//Show a plot on load
 $(function (){
   plotSelectedLocation();
 })
 
-  function plotSelectedLocation() {
-    // WHAT IS TODAYS DATE?
-    var dt = new Date();
-    var today = dt.getUTCFullYear()+"/"+dt.getUTCMonth()+"/"+dt.getUTCDate();
-    // Het stringetje die de waterstand opslaaddt voor highcharts
-    var waterstand = [];
+// Get Date if user changes date
+$(function getSelectedDate() {
+  $(".datepicker-here").datepicker({
+    autoClose: true,
+    onSelect: function(dateText, inst) {
+      dt = inst;
+      selecteddate = inst.getFullYear()+"/"+inst.getMonth()+"/"+inst.getDate();
+      plotSelectedLocation();
+    }
+  })
+});
 
-    // Paar (tijdelijke) strings voor de selectie
-    var selection = document.getElementById("selectedLocation");
-    var title = selection.options[selection.selectedIndex].text;
 
-    var subtitle;
-    if(title==="Scheveningen"){
-      subtitle = "jeej met 159 man in het water";
-    }else if (title === "IJmuiden") {
-      subtitle = "Soort van chill, maar eigenlijk niet";
-    }else if (title === "Petten") {
-      subtitle = "Daar loopt het zo lekker hol";
-    }else if (title === "Hoek van Holland") {
-      subtitle = "Waar die ene fotograaf Ed altijd zijn foto's maakt "
-    }else {
-      subtitle = "Wordt daar gesurft dan?"
+function plotSelectedLocation() {
+  // Het stringetje die de waterstand opslaaddt voor highcharts
+  var waterstand = [];
+
+  // Paar (tijdelijke) strings voor de location selection
+  var selection = document.getElementById("selectedLocation");
+  var title = selection.options[selection.selectedIndex].text;
+
+  var subtitle;
+  if(title==="Scheveningen"){
+    subtitle = "jeej met 159 man in het water";
+  }else if (title === "IJmuiden") {
+    subtitle = "Soort van chill, maar eigenlijk niet";
+  }else if (title === "Petten") {
+    subtitle = "Daar loopt het zo lekker hol";
+  }else if (title === "Hoek van Holland") {
+    subtitle = "Waar die ene fotograaf Ed altijd zijn foto's maakt "
+  }else {
+    subtitle = "Wordt daar gesurft dan?"
+  }
+
+  var location = selection.options[selection.selectedIndex].value;
+  // En de bij passende url
+  var url = location + ".json";
+
+  // Laden van de data
+  $.getJSON(url, function(json) {
+
+    for (i = 0; i < json.series[0].data.length; i++){
+      // Parse the json string to get tide height data
+      var datum = new Date(json.series[0].data[i].dateTime);
+      var dag = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate();
+
+      // Only load data of selected date
+      if(dag === selecteddate){
+        waterstand.push([json.series[0].data[i].value]);
+      }else{
+        //DO NOTIN
+      }
     }
 
-    var location = selection.options[selection.selectedIndex].value;
-    // En de bij passende url
-    var url = location + ".json";
-
-    // Laden van de data
-    $.getJSON(url, function(json) {
-
-
-      for (i = 0; i < json.series[0].data.length; i++){
-        // GET THE DATE FROM THE DATAPOINT
-        var datum = new Date(json.series[0].data[i].dateTime);
-        var dag = datum.getUTCFullYear()+"/"+datum.getUTCMonth()+"/"+datum.getUTCDate();
-
-          if(dag === today){
-            waterstand.push([json.series[0].data[i].value]);
-          }else{
-            //DO NOTIN
-          }
-
-      }
-
-    // Maken van de Plot met behulp van highcharts
+    // Create chart using highcharts
     $('#container').highcharts({
       chart: {
           type: 'spline' //Smooth lijntje
@@ -63,8 +77,8 @@ $(function (){
         type: 'datetime',
         plotLines:[{
           color: "#FF0000",
-          width: 1,
-          value: Date.UTC(dt.getUTCFullYear(), dt.getUTCMonth(), dt.getUTCDate(), dt.getUTCHours() + 2,dt.getUTCMinutes())
+          width: 1
+          //value: Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate(), dt.getHours() + 2,dt.getMinutes())
         }]
       },
       yAxis: {
@@ -75,7 +89,7 @@ $(function (){
 
       plotOptions: {
         series: {
-          pointStart: Date.UTC(dt.getUTCFullYear(), dt.getUTCMonth(), dt.getUTCDate(),0,0),
+          pointStart: Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate(),0,0),
           pointInterval: 60 * 10000,
           marker:{
             enabled:false
