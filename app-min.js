@@ -62,6 +62,15 @@ function plotSelectedLocation() {
       }
     }
 
+    var now = new Date();
+    var nowdt = now.getFullYear()+"/"+now.getMonth()+"/"+now.getDate();
+
+    if(selecteddate === nowdt){
+      nowdt = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(),now.getMinutes());
+    } else {
+      nowdt = null;
+    }
+
     // Create chart using highcharts
     $('#container').highcharts({
       chart: {
@@ -77,8 +86,8 @@ function plotSelectedLocation() {
         type: 'datetime',
         plotLines:[{
           color: "#FF0000",
-          width: 1
-          //value: Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate(), dt.getHours() + 2,dt.getMinutes())
+          width: 1,
+          value: nowdt
         }]
       },
       yAxis: {
