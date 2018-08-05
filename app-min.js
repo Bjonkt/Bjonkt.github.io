@@ -148,7 +148,7 @@ function plotSelectedLocation() {
 
       plotOptions: {
         series: {
-          pointStart: Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate(),0,0),
+          pointStart: Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate()-1,22,0),
           pointInterval: 60 * 10000,
           marker:{
             enabled:false
