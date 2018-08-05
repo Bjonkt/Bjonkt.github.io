@@ -20,6 +20,53 @@ $(function getSelectedDate() {
   })
 });
 
+// This function creates the table containing the extreme values.
+function createTable(urltable){
+
+
+  $.getJSON(urltable, function(json) {
+
+    var waterstandHWLW = [];
+    var watertijd = [];
+    var waterdatum = [];
+
+    for (i = 0; i < json.astronomicaltide.values.value.length; i++){
+      var datum;
+      var dag;
+
+      // Parse the json string to get tide height data
+
+      if(Object.keys(json.astronomicaltide.values.value[i].datetime).length === 2 || Object.keys(json.astronomicaltide.values.value[i].datetime).length === 3){
+        var dt = json.astronomicaltide.values.value[i].datetime.text;
+        datum = new Date(dt.substring(0,4),dt.substring(4,6)-1,dt.substring(6,8),dt.substring(8,10),dt.substring(10,12));
+      } else {
+        var dt = json.astronomicaltide.values.value[i].datetime;
+        datum = new Date(dt.substring(0,4),dt.substring(4,6)-1,dt.substring(6,8),dt.substring(8,10),dt.substring(10,12));
+      };
+
+      dag = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate();
+
+      // Only load data of selected date
+      if(dag === selecteddate){
+        waterstandHWLW.push(json.astronomicaltide.values.value[i].val);
+        watertijd.push(moment(datum).format("HH:mm"));
+        waterdatum.push(moment(datum).format("DD-MM"));
+      }else{
+        //DO NOTIN
+      };
+
+    };
+
+    for (var i = 0; i < 4; i++) {
+      // Data naar tabel
+        document.getElementById("wdata"+i).innerHTML = waterstandHWLW[i];
+        document.getElementById("tdata"+i).innerHTML = watertijd[i];
+        document.getElementById("ddata"+i).innerHTML = waterdatum[i];
+    }
+
+  });
+
+}
 
 function plotSelectedLocation() {
   // Het stringetje die de waterstand opslaaddt voor highcharts
@@ -45,6 +92,9 @@ function plotSelectedLocation() {
   var location = selection.options[selection.selectedIndex].value;
   // En de bij passende url
   var url = location + ".json";
+  var urltable = location + "hwlw" + ".json";
+
+  createTable(urltable);
 
   // Laden van de data
   $.getJSON(url, function(json) {
