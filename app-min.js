@@ -91,8 +91,8 @@ function plotSelectedLocation() {
 
   var location = selection.options[selection.selectedIndex].value;
   // En de bij passende url
-  var url = location + ".json";
-  var urltable = location + "hwlw" + ".json";
+  var url = "json/" + location + ".json";
+  var urltable = "json/" + location + "hwlw" + ".json";
 
   createTable(urltable);
 
