@@ -1,96 +1,73 @@
 <html>
 <head>
   <meta charset="utf-8" />
-
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="moment.min.js"></script>
-
-
   <!-- Air date picker -->
   <link href="dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
   <script src="dist/js/datepicker.min.js"></script>
-
   <!-- Include English language -->
   <script src="dist/js/i18n/datepicker.nl.js"></script>
-
   <!-- Highcharts -->
   <script src="https://code.highcharts.com/stock/highstock.js"></script>
   <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
   <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
-
   <!-- Javascript -->
   <script src="app-min.js"></script>
-
-  <!-- Table Style-->
-  <style>
-  table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 40;
-      font-size: small;
-  }
-
-  td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-  }
-
-  tr:nth-child(even) {
-      background-color: #dddddd;
-  }
-  </style>
-
-</head>
+  <!-- Style Sheet-->
+   <link rel="stylesheet" href="styles.css">
+ </head>
 
 <body>
 
-  <div> Datum
-    <input type="text" class="datepicker-here" data-language="nl">
-  </div>
+  <div class="ctacontainer">
+    <div> Datum <input type="text" class="datepicker-here" data-language="nl"></div>
+    <div> Locatie
+      <select id="selectedLocation" onchange="plotSelectedLocation()">
+        <option value="getijscheveningen">Scheveningen</option>
+        <option value="getijijmuiden">IJmuiden</option>
+        <option value="getijpettenzuid">Petten</option>
+        <option value="getijhoekvanholland">Hoek van Holland</option>
+      </select>
+    </div>
+</div>
 
-  </div>
+  <section class="datacontainer">
+    <div class="container" id="container"></div>
+    <div id="tablecontainer">
+      <table>
+      <tr>
+        <th>Stand</th>
+        <th>Tijdstip</th>
+        <th>Datum</th>
+      </tr>
+      <tr>
+        <td id = wdata0></td>
+        <td id = tdata0></td>
+        <td id = ddata0></td>
+      </tr>
+      <tr>
+        <td id = wdata1></td>
+        <td id = tdata1></td>
+        <td id = ddata1></td>
+      </tr>
+      <tr>
+        <td id = wdata2></td>
+        <td id = tdata2></td>
+        <td id = ddata2></td>
+      </tr>
+      <tr>
+        <td id = wdata3></td>
+        <td id = tdata3></td>
+        <td id = ddata3></td>
+      </tr>
+      </table>
 
-  <div> Locatie
-    <select id="selectedLocation" onchange="plotSelectedLocation()">
-      <option value="getijscheveningen">Scheveningen</option>
-      <option value="getijijmuiden">IJmuiden</option>
-      <option value="getijpettenzuid">Petten</option>
-      <option value="getijhoekvanholland">Hoek van Holland</option>
-    </select>
-  </div>
+    </div>
+  </section>
 
-  <div id="container" style="width:60%; height:300px;"></div>
-
-  <table>
-  <tr>
-    <th>Stand</th>
-    <th>Tijdstip</th>
-    <th>Datum</th>
-  </tr>
-  <tr>
-    <td id = wdata0></td>
-    <td id = tdata0></td>
-    <td id = ddata0></td>
-  </tr>
-  <tr>
-    <td id = wdata1></td>
-    <td id = tdata1></td>
-    <td id = ddata1></td>
-  </tr>
-  <tr>
-    <td id = wdata2></td>
-    <td id = tdata2></td>
-    <td id = ddata2></td>
-  </tr>
-  <tr>
-    <td id = wdata3></td>
-    <td id = tdata3></td>
-    <td id = ddata3></td>
-  </tr>
-</table>
 
 </body>
 
