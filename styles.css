@@ -18,7 +18,8 @@
 }
 table {
     font-size: small;
-    margin-left: 60%;
+    margin-left: 65%;
+    margin-top: 60px;
     height: 150px;
     font-family: arial, sans-serif;
     border-collapse: collapse;

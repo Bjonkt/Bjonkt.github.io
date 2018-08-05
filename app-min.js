@@ -78,7 +78,7 @@ function plotSelectedLocation() {
 
   var subtitle;
   if(title==="Scheveningen"){
-    subtitle = "jeej met 159 man in het water";
+    subtitle = "Met 159 man in het water";
   }else if (title === "IJmuiden") {
     subtitle = "Soort van chill, maar eigenlijk niet";
   }else if (title === "Petten") {
@@ -134,6 +134,7 @@ function plotSelectedLocation() {
       },
       xAxis:{
         type: 'datetime',
+        tickInterval: 3600*1000,
         plotLines:[{
           color: "#FF0000",
           width: 1,
