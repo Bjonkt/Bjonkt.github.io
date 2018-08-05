@@ -84,7 +84,9 @@ function plotSelectedLocation() {
   }else if (title === "Petten") {
     subtitle = "Daar loopt het zo lekker hol";
   }else if (title === "Hoek van Holland") {
-    subtitle = "Waar die ene fotograaf Ed altijd zijn foto's maakt "
+    subtitle = "Waar die ene fotograaf Ed altijd zijn foto's maakt"
+  }else if (title === "Cadzand") {
+    subtitle = "Omdat Domburg data niet te vinden was"
   }else {
     subtitle = "Wordt daar gesurft dan?"
   }
