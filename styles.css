@@ -1,6 +1,9 @@
 
 .ctacontainer{
   padding: 10px;
+  font-family: "Lucida Grande";
+  color: #333333;
+  font-size: 14px;
 }
 .datepicker-here{
   margin: 5px;
@@ -19,9 +22,8 @@
 table {
     font-size: small;
     margin-left: 65%;
-    margin-top: 60px;
     height: 150px;
-    font-family: arial, sans-serif;
+    font-family: "Lucida Grande";
     border-collapse: collapse;
 }
 td, th {

@@ -1,6 +1,8 @@
 // Global variables for date(default today)  and location because i don't know how to program correctly
 var dt = new Date();
+var tm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+1);
 var selecteddate = dt.getFullYear()+"/"+dt.getMonth()+"/"+dt.getDate();
+var tomorrow = tm.getFullYear()+"/"+tm.getMonth()+"/"+tm.getDate();
 var selectedlocation;
 
 //Show a plot on load
@@ -15,6 +17,8 @@ $(function getSelectedDate() {
     onSelect: function(dateText, inst) {
       dt = inst;
       selecteddate = inst.getFullYear()+"/"+inst.getMonth()+"/"+inst.getDate();
+      var nd = new Date(inst.getFullYear(),inst.getMonth(),inst.getDate()+1);
+      tomorrow = nd.getFullYear()+"/"+nd.getMonth()+"/"+nd.getDate();
       plotSelectedLocation();
     }
   })
@@ -47,7 +51,7 @@ function createTable(urltable){
       dag = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate();
 
       // Only load data of selected date
-      if(dag === selecteddate){
+      if(dag === selecteddate || dag === tomorrow){
         waterstandHWLW.push(json.astronomicaltide.values.value[i].val);
         watertijd.push(moment(datum).format("HH:mm"));
         waterdatum.push(moment(datum).format("DD-MM"));
@@ -57,7 +61,7 @@ function createTable(urltable){
 
     };
 
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 8; i++) {
       // Data naar tabel
         document.getElementById("wdata"+i).innerHTML = waterstandHWLW[i];
         document.getElementById("tdata"+i).innerHTML = watertijd[i];
