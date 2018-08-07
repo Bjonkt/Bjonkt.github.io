@@ -114,14 +114,19 @@ function plotSelectedLocation() {
       // Parse the json string to get tide height data
       var datum = new Date(json.series[0].data[i].dateTime);
       var dag = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate();
+      var dag0 = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate()+"/"+datum.getHours();
+      var dag1 = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate()+"/"+datum.getHours();
 
       // Only load data of selected date
-      if(dag === selecteddate){
+      if(dag === selecteddate || dag === tomorrow){
         waterstand.push([json.series[0].data[i].value]);
       }else{
         //DO NOTIN
       }
     }
+
+    //Remove first and last enteries
+    waterstand = waterstand.slice(11,156);
 
     var now = new Date();
     var nowdt = now.getFullYear()+"/"+now.getMonth()+"/"+now.getDate();
@@ -161,7 +166,7 @@ function plotSelectedLocation() {
 
       plotOptions: {
         series: {
-          pointStart: Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate()-1,22,0),
+          pointStart: Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate(),0,0),
           pointInterval: 60 * 10000,
           marker:{
             enabled:false
