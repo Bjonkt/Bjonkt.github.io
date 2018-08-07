@@ -141,6 +141,7 @@ function plotSelectedLocation() {
       xAxis:{
         type: 'datetime',
         tickInterval: 3600*1000,
+        gridLineWidth: 1,
         plotLines:[{
           color: "#FF0000",
           width: 1,
