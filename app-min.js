@@ -5,9 +5,12 @@ var selecteddate = dt.getFullYear()+"/"+dt.getMonth()+"/"+dt.getDate();
 var tomorrow = tm.getFullYear()+"/"+tm.getMonth()+"/"+tm.getDate();
 var selectedlocation;
 
+
 //Show a plot on load
 $(function (){
   plotSelectedLocation();
+  var dp = $('.datepicker-here').datepicker({startDate: dt}).data('datepicker');
+  dp.selectDate(dt);
 })
 
 // Get Date if user changes date
