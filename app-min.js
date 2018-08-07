@@ -1,8 +1,10 @@
 // Global variables for date(default today)  and location because i don't know how to program correctly
 var dt = new Date();
 var tm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+1);
+var dtm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+2);
 var selecteddate = dt.getFullYear()+"/"+dt.getMonth()+"/"+dt.getDate();
 var tomorrow = tm.getFullYear()+"/"+tm.getMonth()+"/"+tm.getDate();
+var dayaftertomorrow = dtm.getFullYear()+"/"+dtm.getMonth()+"/"+dtm.getDate();
 var selectedlocation;
 
 
@@ -54,10 +56,10 @@ function createTable(urltable){
       dag = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate();
 
       // Only load data of selected date
-      if(dag === selecteddate || dag === tomorrow){
+      if(dag === selecteddate || dag === tomorrow || dag === dayaftertomorrow){
         waterstandHWLW.push(json.astronomicaltide.values.value[i].val);
         watertijd.push(moment(datum).format("HH:mm"));
-        waterdatum.push(moment(datum).format("DD-MM"));
+        waterdatum.push(moment(datum).format("ddd DD"));
       }else{
         //DO NOTIN
       };
