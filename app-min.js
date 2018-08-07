@@ -94,6 +94,8 @@ function plotSelectedLocation() {
     subtitle = "Waar die ene fotograaf Ed altijd zijn foto's maakt"
   }else if (title === "Cadzand") {
     subtitle = "Omdat Domburg data niet te vinden was"
+  }else if (title === "Den Helder") {
+    subtitle = "De inspiratie was nu wel op"
   }else {
     subtitle = "Wordt daar gesurft dan?"
   }
