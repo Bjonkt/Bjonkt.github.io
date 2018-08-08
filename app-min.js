@@ -23,7 +23,9 @@ $(function getSelectedDate() {
       dt = inst;
       selecteddate = inst.getFullYear()+"/"+inst.getMonth()+"/"+inst.getDate();
       var nd = new Date(inst.getFullYear(),inst.getMonth(),inst.getDate()+1);
+      var dat = new Date(inst.getFullYear(),inst.getMonth(),inst.getDate()+2);
       tomorrow = nd.getFullYear()+"/"+nd.getMonth()+"/"+nd.getDate();
+      dayaftertomorrow = dat.getFullYear()+"/"+dat.getMonth()+"/"+dat.getDate();
       plotSelectedLocation();
     }
   })
