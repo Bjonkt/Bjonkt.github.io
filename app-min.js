@@ -160,11 +160,11 @@ function plotSelectedLocation() {
           color: "#FF0000",
           width: 1,
           value: nowdt
-        }]
+        }],
       },
       yAxis: {
           title: {
-              text: 'Waterstand in cm'
+              text: null
           }
       },
 
@@ -179,10 +179,8 @@ function plotSelectedLocation() {
       },
 
       series: [{
-          name: 'Waterstand',
-          //data: [0,1,4,9,16,25,36,49,64,100]
-          //data: datapoints
-          data: waterstand,
+        showInLegend: false,
+          data: waterstand
       }]
 
       });
