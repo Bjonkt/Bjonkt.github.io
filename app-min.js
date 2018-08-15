@@ -142,7 +142,7 @@ function plotSelectedLocation() {
     }
 
     // Create chart using highcharts
-    $('#container').highcharts({
+    $('#chartcontainer').highcharts({
       chart: {
           type: 'spline' //Smooth lijntje
       },
@@ -177,12 +177,14 @@ function plotSelectedLocation() {
           }
         }
       },
-
       series: [{
         showInLegend: false,
           data: waterstand
       }],
-      credits: false
+      credits: false,
+      exporting: {
+        enabled: false
+      },
 
       });
       });

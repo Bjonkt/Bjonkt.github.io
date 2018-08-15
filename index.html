@@ -24,10 +24,10 @@
 
   <div class="maincontainer">
 
-    <section class="datacontainer">
+
 
       <!-- Chart container -->
-      <div class="container" id="container"></div>
+      <div class="chartcontainer" id="chartcontainer"></div>
 
       <!-- CTA and Table container -->
       <div class="containertwo">
@@ -35,7 +35,7 @@
         <div class="ctacontainer">
           <div> Datum <input type="text" class="datepicker-here" data-language="nl"></div>
           <div> Locatie
-            <select id="selectedLocation" onchange="plotSelectedLocation()">
+            <select class="select" id="selectedLocation" onchange="plotSelectedLocation()">
               <option value="getijscheveningen">Scheveningen</option>
               <option value="getijijmuiden">IJmuiden</option>
               <option value="getijpettenzuid">Petten</option>
@@ -46,7 +46,7 @@
           </div>
         </div>
 
-        <div id="tablecontainer">
+        <div class="tablecontainer" id="tablecontainer">
           <table>
           <tr>
             <th>Datum</th>
@@ -95,10 +95,10 @@
           </tr>
           </table>
         </div>
-        
+
     </div>
 
-    </section>
+
 
   </div>
 
