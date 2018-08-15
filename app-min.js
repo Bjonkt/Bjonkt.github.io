@@ -142,16 +142,14 @@ function plotSelectedLocation() {
     }
 
     // Create chart using highcharts
-    $('#container').highcharts({
+    $('#chartcontainer').highcharts({
       chart: {
           type: 'spline' //Smooth lijntje
       },
       title: {
           text: title
       },
-      subtitle: {
-        text: subtitle
-      },
+  
       xAxis:{
         type: 'datetime',
         tickInterval: 3600*1000,
@@ -177,12 +175,27 @@ function plotSelectedLocation() {
           }
         }
       },
-
       series: [{
+<<<<<<< HEAD
         showInLegend: false,
           data: waterstand
       }],
       credits: false
+||||||| merged common ancestors
+          name: 'Waterstand',
+          //data: [0,1,4,9,16,25,36,49,64,100]
+          //data: datapoints
+          data: waterstand,
+      }]
+=======
+        showInLegend: false,
+          data: waterstand
+      }],
+      credits: false,
+      exporting: {
+        enabled: false
+      },
+>>>>>>> newlayout
 
       });
       });

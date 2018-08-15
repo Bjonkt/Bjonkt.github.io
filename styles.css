@@ -1,28 +1,62 @@
+body{
+  background-image: url("0012.jpg");
+}
+
+.maincontainer{
+  margin: 50px;
+  padding: 20px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 12px;
+  width: 850px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chartcontainer {
+  float: left;
+  height: 400px;
+}
+
+.vl{
+  float: left;
+  border-right: 1px solid #dddddd;
+  width: 2px;
+  margin-left: 15px;
+  height: 400px;
+}
+.containertwo{
+  float: right;
+  width: 200px;
+}
 
 .ctacontainer{
-  padding: 10px;
   font-family: "Lucida Grande";
   color: #333333;
   font-size: 14px;
+  margin-bottom: 5px;
 }
 .datepicker-here{
-  margin: 5px;
+  margin: 3px;
+  margin-left: 5px;
+  height: 20px;
+  width: 140px;
 }
-.datacontainer {
-    width: 100%;
-    height: 400px;
-    margin: auto;
-    padding: 10px;
+.select{
+  margin: 3px;
+  height: 20px;
+  width: 140px;
 }
-.container {
-    width: 60%;
-    height: 400px;
-    float: left;
+
+.hl{
+  border-top: 1px solid #dddddd;
+  height: 2px;
 }
+
 table {
+  margin-top: 8px;
     font-size: small;
-    margin-left: 65%;
     height: 150px;
+    width: 200px;
     font-family: "Lucida Grande";
     border-collapse: collapse;
 }

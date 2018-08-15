@@ -22,73 +22,89 @@
 
 <body>
 
-  <div class="ctacontainer">
-    <div> Datum <input type="text" class="datepicker-here" data-language="nl"></div>
-    <div> Locatie
-      <select id="selectedLocation" onchange="plotSelectedLocation()">
-        <option value="getijscheveningen">Scheveningen</option>
-        <option value="getijijmuiden">IJmuiden</option>
-        <option value="getijpettenzuid">Petten</option>
-        <option value="getijhoekvanholland">Hoek van Holland</option>
-        <option value="getijcadzand">Cadzand</option>
-        <option value="getijdenhelder">Den Helder</option>
-      </select>
-    </div>
-</div>
+  <div class="maincontainer">
 
-  <section class="datacontainer">
-    <div class="container" id="container"></div>
-    <div id="tablecontainer">
-      <table>
-      <tr>
-        <th>Datum</th>
-        <th>Tijdstip</th>
-        <th>Stand</th>
-      </tr>
-      <tr>
-        <td id = ddata0></td>
-        <td id = tdata0></td>
-        <td id = wdata0></td>
-      </tr>
-      <tr>
-        <td id = ddata1></td>
-        <td id = tdata1></td>
-        <td id = wdata1></td>
-      </tr>
-      <tr>
-        <td id = ddata2></td>
-        <td id = tdata2></td>
-        <td id = wdata2></td>
-      </tr>
-      <tr>
-        <td id = ddata3></td>
-        <td id = tdata3></td>
-        <td id = wdata3></td>
-      </tr>
-      <tr>
-        <td id = ddata4></td>
-        <td id = tdata4></td>
-        <td id = wdata4></td>
-      </tr>
-      <tr>
-        <td id = ddata5></td>
-        <td id = tdata5></td>
-        <td id = wdata5></td>
-      </tr>
-      <tr>
-        <td id = ddata6></td>
-        <td id = tdata6></td>
-        <td id = wdata6></td>
-      </tr>
-      <tr>
-        <td id = ddata7></td>
-        <td id = tdata7></td>
-        <td id = wdata7></td>
-      </tr>
-      </table>
+
+
+      <!-- Chart container -->
+      <div class="chartcontainer" id="chartcontainer"></div>
+
+      <div class="vl"></div>
+
+      <!-- CTA and Table container -->
+      <div class="containertwo">
+
+        <div class="ctacontainer">
+          <div> Datum <input type="text" class="datepicker-here" data-language="nl"></div>
+          <div> Locatie
+            <select class="select" id="selectedLocation" onchange="plotSelectedLocation()">
+              <option value="getijscheveningen">Scheveningen</option>
+              <option value="getijijmuiden">IJmuiden</option>
+              <option value="getijpettenzuid">Petten</option>
+              <option value="getijhoekvanholland">Hoek van Holland</option>
+              <option value="getijcadzand">Cadzand</option>
+              <option value="getijdenhelder">Den Helder</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="hl"></div>
+
+        <div class="tablecontainer" id="tablecontainer">
+          <table>
+          <tr>
+            <th>Datum</th>
+            <th>Tijdstip</th>
+            <th>Stand</th>
+          </tr>
+          <tr>
+            <td id = ddata0></td>
+            <td id = tdata0></td>
+            <td id = wdata0></td>
+          </tr>
+          <tr>
+            <td id = ddata1></td>
+            <td id = tdata1></td>
+            <td id = wdata1></td>
+          </tr>
+          <tr>
+            <td id = ddata2></td>
+            <td id = tdata2></td>
+            <td id = wdata2></td>
+          </tr>
+          <tr>
+            <td id = ddata3></td>
+            <td id = tdata3></td>
+            <td id = wdata3></td>
+          </tr>
+          <tr>
+            <td id = ddata4></td>
+            <td id = tdata4></td>
+            <td id = wdata4></td>
+          </tr>
+          <tr>
+            <td id = ddata5></td>
+            <td id = tdata5></td>
+            <td id = wdata5></td>
+          </tr>
+          <tr>
+            <td id = ddata6></td>
+            <td id = tdata6></td>
+            <td id = wdata6></td>
+          </tr>
+          <tr>
+            <td id = ddata7></td>
+            <td id = tdata7></td>
+            <td id = wdata7></td>
+          </tr>
+          </table>
+        </div>
 
     </div>
-  </section>
+
+
+
+  </div>
 
 
 </body>
