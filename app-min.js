@@ -149,9 +149,7 @@ function plotSelectedLocation() {
       title: {
           text: title
       },
-      subtitle: {
-        text: subtitle
-      },
+  
       xAxis:{
         type: 'datetime',
         tickInterval: 3600*1000,

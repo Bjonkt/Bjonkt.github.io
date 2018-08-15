@@ -1,8 +1,9 @@
 body{
-  background-color: #c2e6ff
+  background-image: url("0012.jpg");
 }
 
 .maincontainer{
+  margin: 50px;
   padding: 20px;
   height: 400px;
   background: #ffffff;
@@ -12,14 +13,22 @@ body{
 }
 
 .chartcontainer {
-    height: 400px;
-    float: left;
+  float: left;
+  height: 400px;
 }
 
+.vl{
+  float: left;
+  border-right: 1px solid #dddddd;
+  width: 2px;
+  margin-left: 15px;
+  height: 400px;
+}
 .containertwo{
   float: right;
   width: 200px;
 }
+
 .ctacontainer{
   font-family: "Lucida Grande";
   color: #333333;
@@ -38,7 +47,13 @@ body{
   width: 140px;
 }
 
+.hl{
+  border-top: 1px solid #dddddd;
+  height: 2px;
+}
+
 table {
+  margin-top: 8px;
     font-size: small;
     height: 150px;
     width: 200px;
