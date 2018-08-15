@@ -175,11 +175,14 @@ function plotSelectedLocation() {
           }
         }
       },
+
       series: [{
           showInLegend: false,
           data: waterstand
       }],
+
       credits: false,
+      
       exporting: {
         enabled: false
       }
