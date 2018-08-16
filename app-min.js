@@ -169,7 +169,7 @@ function plotSelectedLocation() {
       }],
 
       credits: {
-        text: "Staat jou spot er niet bij? Extra features in gedachte? Andere vragen of opmerkingen? Mail dan naar prahprahpro@gmail.com",
+        text: "Staat jouw spot er niet bij? Extra features in gedachte? Andere vragen of opmerkingen? Mail dan naar prahprahpro@gmail.com",
         href: null
       },
 
