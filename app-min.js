@@ -148,12 +148,13 @@ function plotSelectedLocation() {
       },
       yAxis: {
           title: {
-              text: null
+              text: 'Waterstand [cm]'
           }
       },
 
       plotOptions: {
         series: {
+          name: 'Waterstand [cm]',
           pointStart: Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate(),0,0),
           pointInterval: 60 * 10000,
           marker:{
@@ -167,7 +168,10 @@ function plotSelectedLocation() {
           data: waterstand
       }],
 
-      credits: false,
+      credits: {
+        text: "Staat jou spot er niet bij? Extra features in gedachte? Andere vragen of opmerkingen? Mail dan naar prahprahpro@gmail.com",
+        href: null
+      },
 
       exporting: {
         enabled: false
