@@ -87,23 +87,6 @@ function plotSelectedLocation() {
   var selection = document.getElementById("selectedLocation");
   var title = selection.options[selection.selectedIndex].text;
 
-  var subtitle;
-  if(title==="Scheveningen"){
-    subtitle = "Met 159 man in het water";
-  }else if (title === "IJmuiden") {
-    subtitle = "Soort van chill, maar eigenlijk niet";
-  }else if (title === "Petten") {
-    subtitle = "Daar loopt het zo lekker hol";
-  }else if (title === "Hoek van Holland") {
-    subtitle = "Waar die ene fotograaf Ed altijd zijn foto's maakt"
-  }else if (title === "Cadzand") {
-    subtitle = "Omdat Domburg data niet te vinden was"
-  }else if (title === "Den Helder") {
-    subtitle = "De inspiratie was nu wel op"
-  }else {
-    subtitle = "Wordt daar gesurft dan?"
-  }
-
   var location = selection.options[selection.selectedIndex].value;
   // En de bij passende url
   var url = "json/" + location + ".json";
@@ -147,7 +130,10 @@ function plotSelectedLocation() {
           type: 'spline' //Smooth lijntje
       },
       title: {
-          text: title
+          text: "Astronomisch Getij"
+      },
+      subtitle: {
+        text: title
       },
 
       xAxis:{
@@ -182,7 +168,7 @@ function plotSelectedLocation() {
       }],
 
       credits: false,
-      
+
       exporting: {
         enabled: false
       }
