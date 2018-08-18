@@ -6,7 +6,8 @@ var selecteddate = dt.getFullYear()+"/"+dt.getMonth()+"/"+dt.getDate();
 var tomorrow = tm.getFullYear()+"/"+tm.getMonth()+"/"+tm.getDate();
 var dayaftertomorrow = dtm.getFullYear()+"/"+dtm.getMonth()+"/"+dtm.getDate();
 var selectedlocation;
-
+var sunrise = new Date();
+var sundown = new Date();
 
 //Show a plot on load
 $(function (){
@@ -79,6 +80,35 @@ function createTable(urltable){
 
 }
 
+// This function creates the table containing the extreme values.
+function getSunData(sundata){
+
+  $.getJSON(sundata, function(json) {
+
+    for (i = 0; i < json.length; i++){
+
+      var dt = json[i].dateTimeUp;
+      var dag;
+      var datum;
+      datum = new Date(dt.substring(0,4),dt.substring(4,6)-1,dt.substring(6,8),dt.substring(8,10),dt.substring(10,12));
+      dag = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate();
+
+      // Only load data of selected date
+      if(dag === selecteddate){
+        var up = json[i].dateTimeUp;
+        var down = json[i].dateTimeDown;
+        sunrise = new Date(up.substring(0,4),up.substring(4,6)-1,up.substring(6,8),up.substring(8,10),up.substring(10,12));
+        sundown = new Date(down.substring(0,4),down.substring(4,6)-1,down.substring(6,8),down.substring(8,10),down.substring(10,12));
+      }else{
+        //Do NOTIN
+      };
+
+    };
+
+  });
+
+}
+
 function plotSelectedLocation() {
   // Het stringetje die de waterstand opslaaddt voor highcharts
   var waterstand = [];
@@ -93,6 +123,7 @@ function plotSelectedLocation() {
   var urltable = "json/" + location + "hwlw" + ".json";
 
   createTable(urltable);
+  getSunData("json/sundata.json");
 
   // Laden van de data
   $.getJSON(url, function(json) {
@@ -140,11 +171,21 @@ function plotSelectedLocation() {
         type: 'datetime',
         tickInterval: 3600*1000,
         gridLineWidth: 1,
-        plotLines:[{
-          color: "#FF0000",
-          width: 1,
-          value: nowdt
-        }],
+        plotBands: [{
+        color: "#dddddd", // Color value
+        from: Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate(),0,0), // Start of the plot band
+        to: Date.UTC(sunrise.getFullYear(), sunrise.getMonth(), sunrise.getDate(),sunrise.getHours(),sunrise.getMinutes()), // End of the plot band
+      },{
+        color: "#dddddd", // Color value
+        from: Date.UTC(sundown.getFullYear(), sundown.getMonth(), sundown.getDate(),sundown.getHours(),sundown.getMinutes()),
+        to: Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate(),24,0),
+      }],
+      plotLines:[{
+        color: "#FF0000",
+        width: 1,
+        value: nowdt,
+        zIndex: 3,
+      }],
       },
       yAxis: {
           title: {
