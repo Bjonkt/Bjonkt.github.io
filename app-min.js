@@ -175,6 +175,11 @@ function plotSelectedLocation() {
           }
         }
       },
+      tooltip: {
+        crosshairs: {
+            dashStyle: "ShortDash"
+        },
+      },
 
       series: [{
           showInLegend: false,
