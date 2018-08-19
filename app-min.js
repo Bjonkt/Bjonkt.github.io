@@ -6,8 +6,7 @@ var selecteddate = dt.getFullYear()+"/"+dt.getMonth()+"/"+dt.getDate();
 var tomorrow = tm.getFullYear()+"/"+tm.getMonth()+"/"+tm.getDate();
 var dayaftertomorrow = dtm.getFullYear()+"/"+dtm.getMonth()+"/"+dtm.getDate();
 var selectedlocation;
-var sunrise = new Date();
-var sundown = new Date();
+
 
 //Show a plot on load
 $(function (){
@@ -80,35 +79,6 @@ function createTable(urltable){
 
 }
 
-// This function creates the table containing the extreme values.
-function getSunData(sundata){
-
-  $.getJSON(sundata, function(json) {
-
-    for (i = 0; i < json.length; i++){
-
-      var dt = json[i].dateTimeUp;
-      var dag;
-      var datum;
-      datum = new Date(dt.substring(0,4),dt.substring(4,6)-1,dt.substring(6,8),dt.substring(8,10),dt.substring(10,12));
-      dag = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate();
-
-      // Only load data of selected date
-      if(dag === selecteddate){
-        var up = json[i].dateTimeUp;
-        var down = json[i].dateTimeDown;
-        sunrise = new Date(up.substring(0,4),up.substring(4,6)-1,up.substring(6,8),up.substring(8,10),up.substring(10,12));
-        sundown = new Date(down.substring(0,4),down.substring(4,6)-1,down.substring(6,8),down.substring(8,10),down.substring(10,12));
-      }else{
-        //Do NOTIN
-      };
-
-    };
-
-  });
-
-}
-
 function plotSelectedLocation() {
   // Het stringetje die de waterstand opslaaddt voor highcharts
   var waterstand = [];
@@ -118,15 +88,17 @@ function plotSelectedLocation() {
   var title = selection.options[selection.selectedIndex].text;
 
   var location = selection.options[selection.selectedIndex].value;
+
   // En de bij passende url
   var url = "json/" + location + ".json";
   var urltable = "json/" + location + "hwlw" + ".json";
 
   createTable(urltable);
-  getSunData("json/sundata.json");
 
   // Laden van de data
   $.getJSON(url, function(json) {
+
+    var suntimes = SunCalc.getTimes(dt,json.series[0].location[0].latitude,json.series[0].location[0].longitude);
 
     for (i = 0; i < json.series[0].data.length; i++){
       // Parse the json string to get tide height data
@@ -174,10 +146,10 @@ function plotSelectedLocation() {
         plotBands: [{
         color: "#dddddd", // Color value
         from: Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate(),0,0), // Start of the plot band
-        to: Date.UTC(sunrise.getFullYear(), sunrise.getMonth(), sunrise.getDate(),sunrise.getHours(),sunrise.getMinutes()), // End of the plot band
+        to: Date.UTC(suntimes.sunrise.getFullYear(), suntimes.sunrise.getMonth(), suntimes.sunrise.getDate(), suntimes.sunrise.getHours(),suntimes.sunrise.getMinutes(),suntimes.sunrise.getSeconds()), // End of the plot band
       },{
         color: "#dddddd", // Color value
-        from: Date.UTC(sundown.getFullYear(), sundown.getMonth(), sundown.getDate(),sundown.getHours(),sundown.getMinutes()),
+        from: Date.UTC(suntimes.sunset.getFullYear(), suntimes.sunset.getMonth(), suntimes.sunset.getDate(),suntimes.sunset.getHours(),suntimes.sunset.getMinutes(),suntimes.sunset.getSeconds()),
         to: Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate(),24,0),
       }],
       plotLines:[{
