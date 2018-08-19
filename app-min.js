@@ -1,11 +1,14 @@
 // Global variables for date(default today)  and location because i don't know how to program correctly
 var dt = new Date();
 var tm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+1);
-var dtm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+2);
+var qm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+2);
+
 var selecteddate = dt.getFullYear()+"/"+dt.getMonth()+"/"+dt.getDate();
 var tomorrow = tm.getFullYear()+"/"+tm.getMonth()+"/"+tm.getDate();
-var dayaftertomorrow = dtm.getFullYear()+"/"+dtm.getMonth()+"/"+dtm.getDate();
+var dayaftertomorrow = qm.getFullYear()+"/"+qm.getMonth()+"/"+qm.getDate();
+
 var selectedlocation;
+var suntimes;
 
 
 //Show a plot on load
@@ -42,20 +45,22 @@ function createTable(urltable){
     var waterdatum = [];
 
     for (i = 0; i < json.astronomicaltide.values.value.length; i++){
+
       var datum;
       var dag;
 
       // Parse the json string to get tide height data
 
       if(Object.keys(json.astronomicaltide.values.value[i].datetime).length === 2 || Object.keys(json.astronomicaltide.values.value[i].datetime).length === 3){
-        var dt = json.astronomicaltide.values.value[i].datetime.text;
-        datum = new Date(dt.substring(0,4),dt.substring(4,6)-1,dt.substring(6,8),dt.substring(8,10),dt.substring(10,12));
+        var datejson = json.astronomicaltide.values.value[i].datetime.text;
+        datum = new Date(datejson.substring(0,4),datejson.substring(4,6)-1,datejson.substring(6,8),datejson.substring(8,10),datejson.substring(10,12));
+        dag = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate();
       } else {
-        var dt = json.astronomicaltide.values.value[i].datetime;
-        datum = new Date(dt.substring(0,4),dt.substring(4,6)-1,dt.substring(6,8),dt.substring(8,10),dt.substring(10,12));
+        var datejson = json.astronomicaltide.values.value[i].datetime;
+        datum = new Date(datejson.substring(0,4),datejson.substring(4,6)-1,datejson.substring(6,8),datejson.substring(8,10),datejson.substring(10,12));
+        dag = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate();
       };
 
-      dag = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate();
 
       // Only load data of selected date
       if(dag === selecteddate || dag === tomorrow || dag === dayaftertomorrow){
@@ -98,7 +103,7 @@ function plotSelectedLocation() {
   // Laden van de data
   $.getJSON(url, function(json) {
 
-    var suntimes = SunCalc.getTimes(dt,json.series[0].location[0].latitude,json.series[0].location[0].longitude);
+    suntimes = SunCalc.getTimes(new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+1),json.series[0].location[0].latitude,json.series[0].location[0].longitude);
 
     for (i = 0; i < json.series[0].data.length; i++){
       // Parse the json string to get tide height data
@@ -119,12 +124,12 @@ function plotSelectedLocation() {
     waterstand = waterstand.slice(11,156);
 
     var now = new Date();
-    var nowdt = now.getFullYear()+"/"+now.getMonth()+"/"+now.getDate();
+    var currenttime = now.getFullYear()+"/"+now.getMonth()+"/"+now.getDate();
 
-    if(selecteddate === nowdt){
-      nowdt = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(),now.getMinutes());
+    if(selecteddate === currenttime){
+      currenttime = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(),now.getMinutes());
     } else {
-      nowdt = null;
+      currenttime = null;
     }
 
     // Create chart using highcharts
@@ -155,7 +160,7 @@ function plotSelectedLocation() {
       plotLines:[{
         color: "#FF0000",
         width: 1,
-        value: nowdt,
+        value: currenttime,
         zIndex: 3,
       }],
       },
