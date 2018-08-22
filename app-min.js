@@ -1,17 +1,35 @@
-// Global variables for date(default today)  and location because i don't know how to program correctly
+// Define Global veriables
 var dt = new Date();
-var tm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+1);
-var qm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+2);
+var tm = new Date();
+var qm = new Date();
 
-var selecteddate = dt.getFullYear()+"/"+dt.getMonth()+"/"+dt.getDate();
-var tomorrow = tm.getFullYear()+"/"+tm.getMonth()+"/"+tm.getDate();
-var dayaftertomorrow = qm.getFullYear()+"/"+qm.getMonth()+"/"+qm.getDate();
+var selecteddate;
+var tomorrow;
+var dayaftertomorrow;
 
 var selectedlocation;
 var suntimes;
 
+// Get dates in NL time
+$(function(){
+  dt = convertToNL(dt);
+  tm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+1);
+  qm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+2);
 
-//Show a plot on load
+  selecteddate = dt.getFullYear()+"/"+dt.getMonth()+"/"+dt.getDate();
+  tomorrow = tm.getFullYear()+"/"+tm.getMonth()+"/"+tm.getDate();
+  dayaftertomorrow = qm.getFullYear()+"/"+qm.getMonth()+"/"+qm.getDate();
+})
+
+// Converts local time zone to NL time
+function convertToNL(localtime) {
+  var UTCDate = Date.UTC(localtime.getUTCFullYear(), localtime.getUTCMonth(), localtime.getUTCDate(),
+  localtime.getUTCHours() + 2, localtime.getUTCMinutes(), localtime.getUTCSeconds());
+  var NLDate = new Date(UTCDate);
+  return NLDate;
+};
+
+// Plot the graph when page is being loaded
 $(function (){
   plotSelectedLocation();
   var dp = $('.datepicker-here').datepicker({startDate: dt}).data('datepicker');
@@ -36,21 +54,16 @@ $(function getSelectedDate() {
 
 // This function creates the table containing the extreme values.
 function createTable(urltable){
-
-
   $.getJSON(urltable, function(json) {
-
     var waterstandHWLW = [];
     var watertijd = [];
     var waterdatum = [];
 
     for (i = 0; i < json.astronomicaltide.values.value.length; i++){
-
       var datum;
       var dag;
 
       // Parse the json string to get tide height data
-
       if(Object.keys(json.astronomicaltide.values.value[i].datetime).length === 2 || Object.keys(json.astronomicaltide.values.value[i].datetime).length === 3){
         var datejson = json.astronomicaltide.values.value[i].datetime.text;
         datum = new Date(datejson.substring(0,4),datejson.substring(4,6)-1,datejson.substring(6,8),datejson.substring(8,10),datejson.substring(10,12));
@@ -61,7 +74,6 @@ function createTable(urltable){
         dag = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate();
       };
 
-
       // Only load data of selected date
       if(dag === selecteddate || dag === tomorrow || dag === dayaftertomorrow){
         waterstandHWLW.push(json.astronomicaltide.values.value[i].val);
@@ -70,7 +82,6 @@ function createTable(urltable){
       }else{
         //DO NOTIN
       };
-
     };
 
     for (var i = 0; i < 8; i++) {
@@ -79,32 +90,23 @@ function createTable(urltable){
         document.getElementById("tdata"+i).innerHTML = watertijd[i];
         document.getElementById("ddata"+i).innerHTML = waterdatum[i];
     }
-
   });
-
 }
 
+// This function creates the graph
 function plotSelectedLocation() {
-  // Het stringetje die de waterstand opslaaddt voor highcharts
   var waterstand = [];
-
-  // Paar (tijdelijke) strings voor de location selection
   var selection = document.getElementById("selectedLocation");
   var title = selection.options[selection.selectedIndex].text;
-
   var location = selection.options[selection.selectedIndex].value;
 
-  // En de bij passende url
   var url = "json/" + location + ".json";
   var urltable = "json/" + location + "hwlw" + ".json";
-
   createTable(urltable);
 
-  // Laden van de data
+  // Load Data
   $.getJSON(url, function(json) {
-
     suntimes = SunCalc.getTimes(new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+1),json.series[0].location[0].latitude,json.series[0].location[0].longitude);
-
     for (i = 0; i < json.series[0].data.length; i++){
       // Parse the json string to get tide height data
       var datum = new Date(json.series[0].data[i].dateTime);
@@ -119,15 +121,14 @@ function plotSelectedLocation() {
         //DO NOTIN
       }
     }
-
     //Remove first and last enteries
     waterstand = waterstand.slice(11,156);
 
-    var now = new Date();
+    var now = convertToNL(new Date());
     var currenttime = now.getFullYear()+"/"+now.getMonth()+"/"+now.getDate();
 
     if(selecteddate === currenttime){
-      currenttime = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(),now.getMinutes());
+      currenttime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(),now.getMinutes());
     } else {
       currenttime = null;
     }
