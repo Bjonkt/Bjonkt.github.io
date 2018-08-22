@@ -13,7 +13,6 @@ var suntimes;
 // Get dates in NL time
 $(function(){
   dt = convertToNL(dt);
-  console.log(dt);
   tm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+1);
   qm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+2);
 
@@ -108,27 +107,20 @@ function plotSelectedLocation() {
   // Load Data
   $.getJSON(url, function(json) {
     suntimes = SunCalc.getTimes(dt,json.series[0].location[0].latitude,json.series[0].location[0].longitude);
-
-    console.log(convertToNL(suntimes.sunrise));
-
     for (i = 0; i < json.series[0].data.length; i++){
       // Parse the json string to get tide height data
       var datum = new Date(json.series[0].data[i].dateTime);
+      datum = new Date(datum.getUTCFullYear(),datum.getUTCMonth(),datum.getUTCDate(),datum.getUTCHours(),datum.getUTCMinutes());
+      datum = convertToNL(datum);
       var dag = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate();
-      var dag0 = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate()+"/"+datum.getHours();
-      var dag1 = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate()+"/"+datum.getHours();
 
       // Only load data of selected date
       if(dag === selecteddate || dag === tomorrow){
         waterstand.push([json.series[0].data[i].value]);
-        console.log(datum);
-        console.log(dag);
       }else{
         //DO NOTIN
       }
     }
-
-    console.log(selecteddate);
 
     //Remove first and last enteries
     waterstand = waterstand.slice(11,156);
