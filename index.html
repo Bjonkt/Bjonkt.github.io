@@ -37,13 +37,13 @@
       <!-- Chart container -->
       <div class="chartcontainer" id="chartcontainer"></div>
 
-      <div class="vl"></div>
-
       <!-- CTA and Table container -->
       <div class="containertwo">
 
         <div class="ctacontainer">
-          <div> Datum <input type="text" class="datepicker-here" data-language="nl"></div>
+          <div> Datum
+            <div class="datepickercontainer">
+              <button class="nextday"></button> <input type="text" class="datepicker-here" data-language="nl"> <button class="nextday"></button></div></div>
           <div> Locatie
             <select class="select" id="selectedLocation" onchange="plotSelectedLocation()">
               <option value="getijscheveningen">Scheveningen</option>

@@ -13,6 +13,7 @@ var suntimes;
 // Get dates in NL time
 $(function(){
   dt = convertToNL(dt);
+  console.log(dt);
   tm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+1);
   qm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+2);
 
@@ -106,7 +107,10 @@ function plotSelectedLocation() {
 
   // Load Data
   $.getJSON(url, function(json) {
-    suntimes = SunCalc.getTimes(new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+1),json.series[0].location[0].latitude,json.series[0].location[0].longitude);
+    suntimes = SunCalc.getTimes(dt,json.series[0].location[0].latitude,json.series[0].location[0].longitude);
+
+    console.log(convertToNL(suntimes.sunrise));
+
     for (i = 0; i < json.series[0].data.length; i++){
       // Parse the json string to get tide height data
       var datum = new Date(json.series[0].data[i].dateTime);
@@ -117,10 +121,15 @@ function plotSelectedLocation() {
       // Only load data of selected date
       if(dag === selecteddate || dag === tomorrow){
         waterstand.push([json.series[0].data[i].value]);
+        console.log(datum);
+        console.log(dag);
       }else{
         //DO NOTIN
       }
     }
+
+    console.log(selecteddate);
+
     //Remove first and last enteries
     waterstand = waterstand.slice(11,156);
 
@@ -152,10 +161,10 @@ function plotSelectedLocation() {
         plotBands: [{
         color: "#dddddd", // Color value
         from: Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate(),0,0), // Start of the plot band
-        to: Date.UTC(suntimes.sunrise.getFullYear(), suntimes.sunrise.getMonth(), suntimes.sunrise.getDate(), suntimes.sunrise.getHours(),suntimes.sunrise.getMinutes(),suntimes.sunrise.getSeconds()), // End of the plot band
+        to: convertToNL(suntimes.sunrise), // End of the plot band
       },{
         color: "#dddddd", // Color value
-        from: Date.UTC(suntimes.sunset.getFullYear(), suntimes.sunset.getMonth(), suntimes.sunset.getDate(),suntimes.sunset.getHours(),suntimes.sunset.getMinutes(),suntimes.sunset.getSeconds()),
+        from: convertToNL(suntimes.sunset),
         to: Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate(),24,0),
       }],
       plotLines:[{
