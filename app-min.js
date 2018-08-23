@@ -200,3 +200,13 @@ function plotSelectedLocation() {
       });
       });
   };
+
+  function nextDay() {
+    dt = convertToNL(new Date(dt.getFullYear(),dt.getMonth(),dt.getDate() + 1));
+    $(".datepicker-here").datepicker().data("datepicker").selectDate(dt);
+  }
+
+  function previousDay(){
+    dt = convertToNL(new Date(dt.getFullYear(),dt.getMonth(),dt.getDate() - 1));
+    $(".datepicker-here").datepicker().data("datepicker").selectDate(dt);
+  }

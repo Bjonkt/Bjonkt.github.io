@@ -30,7 +30,7 @@ html {
 }
 .containertwo{
   float: right;
-  width: 200px;
+  width: 220px;
 }
 
 .ctacontainer{
@@ -40,14 +40,28 @@ html {
   margin-bottom: 5px;
 }
 .datepicker-here{
-  margin: 3px;
-  height: 20px;
-  width: 140px;
+  margin: 2px;
+  height: 22px;
+  width: 80px;
+
+  font-family: "Lucida Grande";
+  color: #333333;
 }
 .select{
-  margin: 3px;
-  height: 20px;
-  width: 140px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+
+  height: 22px;
+  width: 166px;
+
+  font-family: "Lucida Grande";
+  color: #333333;
+}
+
+.nextday{
+  height: 22px;
+  font-family: "Lucida Grande";
+  color: #333333;
 }
 
 .hl{
@@ -59,7 +73,7 @@ table {
   margin-top: 8px;
     font-size: small;
     height: 150px;
-    width: 200px;
+    width: 220px;
     font-family: "Lucida Grande";
     border-collapse: collapse;
 }
