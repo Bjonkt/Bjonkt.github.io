@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -41,10 +42,15 @@
       <div class="rightcontainer">
 
         <div class="ctacontainer">
-          <div> Datum
+          <div class = "datecontainer"> Datum
             <div class="datepickercontainer">
-              <button class="nextday"></button> <input type="text" class="datepicker-here" data-language="nl"> <button class="nextday"></button></div></div>
-          <div> Locatie
+              <button class="nextday" onclick="previousDay()"><</button>
+      				<input type="text" class="datepicker-here" data-language="nl">
+      				<button class="nextday" onclick="nextDay()">></button>
+			  </div>
+			</div>
+
+          <div class="locationcontainer"> Locatie
             <select class="select" id="selectedLocation" onchange="plotSelectedLocation()">
               <option value="getijscheveningen">Scheveningen</option>
               <option value="getijijmuiden">IJmuiden</option>
@@ -66,44 +72,44 @@
             <th>Stand</th>
           </tr>
           <tr>
-            <td id = ddata0></td>
-            <td id = tdata0></td>
-            <td id = wdata0></td>
+            <td id = "ddata0"></td>
+            <td id = "tdata0"></td>
+            <td id = "wdata0"></td>
           </tr>
           <tr>
-            <td id = ddata1></td>
-            <td id = tdata1></td>
-            <td id = wdata1></td>
+            <td id = "ddata1"></td>
+            <td id = "tdata1"></td>
+            <td id = "wdata1"></td>
           </tr>
           <tr>
-            <td id = ddata2></td>
-            <td id = tdata2></td>
-            <td id = wdata2></td>
+            <td id = "ddata2"></td>
+            <td id = "tdata2"></td>
+            <td id = "wdata2"></td>
           </tr>
           <tr>
-            <td id = ddata3></td>
-            <td id = tdata3></td>
-            <td id = wdata3></td>
+            <td id = "ddata3"></td>
+            <td id = "tdata3"></td>
+            <td id = "wdata3"></td>
           </tr>
           <tr>
-            <td id = ddata4></td>
-            <td id = tdata4></td>
-            <td id = wdata4></td>
+            <td id = "ddata4"></td>
+            <td id = "tdata4"></td>
+            <td id = "wdata4"></td>
           </tr>
           <tr>
-            <td id = ddata5></td>
-            <td id = tdata5></td>
-            <td id = wdata5></td>
+            <td id = "ddata5"></td>
+            <td id = "tdata5"></td>
+            <td id = "wdata5"></td>
           </tr>
           <tr>
-            <td id = ddata6></td>
-            <td id = tdata6></td>
-            <td id = wdata6></td>
+            <td id = "ddata6"></td>
+            <td id = "tdata6"></td>
+            <td id = "wdata6"></td>
           </tr>
           <tr>
-            <td id = ddata7></td>
-            <td id = tdata7></td>
-            <td id = wdata7></td>
+            <td id = "ddata7"></td>
+            <td id = "tdata7"></td>
+            <td id = "wdata7"></td>
           </tr>
           </table>
         </div>

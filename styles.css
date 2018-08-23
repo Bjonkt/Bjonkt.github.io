@@ -10,17 +10,18 @@ html {
   margin: 50px;
   padding: 20px;
   height: 400px;
-  width: 55%;
+  width: 900px;
 
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .chartcontainer {
   float: left;
   height: 400px;
   width: 70%;
+
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .vl{
@@ -32,13 +33,20 @@ html {
 
   border-right: 1px solid #dddddd;
 }
+
 .rightcontainer{
   float: right;
-  width: 30%;
+  height: inherit;
+  width: 28%;
+
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .ctacontainer{
   width: 90%;
+	height: 60px;
 
   margin-left: auto;
   margin-right: auto;
@@ -49,37 +57,61 @@ html {
   font-size: 14px;
 }
 
+.datecontainer{
+	height: 50%;
+}
+
 .datepickercontainer{
-  float: right;
-  width: 80%;
+  	float: right;
+  	margin-top: auto;
+  	margin-bottom: auto;
+
+  	width: 160px;
+  	height: 25px;
 }
 
 .datepicker-here{
+  margin-top: auto;
+  margin-bottom: auto;
+
   width: 80px;
-  height: 20px;
+
+  font-family: "Lucida Grande";
+  color: #333333;
+  font-size: 12px;
+}
+
+.nextday{
+  margin-top: auto;
+  margin-bottom: auto;
+  vertical-align: middle;
+
+  width: 25px;
+  height: 25px;
+
+  text-align: center;
+}
+
+.locationcontainer{
+	height: 50%;
 }
 
 .select{
-  margin-top: auto;
-  margin-bottom: auto;
   float: right;
+  width: 160px;
+  height: 25px;
 
-  width: 140px;
-  height: 20px;
+  font-family: "Lucida Grande";
+  color: #333333;
+  font-size: 12px;
 }
+
 
 .hl{
   border-top: 1px solid #dddddd;
   height: 2px;
 }
 
-.nextday{
-  margin-top: auto;
-  margin-bottom: auto;
-
-  width: 20px;
-  height: 20px;
-}
 
 table {
     margin-top: 8px;
