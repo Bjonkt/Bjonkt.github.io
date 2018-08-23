@@ -41,10 +41,10 @@ $(function getSelectedDate() {
   $(".datepicker-here").datepicker({
     autoClose: true,
     onSelect: function(dateText, inst) {
-      dt = inst;
-      selecteddate = inst.getFullYear()+"/"+inst.getMonth()+"/"+inst.getDate();
-      var nd = new Date(inst.getFullYear(),inst.getMonth(),inst.getDate()+1);
-      var dat = new Date(inst.getFullYear(),inst.getMonth(),inst.getDate()+2);
+      dt = convertToNL(inst);
+      selecteddate = dt.getFullYear()+"/"+dt.getMonth()+"/"+dt.getDate();
+      var nd = convertToNL(new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+1));
+      var dat = convertToNL(new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+2));
       tomorrow = nd.getFullYear()+"/"+nd.getMonth()+"/"+nd.getDate();
       dayaftertomorrow = dat.getFullYear()+"/"+dat.getMonth()+"/"+dat.getDate();
       plotSelectedLocation();
