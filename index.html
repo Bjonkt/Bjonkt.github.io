@@ -26,7 +26,7 @@
   <script src="suncalc.js"></script>
 
   <!-- Style Sheet-->
-   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="mobilestyle.css">
  </head>
 
 <body>
@@ -34,82 +34,100 @@
   <div class="bg">
 
     <div class="maincontainer">
-      <!-- Chart container -->
-      <div class="chartcontainer" id="chartcontainer"></div>
 
-      <div class="vl"></div>
+      <div class="ctacontainer">
+        <div class = "datecontainer">
+          <button class="nextday" onclick="previousDay()"><</button>
+          <input type="text" class="datepicker-here" data-language="nl">
+          <button class="nextday" onclick="nextDay()">></button>
+        </div>
+        <div class = "locationcontainer">
+          <select class="select" id="selectedLocation" onchange="plotSelectedLocation()">
+            <option value="getijscheveningen">Scheveningen</option>
+            <option value="getijijmuiden">IJmuiden</option>
+            <option value="getijpettenzuid">Petten</option>
+            <option value="getijhoekvanholland">Hoek van Holland</option>
+            <option value="getijcadzand">Cadzand</option>
+            <option value="getijdenhelder">Den Helder</option>
+          </select>
+        </div>
+      </div>
 
+      <div class="outerchartcontainer">
+        <!-- Chart container -->
+        <div class="chartcontainer" id="chartcontainer"></div>
+      </div>
+      
       <!-- CTA and Table container -->
       <div class="containertwo">
 
-        <div class="ctacontainer">
-          <div class = "datecontainer"> Datum
-            <button class="nextday" onclick="previousDay()"><</button>
-            <input type="text" class="datepicker-here" data-language="nl">
-            <button class="nextday" onclick="nextDay()">></button>
-          </div>
-          <div class = "locationcontainer"> Locatie
-            <select class="select" id="selectedLocation" onchange="plotSelectedLocation()">
-              <option value="getijscheveningen">Scheveningen</option>
-              <option value="getijijmuiden">IJmuiden</option>
-              <option value="getijpettenzuid">Petten</option>
-              <option value="getijhoekvanholland">Hoek van Holland</option>
-              <option value="getijcadzand">Cadzand</option>
-              <option value="getijdenhelder">Den Helder</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="hl"></div>
-
         <div class="tablecontainer" id="tablecontainer">
-          <table>
+          <table class = "tableday1">
           <tr>
-            <th>Datum</th>
-            <th>Tijdstip</th>
-            <th>Stand</th>
+            <th colspan="2" id="ddata0"></th>
           </tr>
           <tr>
-            <td id = ddata0></td>
             <td id = tdata0></td>
             <td id = wdata0></td>
           </tr>
           <tr>
-            <td id = ddata1></td>
             <td id = tdata1></td>
             <td id = wdata1></td>
           </tr>
           <tr>
-            <td id = ddata2></td>
             <td id = tdata2></td>
             <td id = wdata2></td>
           </tr>
           <tr>
-            <td id = ddata3></td>
             <td id = tdata3></td>
             <td id = wdata3></td>
           </tr>
+          </table>
+
+          <table class = "tableday2">
           <tr>
-            <td id = ddata4></td>
+            <th colspan="2" id="ddata4"></th>
+          </tr>
+          <tr>
             <td id = tdata4></td>
             <td id = wdata4></td>
           </tr>
           <tr>
-            <td id = ddata5></td>
             <td id = tdata5></td>
             <td id = wdata5></td>
           </tr>
           <tr>
-            <td id = ddata6></td>
             <td id = tdata6></td>
             <td id = wdata6></td>
           </tr>
           <tr>
-            <td id = ddata7></td>
             <td id = tdata7></td>
             <td id = wdata7></td>
           </tr>
           </table>
+
+          <table class = "tableday3">
+          <tr>
+            <th colspan="2" id="ddata8"></th>
+          </tr>
+          <tr>
+            <td id = tdata8></td>
+            <td id = wdata8></td>
+          </tr>
+          <tr>
+            <td id = tdata9></td>
+            <td id = wdata9></td>
+          </tr>
+          <tr>
+            <td id = tdata10></td>
+            <td id = wdata10></td>
+          </tr>
+          <tr>
+            <td id = tdata11></td>
+            <td id = wdata11></td>
+          </tr>
+          </table>
+
         </div>
 
     </div>

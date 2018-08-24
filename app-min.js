@@ -55,9 +55,18 @@ $(function getSelectedDate() {
 // This function creates the table containing the extreme values.
 function createTable(urltable){
   $.getJSON(urltable, function(json) {
+
     var waterstandHWLW = [];
     var watertijd = [];
     var waterdatum = [];
+
+    var waterstandHWLW2 = [];
+    var watertijd2 = [];
+    var waterdatum2 = [];
+
+    var waterstandHWLW3 = [];
+    var watertijd3 = [];
+    var waterdatum3 = [];
 
     for (i = 0; i < json.astronomicaltide.values.value.length; i++){
       var datum;
@@ -75,20 +84,58 @@ function createTable(urltable){
       };
 
       // Only load data of selected date
-      if(dag === selecteddate || dag === tomorrow || dag === dayaftertomorrow){
+      if(dag === selecteddate){
         waterstandHWLW.push(json.astronomicaltide.values.value[i].val);
         watertijd.push(moment(datum).format("HH:mm"));
         waterdatum.push(moment(datum).format("ddd DD"));
+      }else if (dag === tomorrow) {
+        waterstandHWLW2.push(json.astronomicaltide.values.value[i].val);
+        watertijd2.push(moment(datum).format("HH:mm"));
+        waterdatum2.push(moment(datum).format("ddd DD"));
+      }else if (dag === dayaftertomorrow) {
+        waterstandHWLW3.push(json.astronomicaltide.values.value[i].val);
+        watertijd3.push(moment(datum).format("HH:mm"));
+        waterdatum3.push(moment(datum).format("ddd DD"));
       }else{
         //DO NOTIN
       };
     };
 
-    for (var i = 0; i < 8; i++) {
-      // Data naar tabel
-        document.getElementById("wdata"+i).innerHTML = waterstandHWLW[i];
-        document.getElementById("tdata"+i).innerHTML = watertijd[i];
-        document.getElementById("ddata"+i).innerHTML = waterdatum[i];
+    for (var i = 0; i < 4; i++) {
+
+        if(watertijd[i] !== undefined){
+          // Data naar tabel
+            document.getElementById("wdata"+i).innerHTML = waterstandHWLW[i];
+            document.getElementById("tdata"+i).innerHTML = watertijd[i];
+            document.getElementById("ddata0").innerHTML = waterdatum[i];
+        } else {
+          // Data naar tabel
+            document.getElementById("wdata"+i).innerHTML = "-";
+            document.getElementById("tdata"+i).innerHTML = "-";
+        };
+
+        if (watertijd2[i] !== undefined) {
+          var b = i + 4;
+          document.getElementById("wdata"+b).innerHTML = waterstandHWLW2[i];
+          document.getElementById("tdata"+b).innerHTML = watertijd2[i];
+          document.getElementById("ddata4").innerHTML = waterdatum2[i];
+        } else {
+          var b = i + 4;
+          document.getElementById("wdata"+b).innerHTML = "-";
+          document.getElementById("tdata"+b).innerHTML = "-";
+        };
+
+        if (watertijd3[i] !== undefined) {
+          var c = i + 8;
+          document.getElementById("wdata"+c).innerHTML = waterstandHWLW3[i];
+          document.getElementById("tdata"+c).innerHTML = watertijd3[i];
+          document.getElementById("ddata8").innerHTML = waterdatum3[i];
+        } else {
+          var c = i + 8;
+          document.getElementById("wdata"+c).innerHTML = "-";
+          document.getElementById("tdata"+c).innerHTML = "-";
+        };
+
     }
   });
 }
@@ -137,18 +184,19 @@ function plotSelectedLocation() {
     // Create chart using highcharts
     $('#chartcontainer').highcharts({
       chart: {
-          type: 'spline' //Smooth lijntje
+          type: 'spline', //Smooth lijntje
+          backgroundColor: null,
       },
       title: {
-          text: "Astronomisch Getij"
+          text: null
       },
       subtitle: {
-        text: title
+        text: null
       },
 
       xAxis:{
         type: 'datetime',
-        tickInterval: 3600*1000,
+        tickInterval: 3600*1000*3,
         gridLineWidth: 1,
         plotBands: [{
         color: "#dddddd", // Color value
@@ -168,8 +216,13 @@ function plotSelectedLocation() {
       },
       yAxis: {
           title: {
-              text: 'Waterstand [cm]'
+              text: null
+          },
+          labels: {
+            align: "left"
           }
+
+
       },
 
       plotOptions: {
@@ -188,11 +241,7 @@ function plotSelectedLocation() {
           data: waterstand
       }],
 
-      credits: {
-        text: "Staat jouw spot er niet bij? Extra features in gedachte? Andere vragen of opmerkingen? Mail dan naar prahprahpro@gmail.com",
-        href: null
-      },
-
+      credits: false,
       exporting: {
         enabled: false
       }

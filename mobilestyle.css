@@ -1,0 +1,126 @@
+html {
+  background: url("0012.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bg{
+  height: 100%;
+  width: 100%;
+}
+
+.maincontainer{
+  width: 100%;
+}
+
+.ctacontainer{
+  margin-bottom: 8px;
+  width: 100%;
+  height: 15%;
+
+  background: #9ac6f0;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  font-family: "Lucida Grande";
+  color: #333333;
+  font-size: 14px;
+}
+
+.outerchartcontainer{
+  height: 40%;
+
+  background: #ffffff;
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.chartcontainer {
+  width: 90%; !important;
+  height: 100%; !important;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containertwo{
+  margin-top: 4px;
+  width: 100%;
+
+  background: #ffffff;
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.datecontainer{
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.datepicker-here{
+  margin-top: auto;
+  margin-bottom: auto;
+
+  height: 75%;
+  width: 60%;
+
+  font-family: "Lucida Grande";
+  color: #333333;
+}
+
+.locationcontainer{
+  width: 100%;
+  height: 50%;
+}
+
+.select{
+  margin-top: auto;
+  margin-bottom: auto;
+
+  height: 90%;
+  width: 100%;
+
+  font-family: "Lucida Grande";
+  color: #333333;
+}
+
+.nextday{
+  margin-top: auto;
+  margin-bottom: auto;
+
+  margin-left: 8px;
+  margin-right: 8px;
+
+  height: 75%;
+  font-family: "Lucida Grande";
+  color: #333333;
+}
+
+.tablecontainer{
+  margin: 8px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+
+table {
+  margin-top: 8px;
+  margin-bottom: 8px;
+    font-family: "Lucida Grande";
+    font-size: small;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #9ac6f0;
+}
