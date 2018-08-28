@@ -13,9 +13,8 @@ var suntimes;
 // Get dates in NL time
 $(function(){
   dt = convertToNL(dt);
-  tm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+1);
-  qm = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+2);
-
+  tm = convertToNL(new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+1));
+  qm = convertToNL(new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+2));
   selecteddate = dt.getFullYear()+"/"+dt.getMonth()+"/"+dt.getDate();
   tomorrow = tm.getFullYear()+"/"+tm.getMonth()+"/"+tm.getDate();
   dayaftertomorrow = qm.getFullYear()+"/"+qm.getMonth()+"/"+qm.getDate();
@@ -109,9 +108,7 @@ function plotSelectedLocation() {
     suntimes = SunCalc.getTimes(dt,json.series[0].location[0].latitude,json.series[0].location[0].longitude);
     for (i = 0; i < json.series[0].data.length; i++){
       // Parse the json string to get tide height data
-      var datum = new Date(json.series[0].data[i].dateTime);
-      datum = new Date(datum.getUTCFullYear(),datum.getUTCMonth(),datum.getUTCDate(),datum.getUTCHours(),datum.getUTCMinutes());
-      datum = convertToNL(datum);
+      var datum = convertToNL(new Date(json.series[0].data[i].dateTime));
       var dag = datum.getFullYear()+"/"+datum.getMonth()+"/"+datum.getDate();
 
       // Only load data of selected date
