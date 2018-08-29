@@ -120,7 +120,7 @@ function plotSelectedLocation() {
     }
 
     //Remove first and last enteries
-    waterstand = waterstand.slice(11,156);
+    waterstand = waterstand.slice(24,169);
 
     var now = convertToNL(new Date());
     var currenttime = now.getFullYear()+"/"+now.getMonth()+"/"+now.getDate();
