@@ -26,80 +26,80 @@
   <body>
 
     <div class="container-main">
-    <div class="container-chart" id="content-chart"></div>
-    <div class="container-cta">
-      <div class="wrapper-cta">
-        <div class="wrapper-date">
+      <div class="container-cta">
+        <div class="wrapper-cta">
+          <div class="wrapper-date">
 
-          <div class="mdc-text-field">
-            <input class="mdc-text-field__input" id="mdc-text-field" type="text" tabindex="0">
+            <div class="mdc-text-field">
+              <input class="mdc-text-field__input" id="mdc-text-field" type="text" tabindex="0">
+            </div>
+
+            <div class="wrapper-next">
+              <button class="button" onclick="nextDay()"> <i class="arrowright"></i> </button>
+              <button class="button" onclick="previousDay()"> <i class="arrowleft"></i> </button>
+            </div>
+
           </div>
-
-          <div class="wrapper-next">
-            <button class="button" onclick="nextDay()"> <i class="arrowright"></i> </button>
-            <button class="button" onclick="previousDay()"> <i class="arrowleft"></i> </button>
+          <div class="wrapper-location">
+            <div class="mdc-select">
+            <select class="mdc-select__native-control" id="selectedLocation" onchange="changeLocation()">
+              <option value="getijscheveningen">Scheveningen</option>
+              <option value="getijijmuiden">IJmuiden</option>
+              <option value="getijpettenzuid">Petten</option>
+              <option value="getijhoekvanholland">Hoek van Holland</option>
+              <option value="getijcadzand">Cadzand</option>
+              <option value="getijdenhelder">Den Helder</option>
+            </select>
           </div>
-
-        </div>
-        <div class="wrapper-location">
-          <div class="mdc-select">
-          <select class="mdc-select__native-control" id="selectedLocation" onchange="changeLocation()">
-            <option value="getijscheveningen">Scheveningen</option>
-            <option value="getijijmuiden">IJmuiden</option>
-            <option value="getijpettenzuid">Petten</option>
-            <option value="getijhoekvanholland">Hoek van Holland</option>
-            <option value="getijcadzand">Cadzand</option>
-            <option value="getijdenhelder">Den Helder</option>
-          </select>
-        </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container-table">
-      <div class="wrapper-table">
-
-      <table class="table">
-        <tr>
-          <th align="left" colspan="4" id="ddata0"></th>
-        </tr>
-        <tr>
-          <td id = "tdata0"></td>
-          <td id = "tdata1"></td>
-          <td id = "tdata2"></td>
-          <td id = "tdata3"></td>
-
-        </tr>
-        <tr>
-          <td id = "wdata0"></td>
-          <td id = "wdata1"></td>
-          <td id = "wdata2"></td>
-          <td id = "wdata3"></td>
-        </tr>
-
-        </table>
+      <div class="container-table">
+        <div class="wrapper-table">
 
         <table class="table">
           <tr>
-            <th align="left" colspan="4" id="ddata1"></th>
+            <th align="left" colspan="4" id="ddata0"></th>
           </tr>
           <tr>
-            <td id = "tdata4"></td>
-            <td id = "tdata5"></td>
-            <td id = "tdata6"></td>
-            <td id = "tdata7"></td>
+            <td id = "tdata0"></td>
+            <td id = "tdata1"></td>
+            <td id = "tdata2"></td>
+            <td id = "tdata3"></td>
 
           </tr>
           <tr>
-            <td id = "wdata4"></td>
-            <td id = "wdata5"></td>
-            <td id = "wdata6"></td>
-            <td id = "wdata7"></td>
+            <td id = "wdata0"></td>
+            <td id = "wdata1"></td>
+            <td id = "wdata2"></td>
+            <td id = "wdata3"></td>
           </tr>
+
           </table>
 
+          <table class="table">
+            <tr>
+              <th align="left" colspan="4" id="ddata1"></th>
+            </tr>
+            <tr>
+              <td id = "tdata4"></td>
+              <td id = "tdata5"></td>
+              <td id = "tdata6"></td>
+              <td id = "tdata7"></td>
 
-    </div></div>
-  </div>
+            </tr>
+            <tr>
+              <td id = "wdata4"></td>
+              <td id = "wdata5"></td>
+              <td id = "wdata6"></td>
+              <td id = "wdata7"></td>
+            </tr>
+            </table>
+
+
+      </div></div>
+      <div class="container-chart" id="content-chart"></div>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/moment.min.js"></script>
