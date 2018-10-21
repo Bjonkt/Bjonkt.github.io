@@ -24,22 +24,10 @@
     </noscript>
   </head>
   <body>
-
     <div class="container-main">
+      <div class="realtime" id="realtimedata">loading</div>
       <div class="container-cta">
         <div class="wrapper-cta">
-          <div class="wrapper-date">
-
-            <div class="mdc-text-field">
-              <input class="mdc-text-field__input" id="mdc-text-field" type="text" tabindex="0">
-            </div>
-
-            <div class="wrapper-next">
-              <button class="button" onclick="nextDay()"> <i class="arrowright"></i> </button>
-              <button class="button" onclick="previousDay()"> <i class="arrowleft"></i> </button>
-            </div>
-
-          </div>
           <div class="wrapper-location">
             <div class="mdc-select">
             <select class="mdc-select__native-control" id="selectedLocation" onchange="changeLocation()">
@@ -52,6 +40,16 @@
             </select>
           </div>
           </div>
+          <div class="wrapper-date">
+            <div class="mdc-text-field">
+              <input class="mdc-text-field__input" id="mdc-text-field" type="text" tabindex="0">
+            </div>
+            <div class="wrapper-next">
+              <button class="button" onclick="nextDay()"> <i class="arrowright"></i> </button>
+              <button class="button" onclick="previousDay()"> <i class="arrowleft"></i> </button>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="container-table">
