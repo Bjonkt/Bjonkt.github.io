@@ -1,6 +1,5 @@
 var fp;
-var golfhoogte;
-var windkracht;
+
  $(function init() {
    var today = getNL(new Date());
    fp = $("#mdc-text-field").flatpickr({
@@ -237,53 +236,15 @@ function createTable(selection,day) {
   });
 };
 
-function getRealTime(selection) {
-  document.getElementById('realtimedata').innerHTML = 'loading...';
-  var location;
-  if (selection=='Den Helder') {
-    wavelocation = 'IJgeul-stroommeetpaal%28SPY%29';
-    windlocation = 'De-Kooy%28DEKO%29';
-  } else if (selection=='Petten') {
-    wavelocation = 'IJgeul-stroommeetpaal%28SPY%29';
-    windlocation = 'IJgeul-stroommeetpaal%28SPY%29'
-  }else if (selection=='IJmuiden') {
-    wavelocation = 'IJgeul-stroommeetpaal%28SPY%29';
-    windlocation = 'IJgeul-stroommeetpaal%28SPY%29';
-  }else if (selection=='Scheveningen') {
-    wavelocation = 'Eurogeul-E13%28E13%29';
-    windlocation = 'Hoek-van-Holland%28HOEK%29';
-  } else if (selection=='Hoek van Holland') {
-    wavelocation = 'Eurogeul-E13%28E13%29';
-    windlocation = 'Hoek-van-Holland%28HOEK%29';
-  }else if (selection='Cadzand') {
-    wavelocation = 'Cadzand-boei%28CADW%29';
-    windlocation = 'Cadzand-wind%28CAWI%29';
-  }
-  var waveurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Significante___20golfhoogte___20in___20het___20spectrale___20domein___20Oppervlaktewater___20golffrequentie___20tussen___2030___20en___20500___20mHz___20in___20cm&locationSlug=' + wavelocation + '&user=publiek';
-  var windurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windsnelheid___20Lucht___20t.o.v.___20Mean___20Sea___20Level___20in___20m___2Fs&locationSlug=' + windlocation + '&user=publiek'
-  $.get("http://cors-anywhere.herokuapp.com/"+waveurl, function(wavedata) {
-    $.get("http://cors-anywhere.herokuapp.com/"+windurl, function(winddata) {
-      golfhoogte = wavedata.latest.data;
-      windkracht = winddata.latest.data;
-      var fullstring = 'Actuele Metingen - ' + 'Golfhoogte [cm]: ' + golfhoogte + ', Windsnelheid [Bft]: ' + windkracht;
-      document.getElementById('realtimedata').innerHTML = fullstring;
-      console.log(fullstring);
-    });
-  });
-}
-
 function update(day) {
   // location
   var sl = document.getElementById("selectedLocation");
   // create chart createChart(location,day)
   var selection = sl.options[sl.selectedIndex];
 
-  getRealTime(selection.text);
-
   createChart(selection.value,selection.text,day);
   // create table createTable(selection,day)
   createTable(selection.value,day);
-
 }
 
 // next day and previous day functions
