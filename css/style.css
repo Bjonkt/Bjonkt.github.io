@@ -46,9 +46,10 @@ html {
   grid-gap: 8px;
   max-width: 900px;
   grid-template-columns: repeat(8,minmax(40px,1fr));
-  grid-template-rows: repeat(11,minmax(20px,1fr));
+  grid-template-rows: repeat(12,minmax(20px,1fr));
   grid-template-areas:
-    "r r r r r r r r"
+    "r r r c c c c c"
+    "r r r c c c c c"
     "d d d c c c c c"
     "d d d c c c c c"
     "d d d c c c c c"
@@ -77,7 +78,6 @@ html {
 
   grid-area: c;
   min-width: 100px;
-  height: 365px;
 }
 .highcharts-root{
   display: block;
@@ -230,6 +230,17 @@ td{
       grid-area: c;
       min-width: 100px;
       height: 282px;
+    }
+
+    .realtime{
+      padding: 6px;
+      background: var(--color-light-p-light);
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      grid-area: r;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+
     }
 
 }
