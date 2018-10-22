@@ -1,6 +1,4 @@
 var fp;
-var golfhoogte;
-var windkracht;
  $(function init() {
    var today = getNL(new Date());
    fp = $("#mdc-text-field").flatpickr({
@@ -111,7 +109,7 @@ function createChart(selection,title,day) {
           }
         },
         series: [{
-            name: 'Waterstand [cm]',
+            name: 'Astronomisch Getij [cm]',
             data: waterstand.slice(12,157),
             pointStart: Date.UTC(day.getUTCFullYear(),day.getUTCMonth(),day.getUTCDate(),0,0),
             pointInterval: 60 * 10000,
@@ -119,7 +117,7 @@ function createChart(selection,title,day) {
               enabled:false
             },
             color: "#9ac6f0",
-            showInLegend: false,
+            showInLegend: true,
             threshold: -Infinity,
             fillColor:{
               linearGradient: {
@@ -260,14 +258,21 @@ function getRealTime(selection) {
     windlocation = 'Cadzand-wind%28CAWI%29';
   }
   var waveurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Significante___20golfhoogte___20in___20het___20spectrale___20domein___20Oppervlaktewater___20golffrequentie___20tussen___2030___20en___20500___20mHz___20in___20cm&locationSlug=' + wavelocation + '&user=publiek';
-  var windurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windsnelheid___20Lucht___20t.o.v.___20Mean___20Sea___20Level___20in___20m___2Fs&locationSlug=' + windlocation + '&user=publiek'
-  $.get("http://cors-anywhere.herokuapp.com/"+waveurl, function(wavedata) {
-    $.get("http://cors-anywhere.herokuapp.com/"+windurl, function(winddata) {
-      golfhoogte = wavedata.latest.data;
-      windkracht = winddata.latest.data;
-      var fullstring = 'Actuele Metingen - ' + 'Golfhoogte [cm]: ' + golfhoogte + ', Windsnelheid [Bft]: ' + windkracht;
-      document.getElementById('realtimedata').innerHTML = fullstring;
-      console.log(fullstring);
+  var periodurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Golfperiode___20bepaald___20uit___20de___20spectrale___20momenten___20m0___20en___20m2___20Oppervlaktewater___20golffrequentie___20tussen___2030___20en___20500___20mHz___20in___20s&locationSlug=' + wavelocation + '&user=publiek';
+  var windurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windsnelheid___20Lucht___20t.o.v.___20Mean___20Sea___20Level___20in___20m___2Fs&locationSlug=' + windlocation + '&user=publiek';
+  var directionurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windrichting___20Lucht___20t.o.v.___20ware___20Noorden___20in___20graad&locationSlug='+windlocation+'&user=expert';
+  $.get("https://cors-anywhere.herokuapp.com/"+waveurl, function(wavedata) {
+    $.get("https://cors-anywhere.herokuapp.com/"+windurl, function(winddata) {
+      $.get("https://cors-anywhere.herokuapp.com/"+periodurl, function(perioddata) {
+        $.get("https://cors-anywhere.herokuapp.com/"+directionurl, function(directiondata) {
+          var golfhoogte = wavedata.latest.data;
+          var golfperiode = perioddata.latest.data;
+          var windkracht = Math.round(winddata.latest.data/0.5144);
+          var windrichting = Math.round(directiondata.latest.data);
+          var fullstring = 'Actueel - ' + 'Golven: ' + golfhoogte+'cm@'+golfperiode+'s'+', Wind: ' + windkracht+'kt'+' ('+windrichting+'°'+')';
+          document.getElementById('realtimedata').innerHTML = fullstring;
+        });
+      });
     });
   });
 }
