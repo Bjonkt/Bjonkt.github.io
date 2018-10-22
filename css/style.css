@@ -32,7 +32,7 @@
 
 
 html {
-  background: url("0012.jpg") no-repeat center center fixed;
+  background: url("0035.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -43,18 +43,33 @@ html {
   padding: 20px;
 
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 8px;
   max-width: 900px;
   grid-template-columns: repeat(8,minmax(40px,1fr));
-  grid-template-rows: repeat(5,minmax(40px,1fr));
+  grid-template-rows: repeat(11,minmax(20px,1fr));
   grid-template-areas:
+    "r r r r r r r r"
     "d d d c c c c c"
     "d d d c c c c c"
+    "d d d c c c c c"
+    "d d d c c c c c"
+    "t t t c c c c c"
+    "t t t c c c c c"
+    "t t t c c c c c"
     "t t t c c c c c"
     "t t t c c c c c"
     "t t t c c c c c";
 }
+.realtime{
+  padding: 6px;
+  background: var(--color-light-p-light);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  grid-area: r;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 
+}
 .container-chart{
   background: var(--color-light-p-light);
   border-radius: 4px;
@@ -62,7 +77,7 @@ html {
 
   grid-area: c;
   min-width: 100px;
-  height: 355px;
+  height: 365px;
 }
 .highcharts-root{
   display: block;
@@ -186,11 +201,24 @@ td{
 
       padding: 10px;
       grid-template-columns: repeat(6,minmax(40px,1fr));
-      grid-template-rows: repeat(4,minmax(40px,1fr));
+      grid-template-rows: repeat(17,minmax(8px,1fr));
       grid-template-areas:
+        "r r r r r r"
+        "c c c c c c"
+        "c c c c c c"
+        "c c c c c c"
+        "c c c c c c"
+        "c c c c c c"
+        "c c c c c c"
         "c c c c c c"
         "c c c c c c"
         "t t t t t t"
+        "t t t t t t"
+        "t t t t t t"
+        "t t t t t t"
+        "d d d d d d"
+        "d d d d d d"
+        "d d d d d d"
         "d d d d d d"
     }
 
