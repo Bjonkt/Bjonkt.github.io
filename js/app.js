@@ -22,12 +22,6 @@ function createChart(selection,title,day) {
   var waterstand = [];
   $.getJSON(url, function(json) {
     var suntimes = SunCalc.getTimes(day,json.series[0].location[0].latitude,json.series[0].location[0].longitude);
-    var begin = 18;
-    var ending = 163;
-    if(DST(day)){
-      begin = 12;
-      ending = 157;
-    }
     for (i = 0; i < json.series[0].data.length; i++){
       // Parse the json string to get tide height data
       var dataday = getNL(new Date(json.series[0].data[i].dateTime)).toISOString().split("T")[0];
@@ -116,7 +110,7 @@ function createChart(selection,title,day) {
         },
         series: [{
             name: 'Astronomisch Getij [cm]',
-            data: waterstand.slice(begin,ending),
+            data: waterstand.slice(12,157),
             pointStart: Date.UTC(day.getUTCFullYear(),day.getUTCMonth(),day.getUTCDate(),0,0),
             pointInterval: 60 * 10000,
             marker:{
@@ -337,22 +331,9 @@ function getUTC(jsdate) {
 
 function getNL(jsdate) {
   var date = jsdate;
-  var n = 1;
-  if(DST(jsdate)){
-    n = 2;
-  }
-  var date_nl = Date.UTC(date.getUTCFullYear(),date.getUTCMonth(),date.getUTCDate(),date.getUTCHours()+n,date.getUTCMinutes(),date.getUTCSeconds());
+  var date_nl = Date.UTC(date.getUTCFullYear(),date.getUTCMonth(),date.getUTCDate(),date.getUTCHours()+2,date.getUTCMinutes(),date.getUTCSeconds());
   return new Date(date_nl);
 };
-
-function DST(day) {
-  var n = day.getTimezoneOffset();
-  var isDST = false;
-  if(n==-120){
-    isDST = true;
-  }
-  return isDST;
-}
 
 Date.prototype.addDays = function(days){
   var date = new Date(this.valueOf());
