@@ -22,12 +22,8 @@ function createChart(selection,title,day) {
   var waterstand = [];
   $.getJSON(url, function(json) {
     var suntimes = SunCalc.getTimes(day,json.series[0].location[0].latitude,json.series[0].location[0].longitude);
-    var begin = 18;
-    var ending = 163;
-    if(DST(day)){
-      begin = 12;
-      ending = 157;
-    }
+    var begin = 12;
+    var ending = 157;
     for (i = 0; i < json.series[0].data.length; i++){
       // Parse the json string to get tide height data
       var dataday = getNL(new Date(json.series[0].data[i].dateTime)).toISOString().split("T")[0];
