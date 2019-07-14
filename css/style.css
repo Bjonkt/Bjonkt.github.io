@@ -49,7 +49,7 @@ html {
   grid-template-rows: repeat(12,minmax(20px,1fr));
   grid-template-areas:
     "r r r c c c c c"
-    "r r r c c c c c"
+    "s s s c c c c c"
     "d d d c c c c c"
     "d d d c c c c c"
     "d d d c c c c c"
@@ -67,6 +67,17 @@ html {
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   grid-area: r;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+
+}
+
+.suntime{
+  padding: 6px;
+  background: var(--color-light-p-light);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  grid-area: s;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 
@@ -201,9 +212,10 @@ td{
 
       padding: 10px;
       grid-template-columns: repeat(6,minmax(40px,1fr));
-      grid-template-rows: repeat(17,minmax(8px,1fr));
+      grid-template-rows: repeat(18,minmax(8px,1fr));
       grid-template-areas:
         "r r r r r r"
+        "s s s s s s"
         "c c c c c c"
         "c c c c c c"
         "c c c c c c"
@@ -238,6 +250,16 @@ td{
       border-radius: 4px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
       grid-area: r;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+
+    }
+    .suntime{
+      padding: 6px;
+      background: var(--color-light-p-light);
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      grid-area: s;
       font-family: 'Roboto', sans-serif;
       font-size: 12px;
 

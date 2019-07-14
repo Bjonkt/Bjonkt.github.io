@@ -34,6 +34,13 @@ function createChart(selection,title,day) {
         //DO NOTIN
       }
     }
+    // Suntimes in secopnd bar from top
+    var dawn = ('0'+suntimes.dawn.getHours()).slice(-2)+':'+('0'+suntimes.dawn.getMinutes()).slice(-2);
+    var sunrise = ('0'+suntimes.sunrise.getHours()).slice(-2)+':'+('0'+suntimes.sunrise.getMinutes()).slice(-2);
+    var sunset = ('0'+suntimes.sunset.getHours()).slice(-2)+':'+('0'+suntimes.sunset.getMinutes()).slice(-2);
+    var dusk = ('0'+suntimes.dusk.getHours()).slice(-2)+':'+('0'+suntimes.dusk.getMinutes()).slice(-2);
+    var fullsunstring = 'Dawn - ' + dawn + ', Rise - ' + sunrise + ', Set - ' + sunset + ', Dusk - ' + dusk;
+    document.getElementById('suntimedata').innerHTML = fullsunstring;
     // chart
     var chartoptions = {
         chart: {
