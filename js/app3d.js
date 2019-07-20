@@ -19,7 +19,7 @@ function createChart(selection,title,day) {
   var day1 = day.toISOString().split("T")[0];
   var day2 = day.addDays(1).toISOString().split("T")[0];
   var cors = "https://cors-anywhere.herokuapp.com/"
-  var startdate = moment().subtract(7, 'days').startOf('hour').format("YYYY-MM-DDTHH:mm:ss") + "Z";
+  var startdate = moment().subtract(1, 'days').startOf('hour').format("YYYY-MM-DDTHH:mm:ss") + "Z";
   var enddate = moment().startOf('hour').format("YYYY-MM-DDTHH:mm:ss") + "Z";
   var url = cors + "https://waterberichtgeving.rws.nl/wbviewer/wb_api.php?request=spectra&polar=GR_S_1.1-102&spectra=GD_S_1.28-78&spectra_meta=GD_S_1.1-20&loc="+selection+"&start="+startdate+"&end="+enddate;
 
