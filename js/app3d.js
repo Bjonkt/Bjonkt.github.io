@@ -25,8 +25,12 @@ function createChart(selection,title,day) {
 
   $.getJSON(url,function(json){
     var tijd = json.spectra.times;
+    for (var i = 0; i < tijd.length; i++) {
+      tijd[i] = moment(tijd[i]*1000).format('YYYY-MM-DD HH:MM:SS')
+    }
     var energiedichtheid = json.spectra.values;
     var data = [{
+      y: tijd,
       z: energiedichtheid,
       type: 'surface'
             }];
