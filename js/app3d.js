@@ -29,19 +29,27 @@ function createChart(selection,title,day) {
       tijd[i] = moment(tijd[i]*1000).format('YYYY-MM-DD HH:MM:SS')
     }
     var energiedichtheid = json.spectra.values;
+    for (var i = 0; i < energiedichtheid.length; i++) {
+      for (var j = 0; j < energiedichtheid[i].length; j++) {
+        var m0 = energiedichtheid[i][j]*10*0.001;
+        energiedichtheid[i][j] = 4*Math.sqrt(m0);
+      }
+    }
     var data = [{
       y: tijd,
       z: energiedichtheid,
+      colorscale: 'Viridis',
+      showscale: false,
       type: 'surface'
             }];
     var layout = {
       title: '3D Golf spectra ' + selection,
-      autosize: true,
+      autosize: false,
       margin: {
-        l: 65,
-        r: 50,
-        b: 65,
-        t: 90,
+        l: 0,
+        r: 0,
+        b: 0,
+        t: 0,
       }
     };
     Plotly.newPlot('content-chart', data, layout, {showSendToCloud: true});
