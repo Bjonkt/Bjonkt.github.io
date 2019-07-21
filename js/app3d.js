@@ -43,6 +43,11 @@ function createChart(selection,title,day) {
       type: 'surface'
             }];
     var layout = {
+      scene: {
+    		xaxis:{title: 'mHz', autorange:'reversed'},
+    		yaxis:{title: false},
+    		zaxis:{title: '[cm]'},
+    		},
       title: '3D Golf spectra ' + selection,
       autosize: false,
       margin: {
