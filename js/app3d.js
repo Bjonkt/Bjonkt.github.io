@@ -45,11 +45,11 @@ function createChart(selection,title,day) {
     var layout = {
       scene: {
     		xaxis:{title: 'mHz', autorange:'reversed'},
-    		yaxis:{title: false},
+    		yaxis:{title: ''},
     		zaxis:{title: '[cm]'},
     		},
-      title: '3D Golf spectra ' + selection,
-      autosize: false,
+      title: false,
+      autosize: true,
       margin: {
         l: 0,
         r: 0,
@@ -57,7 +57,7 @@ function createChart(selection,title,day) {
         t: 0,
       }
     };
-    Plotly.newPlot('content-chart', data, layout, {showSendToCloud: true});
+    Plotly.newPlot('content-chart', data, layout, {responsive:true});
   });
 };
 
