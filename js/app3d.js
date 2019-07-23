@@ -24,20 +24,25 @@ function createChart(selection,title,day) {
   var url = cors + "https://waterberichtgeving.rws.nl/wbviewer/wb_api.php?request=spectra&polar=GR_S_1.1-102&spectra=GD_S_1.28-78&spectra_meta=GD_S_1.1-20&loc="+selection+"&start="+startdate+"&end="+enddate;
 
   $.getJSON(url,function(json){
-    var tijd = json.spectra.times;
-    for (var i = 0; i < tijd.length; i++) {
-      tijd[i] = moment(tijd[i]*1000).format('YYYY-MM-DD HH:MM:SS')
+    var frequency = Array.apply(null, {length: 50}).map(Number.call, Number)
+    for (var i = 0; i < frequency.length; i++) {
+        frequency[i] *= 10;
     }
-    var energiedichtheid = json.spectra.values;
-    for (var i = 0; i < energiedichtheid.length; i++) {
-      for (var j = 0; j < energiedichtheid[i].length; j++) {
-        var m0 = energiedichtheid[i][j]*10*0.001;
-        energiedichtheid[i][j] = 4*Math.sqrt(m0);
+    var time = json.spectra.times;
+    for (var i = 0; i < time.length; i++) {
+      time[i] = moment(time[i]*1000).format('YYYY-MM-DD HH:MM:SS')
+    }
+    var energydensity = json.spectra.values;
+    for (var i = 0; i < energydensity.length; i++) {
+      for (var j = 0; j < energydensity[i].length; j++) {
+        var m0 = energydensity[i][j]*10*0.001;
+        energydensity[i][j] = 4*Math.sqrt(m0);
       }
     }
     var data = [{
-      y: tijd,
-      z: energiedichtheid,
+      x: frequency,
+      y: time,
+      z: energydensity,
       colorscale: 'Viridis',
       showscale: false,
       type: 'surface'
