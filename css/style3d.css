@@ -49,18 +49,13 @@ html {
   grid-template-columns: repeat(8,minmax(40px,1fr));
   grid-template-rows: repeat(12,minmax(20px,1fr));
   grid-template-areas:
-    "a a a c c c c c"
-    "a a a c c c c c"
-    "d d d c c c c c"
-    "d d d c c c c c"
-    "t t t c c c c c"
-    "t t t c c c c c"
-    "t t t c c c c c"
-    "t t t c c c c c"
-    "t t t c c c c c"
-    "t t t c c c c c"
-    "t t t c c c c c"
-    "t t t c c c c c";
+  "a a a c c c c c"
+  "a a a c c c c c"
+  "d d d c c c c c"
+  "d d d c c c c c"
+  "t t t c c c c c"
+  "t t t c c c c c"
+  "t t t c c c c c";
 }
 .announcement{
   padding: 6px;
