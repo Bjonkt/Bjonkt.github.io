@@ -1,4 +1,6 @@
 var fp;
+document.getElementById("container-table").style.display = "none";
+document.getElementById("wrapper-date").style.display = "none";
  $(function init() {
    var today = getNL(new Date());
    fp = $("#mdc-text-field").flatpickr({
