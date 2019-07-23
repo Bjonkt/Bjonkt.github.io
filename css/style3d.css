@@ -212,14 +212,14 @@ td{
         "c c c c c c"
         "c c c c c c"
         "c c c c c c"
-        "t t t t t t"
-        "t t t t t t"
-        "t t t t t t"
-        "t t t t t t"
         "d d d d d d"
         "d d d d d d"
         "d d d d d d"
         "d d d d d d"
+        "t t t t t t"
+        "t t t t t t"
+        "t t t t t t"
+        "t t t t t t"
     }
     .container-chart{
       background: var(--color-light-p-light);
