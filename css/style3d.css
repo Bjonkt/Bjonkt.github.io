@@ -45,7 +45,7 @@ html {
 
   display: grid;
   grid-gap: 8px;
-  max-width: 900px;
+  max-width: 1200px;
   grid-template-columns: repeat(8,minmax(40px,1fr));
   grid-template-rows: repeat(12,minmax(20px,1fr));
   grid-template-areas:
@@ -91,6 +91,9 @@ html {
 
   grid-area: c;
   min-width: 100px;
+}
+.wrapper-chart{
+  padding: 3px
 }
 .highcharts-root{
   display: block;
@@ -220,6 +223,9 @@ td{
       grid-area: c;
       min-width: 100px;
       height: 282px;
+    }
+    .wrapper{
+      padding: 3px
     }
     .announcement{
       padding: 6px;
