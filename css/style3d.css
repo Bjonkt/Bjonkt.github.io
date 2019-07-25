@@ -93,7 +93,9 @@ html {
   min-width: 100px;
 }
 .wrapper-chart{
-  padding: 3px
+  padding: 3px;
+  width:100%;
+  height: 100%;
 }
 .highcharts-root{
   display: block;
@@ -224,8 +226,10 @@ td{
       min-width: 100px;
       height: 282px;
     }
-    .wrapper{
-      padding: 3px
+    .wrapper-chart{
+      padding: 3px;
+      width:100%;
+      height: 100%;
     }
     .announcement{
       padding: 6px;
