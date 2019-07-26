@@ -54,7 +54,7 @@ function createChart(selection,title,day) {
     		xaxis:{title: 'mHz', autorange:'reversed'},
     		yaxis:{title: ''},
     		zaxis:{title: '[cm]'},
-        aspectratio: {x: 1, y: 1, z:0.4},
+        aspectratio: {x: 1, y: 1, z:0.2},
     		},
       title: false,
       autosize: true,
