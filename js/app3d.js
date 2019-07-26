@@ -45,7 +45,7 @@ function createChart(selection,title,day) {
       x: frequency,
       y: time,
       z: energydensity,
-      colorscale: 'Viridis',
+      colorscale: 'Rainbow',
       showscale: false,
       type: 'surface'
             }];
