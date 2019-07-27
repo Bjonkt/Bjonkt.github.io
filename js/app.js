@@ -281,8 +281,7 @@ function getRealTime(selection) {
       windrichting = Math.round(directiondata.latest.data);
     }),
   ).then(function() {
-    fullstring = 'Actueel - ' + 'Golven: ' + golfhoogte+'cm@'+golfperiode+'s'+', Wind: ' + windkracht+'kt'+' ('+windrichting+'°'+')';
-    document.getElementById('realtimedata').innerHTML = fullstring;
+    updateRealTime();
   });
 
   $.when(
@@ -290,8 +289,7 @@ function getRealTime(selection) {
       golfperiode = perioddata.latest.data;
     }),
   ).then(function() {
-    fullstring = 'Actueel - ' + 'Golven: ' + golfhoogte+'cm@'+golfperiode+'s'+', Wind: ' + windkracht+'kt'+' ('+windrichting+'°'+')';
-    document.getElementById('realtimedata').innerHTML = fullstring;
+    updateRealTime();
   });
 
   $.when(
@@ -299,8 +297,7 @@ function getRealTime(selection) {
       windkracht = Math.round(winddata.latest.data/0.5144);
     }),
   ).then(function() {
-    fullstring = 'Actueel - ' + 'Golven: ' + golfhoogte+'cm@'+golfperiode+'s'+', Wind: ' + windkracht+'kt'+' ('+windrichting+'°'+')';
-    document.getElementById('realtimedata').innerHTML = fullstring;
+    updateRealTime();
   });
 
   $.when(
@@ -308,9 +305,13 @@ function getRealTime(selection) {
       golfhoogte = Math.round(wavedata.latest.data);
     }),
   ).then(function() {
+    updateRealTime();
+  });
+
+  function updateRealTime(){
     fullstring = 'Actueel - ' + 'Golven: ' + golfhoogte+'cm@'+golfperiode+'s'+', Wind: ' + windkracht+'kt'+' ('+windrichting+'°'+')';
     document.getElementById('realtimedata').innerHTML = fullstring;
-  });
+  }
 
 }
 
