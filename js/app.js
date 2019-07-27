@@ -276,37 +276,61 @@ function getRealTime(selection) {
   var windurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windsnelheid___20Lucht___20t.o.v.___20Mean___20Sea___20Level___20in___20m___2Fs&locationSlug=' + windlocation + '&user=publiek';
   var directionurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windrichting___20Lucht___20t.o.v.___20ware___20Noorden___20in___20graad&locationSlug='+windlocation+'&user=expert';
 
-  $.when(
-    $.get("https://cors-anywhere.herokuapp.com/"+directionurl, function(directiondata) {
-      windrichting = Math.round(directiondata.latest.data);
-    }),
-  ).then(function() {
-    updateRealTime();
-  });
+  getWaveHeight();
+  
+  function getWaveHeight() {
+    $.when(
+      $.get("https://cors-anywhere.herokuapp.com/"+waveurl, function(wavedata) {
+        golfhoogte = Math.round(wavedata.latest.data);
+      }),
+    ).then(function() {
+      updateRealTime();
+      getWavePeriod();
+    }).fail(function() {
+      updateRealTime();
+      getWavePeriod();
+    });
+  }
 
-  $.when(
-    $.get("https://cors-anywhere.herokuapp.com/"+periodurl, function(perioddata) {
-      golfperiode = perioddata.latest.data;
-    }),
-  ).then(function() {
-    updateRealTime();
-  });
+  function getWavePeriod() {
+    $.when(
+      $.get("https://cors-anywhere.herokuapp.com/"+periodurl, function(perioddata) {
+        golfperiode = perioddata.latest.data;
+      }),
+    ).then(function() {
+      updateRealTime();
+      getWindForce();
+    }).fail(function() {
+      updateRealTime();
+      getWindForce();
+    });
+  }
 
-  $.when(
-    $.get("https://cors-anywhere.herokuapp.com/"+windurl, function(winddata) {
-      windkracht = Math.round(winddata.latest.data/0.5144);
-    }),
-  ).then(function() {
-    updateRealTime();
-  });
+  function getWindForce() {
+    $.when(
+      $.get("https://cors-anywhere.herokuapp.com/"+windurl, function(winddata) {
+        windkracht = Math.round(winddata.latest.data/0.5144);
+      }),
+    ).then(function() {
+      updateRealTime();
+      getWindDirection()
+    }).fail(function() {
+      updateRealTime();
+      getWindDirection();
+    });
+  }
 
-  $.when(
-    $.get("https://cors-anywhere.herokuapp.com/"+waveurl, function(wavedata) {
-      golfhoogte = Math.round(wavedata.latest.data);
-    }),
-  ).then(function() {
-    updateRealTime();
-  });
+  function getWindDirection() {
+    $.when(
+      $.get("https://cors-anywhere.herokuapp.com/"+directionurl, function(directiondata) {
+        windrichting = Math.round(directiondata.latest.data);
+      }),
+    ).then(function() {
+      updateRealTime();
+    }).fail(function() {
+      updateRealTime();
+    });
+  }
 
   function updateRealTime(){
     fullstring = 'Actueel - ' + 'Golven: ' + golfhoogte+'cm@'+golfperiode+'s'+', Wind: ' + windkracht+'kt'+' ('+windrichting+'°'+')';
