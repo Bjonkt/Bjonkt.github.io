@@ -25,13 +25,20 @@ function createChart(selection,title,day) {
     var begin = 12;
     var ending = 157;
     for (i = 0; i < json.series[0].data.length; i++){
-      // Parse the json string to get tide height data
-      var dataday = getNL(new Date(json.series[0].data[i].dateTime)).toISOString().split("T")[0];
-      // Only load data of selected date
-      if(day1 === dataday || day2 === dataday){
-        waterstand.push([json.series[0].data[i].value]);
-      }else{
-        //DO NOTIN
+
+
+      if (i>0 && i<json.series[0].data.length) {
+        if (json.series[0].data[i].dateTime===json.series[0].data[i-1].dateTime) {
+          //DO NOTHING
+        } else {
+          // Parse the json string to get tide height data
+          var dataday = getNL(new Date(json.series[0].data[i].dateTime)).toISOString().split("T")[0];
+          if(day1 === dataday || day2 === dataday){
+            waterstand.push([json.series[0].data[i].value]);
+          }else{
+            //DO NOTIN
+          }
+        }
       }
     }
     // Suntimes in secopnd bar from top
@@ -277,7 +284,7 @@ function getRealTime(selection) {
   var directionurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windrichting___20Lucht___20t.o.v.___20ware___20Noorden___20in___20graad&locationSlug='+windlocation+'&user=expert';
 
   getWaveHeight();
-  
+
   function getWaveHeight() {
     $.when(
       $.get("https://cors-anywhere.herokuapp.com/"+waveurl, function(wavedata) {
