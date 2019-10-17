@@ -1,0 +1,249 @@
+:root{
+  /* gap */
+  --gap-grid: 1%;
+  --padding-field: 4px;
+  --padding-button-side: 10%;
+
+  /* light */
+  --color-light-p: #fafafa;
+  --color-light-p-dark: #c7c7c7;
+  --color-light-p-light: #ffffff;
+
+  --color-light-s: #9ac6f0;
+  --color-light-s-dark: #8ab2d8;
+  --color-light-s-light: #c3fdff;
+
+  --color-light-a: #ff1744;
+
+  --color-light-t-p: #424242;
+  --color-light-t-s: #000000;
+  --color-light-t-a: #ffffff;
+}
+
+html {
+  background: url("0007.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+div{
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  outline: 1px solid red;
+
+}
+
+/** GAPS **/
+.gap-data{
+  height: var(--gap-grid);
+}
+.gap-control{
+  height: var(--gap-grid);
+}
+.wrapper{
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+
+/** DESKTOP/WIDESCREEN LAYOUT**/
+.container-main {
+  display: flex;
+  max-width: 1000px;
+}
+.container-main:before {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  padding-bottom: calc(9/18 * 100%);
+}
+.container-left{
+  height: inherit;
+  width: 35%;
+}
+.container-chart-desktop{
+  padding-left: calc(var(--gap-grid) * 0.6);
+  height: inherit;
+  width: 65%;
+}
+.container-data-wave{
+  height: 5%;
+  width: 100%;
+}
+.container-data-sun{
+  height: 5%;
+  width: 100%;
+}
+.wrapper-data{
+  display: table;
+  overflow: hidden;
+  height: inherit;
+}
+.wrapper-data-align{
+  display: table-cell;
+  vertical-align: middle;
+}
+.container-chart-portrait{
+  display: none;
+}
+.container-table-portrait{
+  display: none;
+}
+.container-control{
+  height: 30%;
+  width: 100%;
+}
+.container-table-desktop{
+  height: calc(60% - 3 * var(--gap-grid));
+  width: 100%;
+}
+.container-location{
+  height: 50%;
+  width: 100%;
+}
+.container-date{
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+.container-picker{
+  height: 100%;
+  width: 80%;
+}
+.mdc-select{
+  padding-left: var(--padding-field);
+  padding-right: var(--padding-field);
+  height: 100%;
+  width: 100%;
+}
+.mdc-text-field{
+  padding-left: var(--padding-field);
+  padding-right: var(--padding-field);
+  height: 100%;
+  width: 100%;
+}
+.container-buttons{
+  height: 100%;
+  width: 20%;
+}
+.container-button-left{
+  padding-bottom: var(--padding-button-side);
+  padding-left: var(--padding-button-side);
+  padding-right: var(--padding-button-side);
+  width: calc(100% - 2 * var(--padding-button-side));
+  height: calc(50% - var(--padding-button-side));
+}
+.container-button-right{
+  padding-bottom: var(--padding-button-side);
+  padding-left: var(--padding-button-side);
+  padding-right: var(--padding-button-side);
+  width: calc(100% - 2 * var(--padding-button-side));
+  height: calc(50% - var(--padding-button-side));
+}
+i {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+}
+.arrowright{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.arrowleft{
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg)
+}
+button{
+  background-color: var(--color-light-s);
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  height: 100%;
+}
+button:hover{
+  background-color: var(--color-light-s-dark);
+}
+table{
+  font-size: 14px;
+  border-collapse: collapse;
+  width: 100%;
+  color: var(--color-light-t-p);
+  height: calc(1/3 * 100%);
+}
+
+th{
+  font-size: 11px;
+  font-weight: normal;
+  padding-left: 8px;
+}
+
+td{
+  padding-left: 4px;
+  width: 25%;
+}
+
+.table>tbody>tr:nth-child(even){
+  background-color: var(--color-light-s);
+  color: var(--color-light-t-s);
+}
+
+/** MOBILE/PORTRAIT LAYOUT**/
+@media (max-width: 650px){
+  .gap-chart-portrait{
+    height: var(--gap-grid);
+  }
+  .gap-table-portrait{
+    height: var(--gap-grid);
+  }
+  .container-main {
+    display: flex;
+  }
+  .container-main:before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    padding-bottom: calc(18/9 * 100%);
+  }
+  .container-left{
+    height: inherit;
+    width: 100%;
+  }
+  .container-chart-desktop{
+    display: none;
+  }
+  .container-data-wave{
+    height: 5%;
+    width: 100%;
+  }
+  .container-data-sun{
+    height: 5%;
+    width: 100%;
+  }
+  .container-chart-portrait{
+    display: block;
+    height: 40%;
+    width: 100%;
+  }
+  .container-control{
+    height: 20%;
+    width: 100%;
+  }
+  .container-table-portrait{
+    display: block;
+    height: 30%;
+    width: 100%;
+  }
+  .container-table-desktop{
+    display: none;
+  }
+
+}
+
+/** STYLING THE WEBSITE **/
