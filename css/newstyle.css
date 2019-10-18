@@ -21,7 +21,7 @@
 }
 
 html {
-  background: url("0007.png") no-repeat center center fixed;
+  background: url("0035.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -209,7 +209,7 @@ td{
     display: block;
     height: 0;
     width: 0;
-    padding-bottom: calc(18/9 * 100%);
+    padding-bottom: calc(16/9 * 100%);
   }
   .container-left{
     height: inherit;
@@ -219,11 +219,11 @@ td{
     display: none;
   }
   .container-data-wave{
-    height: 5%;
+    height: 4%;
     width: 100%;
   }
   .container-data-sun{
-    height: 5%;
+    height: 4%;
     width: 100%;
   }
   .container-chart-portrait{
@@ -232,7 +232,7 @@ td{
     width: 100%;
   }
   .container-control{
-    height: 20%;
+    height: 22%;
     width: 100%;
   }
   .container-table-portrait{
