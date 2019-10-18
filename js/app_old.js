@@ -171,8 +171,7 @@ function createChart(selection,title,day) {
           }]
         }
       };
-    $("#content-chart-desktop").highcharts(chartoptions)
-    $("#content-chart-portrait").highcharts(chartoptions)
+    $("#content-chart").highcharts(chartoptions)
   })
 };
 
@@ -224,26 +223,15 @@ function createTable(selection,day) {
       };
     };
 
-    document.getElementById("dpdata0").innerHTML = extremesday1[0]
-    document.getElementById("dpdata1").innerHTML = extremesday2[0]
-    document.getElementById("dpdata2").innerHTML = extremesday3[0]
-
     document.getElementById("ddata0").innerHTML = extremesday1[0]
     document.getElementById("ddata1").innerHTML = extremesday2[0]
-    document.getElementById("ddata2").innerHTML = extremesday3[0]
 
     for (var i = 0; i < 4; i++) {
 
       if (extremes1[i] != undefined) {
-        document.getElementById("wpdata"+i).innerHTML = extremes1[i];
-        document.getElementById("tpdata"+i).innerHTML = extremestime1[i];
-
         document.getElementById("wdata"+i).innerHTML = extremes1[i];
         document.getElementById("tdata"+i).innerHTML = extremestime1[i];
       } else {
-        document.getElementById("wpdata"+i).innerHTML = "-";
-        document.getElementById("tpdata"+i).innerHTML = "-";
-
         document.getElementById("wdata"+i).innerHTML = "-";
         document.getElementById("tdata"+i).innerHTML = "-";
       }
@@ -252,33 +240,10 @@ function createTable(selection,day) {
       if (extremes2[i] != undefined) {
         document.getElementById("wdata"+j).innerHTML = extremes2[i];
         document.getElementById("tdata"+j).innerHTML = extremestime2[i];
-
-        document.getElementById("wpdata"+j).innerHTML = extremes2[i];
-        document.getElementById("tpdata"+j).innerHTML = extremestime2[i];
       } else {
         document.getElementById("wdata"+j).innerHTML = "-";
         document.getElementById("tdata"+j).innerHTML = "-";
-
-        document.getElementById("wpdata"+j).innerHTML = "-";
-        document.getElementById("tpdata"+j).innerHTML = "-";
       }
-
-      var k = i + 8;
-      if (extremes3[i] != undefined) {
-        document.getElementById("wdata"+k).innerHTML = extremes3[i];
-        document.getElementById("tdata"+k).innerHTML = extremestime3[i];
-
-        document.getElementById("wpdata"+k).innerHTML = extremes3[i];
-        document.getElementById("tpdata"+k).innerHTML = extremestime3[i];
-      } else {
-        document.getElementById("wdata"+k).innerHTML = "-";
-        document.getElementById("tdata"+k).innerHTML = "-";
-
-        document.getElementById("wpdata"+k).innerHTML = "-";
-        document.getElementById("tpdata"+k).innerHTML = "-";
-      }
-
-
 
     }
   });
