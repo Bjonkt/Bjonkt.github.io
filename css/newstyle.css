@@ -30,7 +30,6 @@ html {
 div{
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
-
 }
 
 /** GAPS **/
@@ -58,7 +57,7 @@ div{
   display: block;
   height: 0;
   width: 0;
-  padding-bottom: calc(9/18 * 100%);
+  padding-bottom: calc(9/19 * 100%);
 }
 .container-left{
   height: inherit;
@@ -85,6 +84,7 @@ div{
 .wrapper-data-align{
   display: table-cell;
   vertical-align: middle;
+  padding-left: 4px;
 }
 .container-chart-portrait{
   display: none;
@@ -193,7 +193,7 @@ td{
 }
 
 /** MOBILE/PORTRAIT LAYOUT**/
-@media (max-width: 650px){
+@media (max-width: 550px){
   .gap-chart-portrait{
     height: var(--gap-grid);
   }
@@ -208,7 +208,7 @@ td{
     display: block;
     height: 0;
     width: 0;
-    padding-bottom: calc(16/9 * 100%);
+    padding-bottom: calc(15/9 * 100%);
   }
   .container-left{
     height: inherit;
@@ -244,5 +244,6 @@ td{
   }
 
 }
+
 
 /** STYLING THE WEBSITE **/
