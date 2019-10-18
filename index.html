@@ -1,100 +1,35 @@
 <!DOCTYPE html>
 <html lang="nl" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="theme-color" content="#9ac6f0">
-  <meta name="description" content="Astronomisch Getij: Scheveningen">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="text/javascript">
-    var host = "prahprah.nl"
-    if((host==window.location.host) && (window.location.protocol != "https:")){
-    window.location.protocol = "https";
-    }
-    </script>
-  <link rel="canonical" href="https://prahprah.nl"/>
-  <title>Astronomisch Getij</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/flatpickr.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="css/mdc.select.min.css" />
-  <link rel="stylesheet" href="css/mdc.textfield.min.css" />
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#9ac6f0">
+    <meta name="description" content="Astronomisch Getij: Scheveningen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+      var host = "prahprah.nl"
+      if((host==window.location.host) && (window.location.protocol != "https:")){
+      window.location.protocol = "https";
+      }
+      </script>
+    <link rel="canonical" href="https://prahprah.nl"/>
+    <title>Astronomisch Getij</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flatpickr.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/mdc.select.min.css" />
+    <link rel="stylesheet" href="css/mdc.textfield.min.css" />
 
-  <noscript>
-    <textarea name="name" rows="8" cols="80">Yoo! Geen javascript? Helaas kan ik je in dat geval niet de getijden laten zien.</textarea>
-  </noscript>
-</head>
+    <noscript>
+      <textarea name="name" rows="8" cols="80">Yoo! Geen javascript? Helaas kan ik je in dat geval niet de getijden laten zien.</textarea>
+    </noscript>
+  </head>
   <body>
     <div class="container-main">
-      <div class="container-left">
-        <div class="container-data-wave"><div class="wrapper"><div class="wrapper-data"> <div class="wrapper-data-align"><div id="realtimedata">Loading...</div></div></div></div></div>
-        <div class="gap-data"></div>
-        <div class="container-data-sun"><div class="wrapper"><div class="wrapper-data"> <div class="wrapper-data-align"><div id="suntimedata">Loading...</div></div></div></div></div>
-        <div class="gap-data"></div>
-        <div class="container-chart-portrait"><div class="wrapper" id="content-chart-portrait"></div></div>
-        <div class="gap-chart-portrait"></div>
-        <div class="container-table-portrait"><div class="wrapper">
-          <table class="table">
-            <tr>
-              <th align="left" colspan="4" id="dpdata0"></th>
-            </tr>
-            <tr>
-              <td id = "tpdata0"></td>
-              <td id = "tpdata1"></td>
-              <td id = "tpdata2"></td>
-              <td id = "tpdata3"></td>
-
-            </tr>
-            <tr>
-              <td id = "wpdata0"></td>
-              <td id = "wpdata1"></td>
-              <td id = "wpdata2"></td>
-              <td id = "wpdata3"></td>
-            </tr>
-
-            </table>
-
-            <table class="table">
-              <tr>
-                <th align="left" colspan="4" id="dpdata1"></th>
-              </tr>
-              <tr>
-                <td id = "tpdata4"></td>
-                <td id = "tpdata5"></td>
-                <td id = "tpdata6"></td>
-                <td id = "tpdata7"></td>
-
-              </tr>
-              <tr>
-                <td id = "wpdata4"></td>
-                <td id = "wpdata5"></td>
-                <td id = "wpdata6"></td>
-                <td id = "wpdata7"></td>
-              </tr>
-              </table>
-
-              <table class="table">
-                <tr>
-                  <th align="left" colspan="4" id="dpdata2"></th>
-                </tr>
-                <tr>
-                  <td id = "tpdata8"></td>
-                  <td id = "tpdata9"></td>
-                  <td id = "tpdata10"></td>
-                  <td id = "tpdata11"></td>
-
-                </tr>
-                <tr>
-                  <td id = "wpdata8"></td>
-                  <td id = "wpdata9"></td>
-                  <td id = "wpdata10"></td>
-                  <td id = "wpdata11"></td>
-                </tr>
-                </table>
-
-        </div></div>
-        <div class="gap-table-portrait"></div>
-        <div class="container-control"><div class="wrapper">
-          <div class="container-location">
+      <div class="realtime" id="realtimedata">loading</div>
+      <div class="suntime" id="suntimedata">loading</div>
+      <div class="container-cta">
+        <div class="wrapper-cta">
+          <div class="wrapper-location">
             <div class="mdc-select">
             <select class="mdc-select__native-control" id="selectedLocation" onchange="changeLocation()">
               <option value="getijscheveningen">Scheveningen</option>
@@ -104,87 +39,65 @@
               <option value="getijcadzand">Cadzand</option>
               <option value="getijdenhelder">Den Helder</option>
             </select>
+          </div>
+          </div>
+          <div class="wrapper-date">
+            <div class="mdc-text-field">
+              <input class="mdc-text-field__input" id="mdc-text-field" type="text" tabindex="0">
+            </div>
+            <div class="wrapper-next">
+              <button class="button" onclick="nextDay()"> <i class="arrowright"></i> </button>
+              <button class="button" onclick="previousDay()"> <i class="arrowleft"></i> </button>
             </div>
           </div>
-          <div class="container-date">
-            <div class="container-picker">
-              <div class="mdc-text-field">
-                <input class="mdc-text-field__input" id="mdc-text-field" type="text" tabindex="0">
-              <label class="mdc-floating-label" for="my-text-field"></label>
-              <div class="mdc-line-ripple"></div>
-            </div>
-            </div>
-            <div class="container-buttons">
-              <div class="container-button-left"><button class="button" onclick="nextDay()"> <i class="arrowright"></i> </button></div>
-              <div class="container-button-right"><button class="button" onclick="previousDay()"> <i class="arrowleft"></i> </button></div>
-            </div>
-          </div>
+
         </div>
-        </div>
-        <div class="gap-control"></div>
-        <div class="container-table-desktop"><div class="wrapper">
+      </div>
+      <div class="container-table" id="container-table">
+        <div class="wrapper-table">
+
+        <table class="table">
+          <tr>
+            <th align="left" colspan="4" id="ddata0"></th>
+          </tr>
+          <tr>
+            <td id = "tdata0"></td>
+            <td id = "tdata1"></td>
+            <td id = "tdata2"></td>
+            <td id = "tdata3"></td>
+
+          </tr>
+          <tr>
+            <td id = "wdata0"></td>
+            <td id = "wdata1"></td>
+            <td id = "wdata2"></td>
+            <td id = "wdata3"></td>
+          </tr>
+
+          </table>
+
           <table class="table">
             <tr>
-              <th align="left" colspan="4" id="ddata0"></th>
+              <th align="left" colspan="4" id="ddata1"></th>
             </tr>
             <tr>
-              <td id = "tdata0"></td>
-              <td id = "tdata1"></td>
-              <td id = "tdata2"></td>
-              <td id = "tdata3"></td>
+              <td id = "tdata4"></td>
+              <td id = "tdata5"></td>
+              <td id = "tdata6"></td>
+              <td id = "tdata7"></td>
 
             </tr>
             <tr>
-              <td id = "wdata0"></td>
-              <td id = "wdata1"></td>
-              <td id = "wdata2"></td>
-              <td id = "wdata3"></td>
+              <td id = "wdata4"></td>
+              <td id = "wdata5"></td>
+              <td id = "wdata6"></td>
+              <td id = "wdata7"></td>
             </tr>
-
             </table>
 
-            <table class="table">
-              <tr>
-                <th align="left" colspan="4" id="ddata1"></th>
-              </tr>
-              <tr>
-                <td id = "tdata4"></td>
-                <td id = "tdata5"></td>
-                <td id = "tdata6"></td>
-                <td id = "tdata7"></td>
 
-              </tr>
-              <tr>
-                <td id = "wdata4"></td>
-                <td id = "wdata5"></td>
-                <td id = "wdata6"></td>
-                <td id = "wdata7"></td>
-              </tr>
-              </table>
-
-              <table class="table">
-                <tr>
-                  <th align="left" colspan="4" id="ddata2"></th>
-                </tr>
-                <tr>
-                  <td id = "tdata8"></td>
-                  <td id = "tdata9"></td>
-                  <td id = "tdata10"></td>
-                  <td id = "tdata11"></td>
-
-                </tr>
-                <tr>
-                  <td id = "wdata8"></td>
-                  <td id = "wdata9"></td>
-                  <td id = "wdata10"></td>
-                  <td id = "wdata11"></td>
-                </tr>
-                </table>
-
-        </div></div>
-      </div>
-      <div class="gap"></div>
-      <div class="container-chart-desktop"><div class="wrapper" id="content-chart-desktop"></div></div>
+      </div></div>
+      <div class="container-chart" id="content-chart"></div>
     </div>
 
     <script src="js/jquery.min.js"></script>
@@ -195,6 +108,5 @@
     <script src="js/mdc.select.min.js"></script>
     <script src="js/mdc.textfield.min.js"></script>
     <script src="js/app.js"></script>
-
   </body>
 </html>
