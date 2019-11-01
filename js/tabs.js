@@ -294,6 +294,9 @@ function createCam(selection){
   }else if (selection=='IJmuiden') {
     document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/BTYXpHelk8M";
     document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/BTYXpHelk8M";
+  }else if (selection=='Noordwijk') {
+    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/59hkhfukuTA";
+    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/59hkhfukuTA";
   }else if (selection=='Scheveningen') {
     document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/J9t__YygUJk";
     document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/J9t__YygUJk";
@@ -318,6 +321,9 @@ function getRealTime(selection) {
   } else if (selection=='Petten') {
     wavelocation = 'IJgeul-stroommeetpaal%28SPY%29';
     windlocation = 'IJgeul-stroommeetpaal%28SPY%29'
+  }else if (selection=='Noordwijk') {
+    wavelocation = 'IJgeul-stroommeetpaal%28SPY%29';
+    windlocation = 'IJgeul-stroommeetpaal%28SPY%29';
   }else if (selection=='IJmuiden') {
     wavelocation = 'IJgeul-stroommeetpaal%28SPY%29';
     windlocation = 'IJgeul-stroommeetpaal%28SPY%29';

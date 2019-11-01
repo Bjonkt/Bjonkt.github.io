@@ -298,6 +298,9 @@ function getRealTime(selection) {
   } else if (selection=='Petten') {
     wavelocation = 'IJgeul-stroommeetpaal%28SPY%29';
     windlocation = 'IJgeul-stroommeetpaal%28SPY%29'
+  }else if (selection=='Noordwijk') {
+    wavelocation = 'IJgeul-stroommeetpaal%28SPY%29';
+    windlocation = 'IJgeul-stroommeetpaal%28SPY%29';
   }else if (selection=='IJmuiden') {
     wavelocation = 'IJgeul-stroommeetpaal%28SPY%29';
     windlocation = 'IJgeul-stroommeetpaal%28SPY%29';
