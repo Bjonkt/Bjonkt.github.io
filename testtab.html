@@ -94,6 +94,15 @@
         </div></div>
         <div class="gap-table-portrait"></div>
         <div class="container-control"><div class="wrapper">
+          <div class="container-tab">
+          <div class="tab">
+            <button class="tablinks active" id="button-tab-tide" onclick="openTab(event, 'Tide')">Tide</button>
+             <div class="gap-tab"></div>
+            <button class="tablinks" onclick="openTab(event, 'Cam')">Cam</button>
+            <div class="gap-tab"></div>
+            <button class="tablinks" onclick="openTab(event, 'Forecast')">Forecast</button>
+          </div>
+          </div>
           <div class="container-location">
             <div class="mdc-select">
             <select class="mdc-select__native-control" id="selectedLocation" onchange="changeLocation()">
@@ -186,20 +195,20 @@
       <div class="gap"></div>
       <div class="container-chart-desktop">
         <div class="wrapper">
-      <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Tide')">Tide</button>
-        <button class="tablinks" onclick="openTab(event, 'Cam')">Cam</button>
-      </div>
+          <div id="Tide" class="tabcontent">
+            <div class="wrapper-tabcontent" id="content-chart-desktop">
+            </div>
+          </div>
 
-      <div id="Tide" class="tabcontent">
-        <div class="wrapper-tabcontent" id="content-chart-desktop">
+          <div id="Cam" class="tabcontent">
+            <iframe class="wrapper-cam" src="https://www.youtube.com/embed/J9t__YygUJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+
+          <div id="Forecast" class="tabcontent">
+            Coming soon
+          </div>
         </div>
-      </div>
-
-      <div id="Cam" class="tabcontent">        
-        <iframe class="wrapper-cam" src="https://www.youtube.com/embed/J9t__YygUJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-      </div>
       </div>
       </div>
     </div>

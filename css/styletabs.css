@@ -36,9 +36,10 @@ div{
 .tab {
   display:flex;
   overflow: hidden;
-  border-radius: 4px;
-  background-color: white;
-  height: 10%;
+  padding: 4px;
+  height: 100%;
+  width: 100%;
+  border-bottom: solid rgba(0,0,0,0.42) 1px;
 }
 /* Style the buttons inside the tab */
 .tab button {
@@ -47,27 +48,25 @@ div{
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 8px;
-  padding: 10px 10px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: var(--color-light-s-dark);
+  background-color: var(--color-light-s);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: var(--color-light-s-dark);
+  background-color: var(--color-light-s);
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   border-radius: 4px;
-  height: 90%;
+  height: 100%;
   width: 100%;
 }
 
@@ -77,6 +76,11 @@ div{
 }
 .gap-control{
   height: var(--gap-grid);
+}
+.gap-tab{
+  height: 100%;
+  width: 4px;
+  background: white;
 }
 .wrapper{
   border-radius: 4px;
@@ -133,6 +137,7 @@ div{
   height: 100%;
   width: 100%;
   border: none;
+  border-radius: 4px;
 }
 .container-chart-portrait{
   display: none;
@@ -148,13 +153,18 @@ div{
   height: calc(60% - 3 * var(--gap-grid));
   width: 100%;
 }
+.container-tab{
+  display: flex;
+  height: 14%;
+  width: 100%;
+}
 .container-location{
-  height: 50%;
+  height: 43%;
   width: 100%;
 }
 .container-date{
   display: flex;
-  height: 50%;
+  height: 43%;
   width: 100%;
 }
 .container-picker{
@@ -256,7 +266,7 @@ td{
     display: block;
     height: 0;
     width: 0;
-    padding-bottom: calc(15/9 * 100%);
+    padding-bottom: calc(16/9 * 100%);
   }
   .container-left{
     height: inherit;

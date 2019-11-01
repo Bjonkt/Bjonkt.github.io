@@ -1,3 +1,4 @@
+
 var fp;
  $(function init() {
    var today = getNL(new Date());
@@ -284,6 +285,7 @@ function createTable(selection,day) {
   });
 };
 
+/*
 function getRealTime(selection) {
   var windrichting = 0;
   var windkracht = 0;
@@ -378,15 +380,15 @@ function getRealTime(selection) {
   }
 
 }
-
+*/
 function update(day) {
   // location
   var sl = document.getElementById("selectedLocation");
   // create chart createChart(location,day)
   var selection = sl.options[sl.selectedIndex];
-
+/*
   getRealTime(selection.text);
-
+*/
   createChart(selection.value,selection.text,day);
   // create table createTable(selection,day)
   createTable(selection.value,day);
@@ -473,4 +475,5 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
 openTab(event, "Tide");
