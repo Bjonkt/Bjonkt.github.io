@@ -285,6 +285,24 @@ function createTable(selection,day) {
   });
 };
 
+// create cam view
+function createCam(selection){
+  if (selection=='Den Helder') {
+  } else if (selection=='Petten') {
+    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/QcurPcHwX6U";
+    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/QcurPcHwX6U";
+  }else if (selection=='IJmuiden') {
+    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/BTYXpHelk8M";
+    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/BTYXpHelk8M";
+  }else if (selection=='Scheveningen') {
+    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/J9t__YygUJk";
+    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/J9t__YygUJk";
+  } else if (selection=='Hoek van Holland') {
+    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/hUxbpx431zk";
+    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/hUxbpx431zk";
+  }else if (selection='Cadzand') {
+  }
+}
 /*
 function getRealTime(selection) {
   var windrichting = 0;
@@ -393,6 +411,8 @@ function update(day) {
   // create table createTable(selection,day)
   createTable(selection.value,day);
 
+  createCam(selection.text);
+
 }
 
 
@@ -405,7 +425,6 @@ function updateLite(day) {
   createChart(selection.value,selection.text,day);
   // create table createTable(selection,day)
   createTable(selection.value,day);
-
 }
 
 // next day and previous day functions
@@ -462,7 +481,7 @@ Date.prototype.addDays = function(days){
 };
 
 
-function openTab(evt, tabName) {
+function openTab(evt, tabNameDesktop, tabNamePortait) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -472,7 +491,8 @@ function openTab(evt, tabName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(tabName).style.display = "block";
+  document.getElementById(tabNameDesktop).style.display = "block";
+  document.getElementById(tabNamePortait).style.display = "block";
   evt.currentTarget.className += " active";
 }
 

@@ -111,6 +111,9 @@ div{
   height: inherit;
   width: 65%;
 }
+.container-cam-not-available-desktop{
+  display: none;
+}
 .container-data-wave{
   height: 5%;
   width: 100%;
@@ -266,7 +269,7 @@ td{
     display: block;
     height: 0;
     width: 0;
-    padding-bottom: calc(16/9 * 100%);
+    padding-bottom: calc(18/9 * 100%);
   }
   .container-left{
     height: inherit;
