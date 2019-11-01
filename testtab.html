@@ -185,18 +185,23 @@
       </div>
       <div class="gap"></div>
       <div class="container-chart-desktop">
-
-
+        <div class="wrapper">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Tide')">Tide</button>
+        <button class="tablinks" onclick="openTab(event, 'Cam')">Cam</button>
       </div>
-    </div>
-    <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'Tide')">Tide</button>
-      <button class="tablinks" onclick="openTab(event, 'Cam')">Cam</button>
-    </div>
-    <div class="tabcontent" id="Tide">TIDE
-    </div>
-    <div class="tabcontent" id="Cam">
-      CAM
+
+      <div id="Tide" class="tabcontent">
+        <div class="wrapper-tabcontent" id="content-chart-desktop"><img src="css/0012.jpg" width="600">
+        </div>
+      </div>
+
+      <div id="Cam" class="tabcontent">
+        <iframe class="wrapper-cam" src="https://www.youtube.com/watch?v=J9t__YygUJk">
+        </iframe>
+      </div>
+      </div>
+      </div>
     </div>
 
     <script src="js/jquery.min.js"></script>
@@ -207,5 +212,6 @@
     <script src="js/mdc.select.min.js"></script>
     <script src="js/mdc.textfield.min.js"></script>
     <script src="js/tabs.js"></script>
+
   </body>
 </html>

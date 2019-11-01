@@ -34,9 +34,11 @@ div{
 
 /* Style the tab */
 .tab {
+  display:flex;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border-radius: 4px;
+  background-color: white;
+  height: 10%;
 }
 /* Style the buttons inside the tab */
 .tab button {
@@ -45,27 +47,28 @@ div{
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  margin: 8px;
+  padding: 10px 10px;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: var(--color-light-s-dark);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: var(--color-light-s-dark);
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+  border-radius: 4px;
+  height: 90%;
+  width: 100%;
 }
 
 /** GAPS **/
@@ -121,6 +124,15 @@ div{
   display: table-cell;
   vertical-align: middle;
   padding-left: 4px;
+}
+.wrapper-tabcontent{
+  height: 100%;
+  width: 100%;
+}
+.wrapper-cam{
+  height: 100%;
+  width: 100%;
+  border: none;
 }
 .container-chart-portrait{
   display: none;
