@@ -50,6 +50,9 @@ function createChart(selection,title,day) {
     var fullsunstring = 'Dawn-' + dawn + ' | Rise-' + sunrise + ' | Set-' + sunset + ' | Dusk-' + dusk;
     document.getElementById('suntimedata').innerHTML = fullsunstring;
     // chart
+    var colortext = "#ffffff";
+    var colorchart = "#03a9f4";
+    var coloraccent = "#e91e63";
     var chartoptions = {
         chart: {
           type: 'areaspline',
@@ -61,53 +64,54 @@ function createChart(selection,title,day) {
         title: {
           text: title,
           style: {
-            fontSize: '16px'
+            fontSize: '16px',
+            color: colortext
           }
         },
         subtitle: {
           text: moment(day).format("dddd, D MMMM"),
             style: {
-              color: "#424242"
+              color: colortext
             }
         },
         xAxis:{
           type: 'datetime',
           tickInterval: 3600*1000*3,
           gridLineWidth: 0,
-          gridLineColor: "#424242",
+          gridLineColor: colortext,
           labels: {
             style: {
-              color: "#424242"
+              color: colortext
             }
           },
           plotLines:[{
-              color: "#ff1744",
+              color: coloraccent,
               width: 1,
               value: getNL(new Date()),
               zIndex: 4,
             }],
           plotBands: [{
-            color: "#e0e0e0", // Color value
+            color: "#212121", // Color value
             from: 0, // Start of the plot band
             to: getNL(suntimes.dawn), // End of the plot band
           },
           {
-            color: "#efefef", // Color value
+            color: "#303030", // Color value
             from: getNL(suntimes.dawn), // Start of the plot band
             to: getNL(suntimes.sunrise), // End of the plot band
           },
           {
-            color: "#ffffff", // Color value
+            color: "#424242", // Color value
             from: getNL(suntimes.sunrise), // Start of the plot band
             to: getNL(suntimes.sunset), // End of the plot band
           },
           {
-            color: "#efefef", // Color value
+            color: "#303030", // Color value
             from: getNL(suntimes.sunset), // Start of the plot band
             to: getNL(suntimes.dusk), // End of the plot band
           },
           {
-            color: "#e0e0e0", // Color value
+            color: "#212121", // Color value
             from: getNL(suntimes.dusk),
             to: Date.UTC(day.getUTCFullYear(), day.getUTCMonth(), day.getUTCDate()+1,24,0),
           }],
@@ -115,13 +119,16 @@ function createChart(selection,title,day) {
         },
         yAxis:{
           title: {
-            text: 'Waterstand [cm]'
+            text: 'Waterstand [cm]',
+            style: {
+              color: colortext
+            }
           },
-          gridLineColor: "#c7c7c7",
+          gridLineColor: colortext,
           crosshair: {dashStyle: 'shortDash'},
           labels: {
             style: {
-              color: "#424242"
+              color: colortext
             }
           }
         },
@@ -133,7 +140,7 @@ function createChart(selection,title,day) {
             marker:{
               enabled:false
             },
-            color: "#9ac6f0",
+            color: colorchart,
             showInLegend: true,
             threshold: -Infinity,
             fillColor:{
@@ -141,11 +148,16 @@ function createChart(selection,title,day) {
                 x1: 0, y1: 0, x2: 0, y2: 1
               },
               stops: [
-                [0, Highcharts.Color("#9ac6f0").setOpacity(0.4).get('rgba')],
-                [1, Highcharts.Color("#9ac6f0").setOpacity(0).get('rgba')]
+                [0, Highcharts.Color(colorchart).setOpacity(0.4).get('rgba')],
+                [1, Highcharts.Color(colorchart).setOpacity(0).get('rgba')]
               ]
             }
         }],
+        legend:{
+          itemStyle:{
+            color: colortext
+          }
+        },
         exporting: {
           enabled: false
         },
@@ -500,6 +512,4 @@ function openTab(evt, tabNameDesktop, tabNamePortait) {
   document.getElementById(tabNameDesktop).style.display = "block";
   document.getElementById(tabNamePortait).style.display = "block";
   evt.currentTarget.className += " active";
-}
-
-openTab(event, "Tide");
+};
