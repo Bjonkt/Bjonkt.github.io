@@ -18,58 +18,73 @@
   --color-light-t-p: #424242;
   --color-light-t-s: #000000;
   --color-light-t-a: #ffffff;
-}
 
+/* dark*/
+--color-dark-surface: #121212;
+--color-dark-text: white;
+--color-dark-items-01dp: #212121;
+--color-dark-items-02dp: #303030;
+--fontsize-dark-p:13px;
+--borderradius: 4px;
+
+}
 html {
-  background: url("0035.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-div{
+  background: var(--color-dark-surface);
   font-family: 'Roboto', sans-serif;
-  font-size: 13px;
+  font-size: var(--fontsize-dark-p);
+  color: var(--color-dark-text);
 }
-
-/* Style the tab */
-.tab {
-  display:flex;
-  overflow: hidden;
-  padding: 4px;
-  height: 100%;
-  width: 100%;
-  border-bottom: solid rgba(0,0,0,0.42) 1px;
+button{
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--fontsize-dark-p);
+  color: var(--color-dark-text);
 }
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
+select{
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--fontsize-dark-p);
+  color: var(--color-dark-text);
   border: none;
-  outline: none;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 13px;
-}
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: var(--color-light-s);
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: var(--color-light-s);
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  border-radius: 4px;
-  height: 100%;
+  display: block;
+  line-height: 1.3;
+  padding: .6em 1.4em .5em .8em;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%, var(--color-dark-items-02dp) 0%);
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: .95em auto, 100%;
 }
-
+select::-ms-expand {
+    display: none;
+}
+select:hover {
+}
+select:focus {
+}
+select option {
+    font-weight:normal;
+}
+input{
+  background: var(--color-dark-items-02dp);
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--fontsize-dark-p);
+  color: var(--color-dark-text);
+  border: none;
+  padding: 0px;
+}
+table{
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--fontsize-dark-p);
+  color: var(--color-dark-text);
+}
 /** GAPS **/
 .gap-data{
   height: var(--gap-grid);
@@ -77,21 +92,16 @@ div{
 .gap-control{
   height: var(--gap-grid);
 }
-.gap-tab{
-  height: 100%;
-  width: 4px;
-  background: white;
-}
 .wrapper{
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  background: white;
+  border-radius: var(--borderradius);
+  background: var(--color-dark-items-01dp);
   height: 100%;
   width: 100%;
 }
 
 /** DESKTOP/WIDESCREEN LAYOUT**/
 .container-main {
+  margin: auto;
   display: flex;
   max-width: 1000px;
 }
@@ -140,7 +150,13 @@ div{
   height: 100%;
   width: 100%;
   border: none;
-  border-radius: 4px;
+  border-radius: var(--borderradius);
+}
+.tabcontent {
+  display: none;
+  border-radius: var(--borderradius);
+  height: inherit;
+  width: inherit;
 }
 .container-chart-portrait{
   display: none;
@@ -152,39 +168,70 @@ div{
   height: 30%;
   width: 100%;
 }
-.container-table-desktop{
-  height: calc(60% - 3 * var(--gap-grid));
-  width: 100%;
-}
 .container-tab{
   display: flex;
-  height: 14%;
+  height: 20%;
+  width:inherit;
+}
+.tab {
+  display:flex;
+  overflow: hidden;
+  height: available;
   width: 100%;
+  border-bottom: solid white 1px;
+}
+.container-tab button {
+  border-radius: var(--borderradius) var(--borderradius) 0px 0px;
+  width: 100%;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container-tab button:hover {
+  background-color: var(--color-light-s-dark);
+}
+.container-tab button.active {
+  background-color: var(--color-light-s);
 }
 .container-location{
-  height: 43%;
-  width: 100%;
+  height: 40%;
+  width: inherit;
 }
 .container-date{
   display: flex;
-  height: 43%;
+  height: 40%;
+  width: inherit;
+}
+.container-select{
+  position: relative;
   width: 100%;
+  height: 100%;
+}
+.container-control select{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .container-picker{
-  height: 100%;
-  width: 80%;
-}
-.mdc-select{
-  padding-left: var(--padding-field);
-  padding-right: var(--padding-field);
-  height: 100%;
+  position: relative;
   width: 100%;
-}
-.mdc-text-field{
-  padding-left: var(--padding-field);
-  padding-right: var(--padding-field);
   height: 100%;
+}
+.container-control input{
   width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .container-buttons{
   height: 100%;
@@ -219,38 +266,36 @@ i {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg)
 }
-button{
+.container-date button{
   background-color: var(--color-light-s);
   border: none;
   border-radius: 2px;
   width: 100%;
   height: 100%;
 }
-button:hover{
+.container-date button:hover{
   background-color: var(--color-light-s-dark);
 }
+.container-table-desktop{
+  height: calc(60% - 3 * var(--gap-grid));
+  width: 100%;
+}
 table{
-  font-size: 14px;
   border-collapse: collapse;
   width: 100%;
-  color: var(--color-light-t-p);
   height: calc(1/3 * 100%);
 }
-
 th{
-  font-size: 11px;
+  font-size: 10px;
   font-weight: normal;
   padding-left: 8px;
 }
-
 td{
   padding-left: 4px;
   width: 25%;
 }
-
 .table>tbody>tr:nth-child(even){
-  background-color: var(--color-light-s);
-  color: var(--color-light-t-s);
+  background-color: var(--color-dark-items-02dp);
 }
 
 /** MOBILE/PORTRAIT LAYOUT**/

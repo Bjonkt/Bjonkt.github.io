@@ -2,7 +2,7 @@
 var fp;
  $(function init() {
    var today = getNL(new Date());
-   fp = $("#mdc-text-field").flatpickr({
+   fp = $("#datepicker").flatpickr({
      autoClose: true,
      defaultDate: today,
      onChange: function(selectedDates, datestr, instance) {

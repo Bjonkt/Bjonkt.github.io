@@ -126,15 +126,13 @@
             <div class="container-tab">
               <div class="tab">
                 <button class="tablinks active" id="button-tab-tide" onclick="openTab(event, 'tide-desktop','tide-portrait')">Tide</button>
-                <div class="gap-tab"></div>
                 <button class="tablinks" onclick="openTab(event, 'cam-desktop', 'cam-portrait')">Cam</button>
-                <div class="gap-tab"></div>
                 <button class="tablinks" onclick="openTab(event, 'forecast-desktop','forecast-portrait')">Forecast</button>
               </div>
             </div>
             <div class="container-location">
-              <div class="mdc-select">
-                <select class="mdc-select__native-control" id="selectedLocation" onchange="changeLocation()">
+              <div class="container-select">
+                <select id="selectedLocation" onchange="changeLocation()">
                   <option value="getijscheveningen">Scheveningen</option>
                   <option value="getijijmuiden">IJmuiden</option>
                   <option value="getijnoordwijk">Noordwijk</option>
@@ -147,20 +145,16 @@
             </div>
             <div class="container-date">
               <div class="container-picker">
-                <div class="mdc-text-field">
-                  <input class="mdc-text-field__input" id="mdc-text-field" type="text" tabindex="0">
-                  <label class="mdc-floating-label" for="my-text-field"></label>
-                  <div class="mdc-line-ripple"></div>
-                </div>
+                <input id="datepicker" type="text" tabindex="0">
               </div>
               <div class="container-buttons">
                 <div class="container-button-left">
-                  <button class="button" onclick="nextDay()">
+                  <button onclick="nextDay()">
                     <i class="arrowright"></i>
                   </button>
                 </div>
                 <div class="container-button-right">
-                  <button class="button" onclick="previousDay()">
+                  <button onclick="previousDay()">
                     <i class="arrowleft"></i>
                   </button>
                 </div>
