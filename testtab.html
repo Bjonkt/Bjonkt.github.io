@@ -2,7 +2,7 @@
 <html lang="nl" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="theme-color" content="#9ac6f0">
+    <meta name="theme-color" content="#212121">
     <meta name="description" content="Astronomisch Getij: Scheveningen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript">
@@ -53,13 +53,13 @@
               <div class="wrapper-tabcontent" id="content-chart-portrait">
               </div>
             </div>
-            <div id="cam-portrait" class="tabcontent">
+            <div id="cam-portrait" class="tabcontent" style="display:none">
               <iframe class="wrapper-cam" id="cam-src-portrait" src="https://www.youtube.com/embed/J9t__YygUJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
               </iframe>
               <div class="container-cam-not-available-desktop">Helaas heb ik geen live cam kunnen vinden van deze locatie. Jij wel? Je kan het mij laten weten via prahprahpro@gmail.com
               </div>
             </div>
-            <div id="forecast-portrait" class="tabcontent">
+            <div id="forecast-portrait" class="tabcontent" style="display:none">
               Coming soon
             </div>
           </div>
@@ -125,7 +125,7 @@
           <div class="wrapper">
             <div class="container-tab">
               <div class="tab">
-                <button class="tablinks active" id="button-tab-tide" onclick="openTab(event, 'tide-desktop','tide-portrait')">Tide</button>
+                <button class="tablinks active" onclick="openTab(event, 'tide-desktop','tide-portrait')">Tide</button>
                 <button class="tablinks" onclick="openTab(event, 'cam-desktop', 'cam-portrait')">Cam</button>
                 <button class="tablinks" onclick="openTab(event, 'forecast-desktop','forecast-portrait')">Forecast</button>
               </div>
@@ -230,12 +230,12 @@
             <div class="wrapper-tabcontent" id="content-chart-desktop">
             </div>
           </div>
-          <div id="cam-desktop" class="tabcontent">
+          <div id="cam-desktop" class="tabcontent" style="display:none">
             <iframe class="wrapper-cam" id="cam-src-desktop" src="https://www.youtube.com/embed/J9t__YygUJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
             <div class="container-cam-not-available-desktop">Helaas heb ik geen live cam kunnen vinden van deze locatie. Jij wel? Je kan het mij laten weten via prahprahpro@gmail.com</div>
           </div>
-          <div id="forecast-desktop" class="tabcontent">
+          <div id="forecast-desktop" class="tabcontent" style="display:none">
             Coming soon
           </div>
         </div>

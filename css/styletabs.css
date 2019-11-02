@@ -161,8 +161,8 @@ table{
   padding-left: 4px;
 }
 .wrapper-tabcontent{
-  height: 100%;
-  width: 100%;
+  height: 100% !important;
+  width: 100% !important;
 }
 .wrapper-cam{
   height: 100%;
@@ -171,7 +171,6 @@ table{
   border-radius: var(--borderradius);
 }
 .tabcontent {
-  display: none;
   border-radius: var(--borderradius);
   height: inherit;
   width: inherit;
