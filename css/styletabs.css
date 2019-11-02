@@ -141,28 +141,35 @@ table{
 }
 /**----------------------------REALTIME & SUNTIME----------------------------**/
 .container-data-wave{
-  height: 5%;
+  border-radius: var(--borderradius);
+  background: var(--color-dark-items-01dp);
+  height: 8%;
   width: 100%;
+  position: relative;
 }
 .container-data-sun{
-  height: 5%;
+  border-radius: var(--borderradius);
+  background: var(--color-dark-items-01dp);
+  height: 8%;
   width: 100%;
+  position: relative;
 }
 .wrapper-data{
-  display: table;
-  overflow: hidden;
-  height: inherit;
   width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-.wrapper-data-align{
-  display: table-cell;
-  vertical-align: middle;
-  padding-left: 4px;
+.container-data-wave tr{
+  background-color: var(--color-dark-items-01dp);
 }
 .container-data-sun tr{
   background-color: var(--color-dark-items-01dp);
 }
-/**----------------------------REALTIME & SUNTIME----------------------------**/
+
+/**----------------------------TIDE/CAM/FORECAST----------------------------**/
 .tabcontent {
   border-radius: var(--borderradius);
   height: inherit;
@@ -194,12 +201,12 @@ table{
 }
 /**--------------------------------- CONTROLS -------------------------------**/
 .container-control{
-  height: 30%;
+  height: 24%;
   width: 100%;
 }
 .container-tab{
   display: flex;
-  height: 20%;
+  height: 26%;
   width:inherit;
 }
 .tab {
@@ -224,7 +231,7 @@ table{
 }
 .container-location{
   position: relative;
-  height: 40%;
+  height: 37%;
 }
 .container-select{
   height: 80%;
@@ -245,7 +252,7 @@ table{
   transform: translateY(-50%);
 }
 .container-date{
-  height: 40%;
+  height: 37%;
   position: relative;
 }
 .container-wrapper-date{
@@ -332,7 +339,6 @@ td{
 .table>tbody>tr:nth-child(even){
   background-color: var(--color-dark-items-02dp);
 }
-
 /** MOBILE/PORTRAIT LAYOUT**/
 @media (max-width: 550px){
   .gap-chart-portrait{
@@ -383,8 +389,4 @@ td{
   .container-table-desktop{
     display: none;
   }
-
 }
-
-
-/** STYLING THE WEBSITE **/
