@@ -89,6 +89,7 @@ input{
   display: block;
   padding: .5em 1.4em .5em 2.8em;
   width: 100%;
+  line-height: 100%;
   max-width: 100%;
   box-sizing: border-box;
   margin: 0;
