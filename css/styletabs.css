@@ -136,7 +136,7 @@ table{
 }
 .container-left{
   height: inherit;
-  width: 35%;
+  width: 30%;
 }
 /**----------------------------REALTIME & SUNTIME----------------------------**/
 .container-data-wave{
@@ -225,6 +225,7 @@ table{
   padding: 0px;
   padding-left: 8px;
   border: 0;
+  width: 200%
 }
 .wrapper-data td{
   padding-top: 0px;

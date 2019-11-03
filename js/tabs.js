@@ -426,9 +426,9 @@ function update(day) {
   var sl = document.getElementById("selectedLocation");
   // create chart createChart(location,day)
   var selection = sl.options[sl.selectedIndex];
-/*
+
   getRealTime(selection.text);
-*/
+
   createChart(selection.value,selection.text,day);
   // create table createTable(selection,day)
   createTable(selection.value,day);
