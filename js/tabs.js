@@ -426,9 +426,9 @@ function update(day) {
   var sl = document.getElementById("selectedLocation");
   // create chart createChart(location,day)
   var selection = sl.options[sl.selectedIndex];
-
+/*
   getRealTime(selection.text);
-
+*/
   createChart(selection.value,selection.text,day);
   // create table createTable(selection,day)
   createTable(selection.value,day);
@@ -517,3 +517,17 @@ function openTab(evt, tabNameDesktop, tabNamePortait) {
   document.getElementById(tabNamePortait).style.display = "block";
   evt.currentTarget.className += " active";
 };
+
+$(document).ready(function() {
+  // Construct URL object using current browser URL
+  var url = new URL(document.location);
+console.log(url);
+  // Get query parameters object
+  var params = url.searchParams;
+console.log(params);
+  // Get value of paper
+  var selectedlocation = params.get("location");
+console.log(selectedlocation);
+  // Set it as the dropdown value
+  //$("#selectedLocation").val(selectedlocation);
+});
