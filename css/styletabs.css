@@ -271,15 +271,13 @@ table{
 .container-picker{
   width: 100%;
   height: 100%;
+  display: inline-block;
+	position: relative;
 }
 .container-picker input{
-  width: 75%;
+  width: 96%;
   height: 100%;
-  margin: 0;
   position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 .container-buttons{
   display: flex;
