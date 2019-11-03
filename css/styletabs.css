@@ -227,6 +227,7 @@ table{
   border: 0;
 }
 .wrapper-data td{
+  padding-top: 0px;
   padding-left: 4px;
   width: 25%;
 }
@@ -260,6 +261,28 @@ table{
 .container-table-portrait{
   display: none;
 }
+.container-forecast{
+  margin: 0;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+  text-align: center;
+  line-height: 200px;
+  font-size: 30px;
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 /**--------------------------------- CONTROLS -------------------------------**/
 .container-control{
   height: 23%;
@@ -277,7 +300,6 @@ table{
   width: 100%;
 }
 .container-tab button {
-  border-radius: var(--borderradius) var(--borderradius) 0px 0px;
   width: 100%;
   background-color: inherit;
   float: left;
@@ -285,6 +307,12 @@ table{
   outline: none;
   cursor: pointer;
   transition: 0.3s;
+}
+.tabtide{
+  border-radius: var(--borderradius) 0px 0px 0px;
+}
+.tabforecast{
+  border-radius: 0px var(--borderradius) 0px 0px;
 }
 .container-tab button:hover {
   background-color: var(--color-dark-accent);
