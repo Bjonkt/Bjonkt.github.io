@@ -1,7 +1,8 @@
+
 var fp;
  $(function init() {
    var today = getNL(new Date());
-   fp = $("#mdc-text-field").flatpickr({
+   fp = $("#datepicker").flatpickr({
      autoClose: true,
      defaultDate: today,
      onChange: function(selectedDates, datestr, instance) {
@@ -42,13 +43,15 @@ function createChart(selection,title,day) {
       }
     }
     // Suntimes in secopnd bar from top
-    var dawn = ('0'+suntimes.dawn.getHours()).slice(-2)+':'+('0'+suntimes.dawn.getMinutes()).slice(-2);
-    var sunrise = ('0'+suntimes.sunrise.getHours()).slice(-2)+':'+('0'+suntimes.sunrise.getMinutes()).slice(-2);
-    var sunset = ('0'+suntimes.sunset.getHours()).slice(-2)+':'+('0'+suntimes.sunset.getMinutes()).slice(-2);
-    var dusk = ('0'+suntimes.dusk.getHours()).slice(-2)+':'+('0'+suntimes.dusk.getMinutes()).slice(-2);
-    var fullsunstring = 'Dawn-' + dawn + ' | Rise-' + sunrise + ' | Set-' + sunset + ' | Dusk-' + dusk;
-    document.getElementById('suntimedata').innerHTML = fullsunstring;
+    document.getElementById('dawn').innerHTML = ('0'+suntimes.dawn.getHours()).slice(-2)+':'+('0'+suntimes.dawn.getMinutes()).slice(-2);
+    document.getElementById('rise').innerHTML = ('0'+suntimes.sunrise.getHours()).slice(-2)+':'+('0'+suntimes.sunrise.getMinutes()).slice(-2);
+    document.getElementById('set').innerHTML = ('0'+suntimes.sunset.getHours()).slice(-2)+':'+('0'+suntimes.sunset.getMinutes()).slice(-2);
+    document.getElementById('dusk').innerHTML = ('0'+suntimes.dusk.getHours()).slice(-2)+':'+('0'+suntimes.dusk.getMinutes()).slice(-2);
+
     // chart
+    var colortext = "#ffffff";
+    var colorchart = "#03a9f4";
+    var coloraccent = "#e91e63";
     var chartoptions = {
         chart: {
           type: 'areaspline',
@@ -60,53 +63,54 @@ function createChart(selection,title,day) {
         title: {
           text: title,
           style: {
-            fontSize: '16px'
+            fontSize: '16px',
+            color: colortext
           }
         },
         subtitle: {
           text: moment(day).format("dddd, D MMMM"),
             style: {
-              color: "#424242"
+              color: colortext
             }
         },
         xAxis:{
           type: 'datetime',
           tickInterval: 3600*1000*3,
           gridLineWidth: 0,
-          gridLineColor: "#424242",
+          gridLineColor: colortext,
           labels: {
             style: {
-              color: "#424242"
+              color: colortext
             }
           },
           plotLines:[{
-              color: "#ff1744",
+              color: coloraccent,
               width: 1,
               value: getNL(new Date()),
               zIndex: 4,
             }],
           plotBands: [{
-            color: "#e0e0e0", // Color value
+            color: "#212121", // Color value
             from: 0, // Start of the plot band
             to: getNL(suntimes.dawn), // End of the plot band
           },
           {
-            color: "#efefef", // Color value
+            color: "#303030", // Color value
             from: getNL(suntimes.dawn), // Start of the plot band
             to: getNL(suntimes.sunrise), // End of the plot band
           },
           {
-            color: "#ffffff", // Color value
+            color: "#424242", // Color value
             from: getNL(suntimes.sunrise), // Start of the plot band
             to: getNL(suntimes.sunset), // End of the plot band
           },
           {
-            color: "#efefef", // Color value
+            color: "#303030", // Color value
             from: getNL(suntimes.sunset), // Start of the plot band
             to: getNL(suntimes.dusk), // End of the plot band
           },
           {
-            color: "#e0e0e0", // Color value
+            color: "#212121", // Color value
             from: getNL(suntimes.dusk),
             to: Date.UTC(day.getUTCFullYear(), day.getUTCMonth(), day.getUTCDate()+1,24,0),
           }],
@@ -114,13 +118,16 @@ function createChart(selection,title,day) {
         },
         yAxis:{
           title: {
-            text: 'Waterstand [cm]'
+            text: 'Waterstand [cm]',
+            style: {
+              color: colortext
+            }
           },
-          gridLineColor: "#c7c7c7",
+          gridLineColor: colortext,
           crosshair: {dashStyle: 'shortDash'},
           labels: {
             style: {
-              color: "#424242"
+              color: colortext
             }
           }
         },
@@ -132,7 +139,7 @@ function createChart(selection,title,day) {
             marker:{
               enabled:false
             },
-            color: "#9ac6f0",
+            color: colorchart,
             showInLegend: true,
             threshold: -Infinity,
             fillColor:{
@@ -140,11 +147,16 @@ function createChart(selection,title,day) {
                 x1: 0, y1: 0, x2: 0, y2: 1
               },
               stops: [
-                [0, Highcharts.Color("#9ac6f0").setOpacity(0.4).get('rgba')],
-                [1, Highcharts.Color("#9ac6f0").setOpacity(0).get('rgba')]
+                [0, Highcharts.Color(colorchart).setOpacity(0.4).get('rgba')],
+                [1, Highcharts.Color(colorchart).setOpacity(0).get('rgba')]
               ]
             }
         }],
+        legend:{
+          itemStyle:{
+            color: colortext
+          }
+        },
         exporting: {
           enabled: false
         },
@@ -284,13 +296,38 @@ function createTable(selection,day) {
   });
 };
 
+// create cam view
+function createCam(selection){
+  if (selection=='Den Helder') {
+  } else if (selection=='Petten') {
+    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/QcurPcHwX6U";
+    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/QcurPcHwX6U";
+  }else if (selection=='IJmuiden') {
+    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/BTYXpHelk8M";
+    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/BTYXpHelk8M";
+  }else if (selection=='Noordwijk') {
+    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/59hkhfukuTA";
+    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/59hkhfukuTA";
+  }else if (selection=='Scheveningen') {
+    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/J9t__YygUJk";
+    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/J9t__YygUJk";
+  } else if (selection=='Hoek van Holland') {
+    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/hUxbpx431zk";
+    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/hUxbpx431zk";
+  }else if (selection='Cadzand') {
+  }
+}
+
 function getRealTime(selection) {
-  var windrichting = 0;
-  var windkracht = 0;
-  var golfhoogte = 0;
-  var golfperiode = 0;
-  var fullstring = 'Actueel - ' + 'Golven: ' + golfhoogte+'cm@'+golfperiode+'s'+', Wind: ' + windkracht+'kt'+' ('+windrichting+'°'+')';
-  document.getElementById('realtimedata').innerHTML = fullstring;
+  var windrichting = "-°";
+  var windkracht = "- kts";
+  var golfhoogte = "- cm";
+  var golfperiode = "- s";
+  document.getElementById('waveheight').innerHTML = golfhoogte;
+  document.getElementById('waveperiod').innerHTML = golfperiode;
+  document.getElementById('windspeed').innerHTML = windkracht;
+  document.getElementById('winddirection').innerHTML = windrichting;
+
   var location;
   if (selection=='Den Helder') {
     wavelocation = 'IJgeul-stroommeetpaal%28SPY%29';
@@ -324,7 +361,7 @@ function getRealTime(selection) {
   function getWaveHeight() {
     $.when(
       $.get("https://cors-anywhere.herokuapp.com/"+waveurl, function(wavedata) {
-        golfhoogte = Math.round(wavedata.latest.data);
+        golfhoogte = "" + Math.round(wavedata.latest.data) + " cm";
       }),
     ).then(function() {
       updateRealTime();
@@ -338,7 +375,7 @@ function getRealTime(selection) {
   function getWavePeriod() {
     $.when(
       $.get("https://cors-anywhere.herokuapp.com/"+periodurl, function(perioddata) {
-        golfperiode = perioddata.latest.data;
+        golfperiode = "" + perioddata.latest.data + " s";
       }),
     ).then(function() {
       updateRealTime();
@@ -352,7 +389,7 @@ function getRealTime(selection) {
   function getWindForce() {
     $.when(
       $.get("https://cors-anywhere.herokuapp.com/"+windurl, function(winddata) {
-        windkracht = Math.round(winddata.latest.data/0.5144);
+        windkracht = "" + Math.round(winddata.latest.data/0.5144) + " kts";
       }),
     ).then(function() {
       updateRealTime();
@@ -366,7 +403,7 @@ function getRealTime(selection) {
   function getWindDirection() {
     $.when(
       $.get("https://cors-anywhere.herokuapp.com/"+directionurl, function(directiondata) {
-        windrichting = Math.round(directiondata.latest.data);
+        windrichting = "" + Math.round(directiondata.latest.data) + "°";
       }),
     ).then(function() {
       updateRealTime();
@@ -376,8 +413,10 @@ function getRealTime(selection) {
   }
 
   function updateRealTime(){
-    fullstring = 'Actueel - ' + 'Golven: ' + golfhoogte+'cm@'+golfperiode+'s'+', Wind: ' + windkracht+'kt'+' ('+windrichting+'°'+')';
-    document.getElementById('realtimedata').innerHTML = fullstring;
+    document.getElementById('waveheight').innerHTML = golfhoogte;
+    document.getElementById('waveperiod').innerHTML = golfperiode;
+    document.getElementById('windspeed').innerHTML = windkracht;
+    document.getElementById('winddirection').innerHTML = windrichting;
   }
 
 }
@@ -394,6 +433,8 @@ function update(day) {
   // create table createTable(selection,day)
   createTable(selection.value,day);
 
+  createCam(selection.text);
+
 }
 
 
@@ -406,7 +447,6 @@ function updateLite(day) {
   createChart(selection.value,selection.text,day);
   // create table createTable(selection,day)
   createTable(selection.value,day);
-
 }
 
 // next day and previous day functions
@@ -460,4 +500,20 @@ Date.prototype.addDays = function(days){
   var date = new Date(this.valueOf());
   date.setDate(date.getDate() + days);
   return date;
+};
+
+
+function openTab(evt, tabNameDesktop, tabNamePortait) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabNameDesktop).style.display = "block";
+  document.getElementById(tabNamePortait).style.display = "block";
+  evt.currentTarget.className += " active";
 };
