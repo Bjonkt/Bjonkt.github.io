@@ -87,7 +87,6 @@ input{
   border: none;
 
   display: block;
-  text-align: center;
   padding: .5em 1.4em .5em 2.8em;
   width: 100%;
   max-width: 100%;
@@ -142,14 +141,14 @@ table{
 /**----------------------------REALTIME & SUNTIME----------------------------**/
 .container-data-wave{
   border-radius: var(--borderradius);
-  background: var(--color-dark-items-01dp);
+  background: var(--color-dark-items-02dp);
   height: 8%;
   width: 100%;
   position: relative;
 }
 .container-data-sun{
   border-radius: var(--borderradius);
-  background: var(--color-dark-items-01dp);
+  background: var(--color-dark-items-02dp);
   height: 8%;
   width: 100%;
   position: relative;
@@ -212,10 +211,10 @@ table{
   }
 }
 .container-data-wave tr{
-  background-color: var(--color-dark-items-01dp);
+  background-color: transparent;
 }
 .container-data-sun tr{
-  background-color: var(--color-dark-items-01dp);
+  background-color: transparent;
 }
 /**----------------------------TIDE/CAM/FORECAST----------------------------**/
 .tabcontent {
