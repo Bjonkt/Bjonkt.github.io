@@ -87,7 +87,7 @@ input{
   border: none;
 
   display: block;
-  line-height: 22px;
+  text-align: center;
   padding: .5em 1.4em .5em 2.8em;
   width: 100%;
   max-width: 100%;
@@ -162,13 +162,61 @@ table{
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.liveblinker{
+  height:10px;
+  width: 12px;
+  -webkit-animation: 1s blink ease infinite;
+  -moz-animation: 1s blink ease infinite;
+  -ms-animation: 1s blink ease infinite;
+  -o-animation: 1s blink ease infinite;
+  animation: 1s blink ease infinite;
+}
+@keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-o-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 .container-data-wave tr{
   background-color: var(--color-dark-items-01dp);
 }
 .container-data-sun tr{
   background-color: var(--color-dark-items-01dp);
 }
-
 /**----------------------------TIDE/CAM/FORECAST----------------------------**/
 .tabcontent {
   border-radius: var(--borderradius);
