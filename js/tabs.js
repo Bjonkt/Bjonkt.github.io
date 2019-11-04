@@ -11,11 +11,12 @@ var fp;
        updateLite(dateSelected);
      }
    });
+   var url = new URL(document.location);
+   var params = url.searchParams;
+   setSelectedIndex(document.getElementById("selectedLocation"),params.get("location"));
    fp.setDate(today);
    update(today);
  })
-
-// load json data
 function createChart(selection,title,day) {
   var day1 = day.toISOString().split("T")[0];
   var day2 = day.addDays(1).toISOString().split("T")[0];
@@ -187,28 +188,22 @@ function createChart(selection,title,day) {
     $("#content-chart-portrait").highcharts(chartoptions)
   })
 };
-
-// create tables
 function createTable(selection,day) {
   var day1 = day;
   var day2 = moment.utc(day).add(1,'days');
   var day3 = moment.utc(day).add(2,'days');
   var url = "json/" + selection + "hwlw" + ".json";
-
   $.getJSON(url,function(json){
     var extremes1 = [];
     var extremes2 = [];
     var extremes3 = [];
-
     var extremestime1 = [];
     var extremestime2 = [];
     var extremestime3 = [];
-
     var extremesday1 = [];
     var extremesday2 = [];
     var extremesday3 = [];
     var dataday = moment.utc(new Date());
-
     for (i = 0; i < json.astronomicaltide.values.value.length; i++){
       // Parse the json string to get tide height data
       if(Object.keys(json.astronomicaltide.values.value[i].datetime).length === 2 || Object.keys(json.astronomicaltide.values.value[i].datetime).length === 3){
@@ -235,68 +230,51 @@ function createTable(selection,day) {
         //DO NOTIN
       };
     };
-
     document.getElementById("dpdata0").innerHTML = extremesday1[0]
     document.getElementById("dpdata1").innerHTML = extremesday2[0]
     document.getElementById("dpdata2").innerHTML = extremesday3[0]
-
     document.getElementById("ddata0").innerHTML = extremesday1[0]
     document.getElementById("ddata1").innerHTML = extremesday2[0]
     document.getElementById("ddata2").innerHTML = extremesday3[0]
-
     for (var i = 0; i < 4; i++) {
-
       if (extremes1[i] != undefined) {
         document.getElementById("wpdata"+i).innerHTML = extremes1[i];
         document.getElementById("tpdata"+i).innerHTML = extremestime1[i];
-
         document.getElementById("wdata"+i).innerHTML = extremes1[i];
         document.getElementById("tdata"+i).innerHTML = extremestime1[i];
       } else {
         document.getElementById("wpdata"+i).innerHTML = "-";
         document.getElementById("tpdata"+i).innerHTML = "-";
-
         document.getElementById("wdata"+i).innerHTML = "-";
         document.getElementById("tdata"+i).innerHTML = "-";
       }
-
       var j = i + 4;
       if (extremes2[i] != undefined) {
         document.getElementById("wdata"+j).innerHTML = extremes2[i];
         document.getElementById("tdata"+j).innerHTML = extremestime2[i];
-
         document.getElementById("wpdata"+j).innerHTML = extremes2[i];
         document.getElementById("tpdata"+j).innerHTML = extremestime2[i];
       } else {
         document.getElementById("wdata"+j).innerHTML = "-";
         document.getElementById("tdata"+j).innerHTML = "-";
-
         document.getElementById("wpdata"+j).innerHTML = "-";
         document.getElementById("tpdata"+j).innerHTML = "-";
       }
-
       var k = i + 8;
       if (extremes3[i] != undefined) {
         document.getElementById("wdata"+k).innerHTML = extremes3[i];
         document.getElementById("tdata"+k).innerHTML = extremestime3[i];
-
         document.getElementById("wpdata"+k).innerHTML = extremes3[i];
         document.getElementById("tpdata"+k).innerHTML = extremestime3[i];
       } else {
         document.getElementById("wdata"+k).innerHTML = "-";
         document.getElementById("tdata"+k).innerHTML = "-";
-
         document.getElementById("wpdata"+k).innerHTML = "-";
         document.getElementById("tpdata"+k).innerHTML = "-";
       }
-
-
-
     }
   });
 };
-
-// create cam view
 function createCam(selection){
   if (selection=='Den Helder') {
   } else if (selection=='Petten') {
@@ -317,7 +295,6 @@ function createCam(selection){
   }else if (selection='Cadzand') {
   }
 }
-
 function getRealTime(selection) {
   var windrichting = "-°";
   var windkracht = "- kts";
@@ -327,7 +304,6 @@ function getRealTime(selection) {
   document.getElementById('waveperiod').innerHTML = golfperiode;
   document.getElementById('windspeed').innerHTML = windkracht;
   document.getElementById('winddirection').innerHTML = windrichting;
-
   var location;
   if (selection=='Den Helder') {
     wavelocation = 'IJgeul-stroommeetpaal%28SPY%29';
@@ -355,9 +331,7 @@ function getRealTime(selection) {
   var periodurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Gem.___20golfperiode___20langste___201___2F3___20deel___20v.d.___20golven___20%28tijdsdomein%29___20Oppervlaktewater___20s&locationSlug=' + wavelocation + '&user=publiek';
   var windurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windsnelheid___20Lucht___20t.o.v.___20Mean___20Sea___20Level___20in___20m___2Fs&locationSlug=' + windlocation + '&user=publiek';
   var directionurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windrichting___20Lucht___20t.o.v.___20ware___20Noorden___20in___20graad&locationSlug='+windlocation+'&user=expert';
-
   getWaveHeight();
-
   function getWaveHeight() {
     $.when(
       $.get("https://cors-anywhere.herokuapp.com/"+waveurl, function(wavedata) {
@@ -371,7 +345,6 @@ function getRealTime(selection) {
       getWavePeriod();
     });
   }
-
   function getWavePeriod() {
     $.when(
       $.get("https://cors-anywhere.herokuapp.com/"+periodurl, function(perioddata) {
@@ -385,7 +358,6 @@ function getRealTime(selection) {
       getWindForce();
     });
   }
-
   function getWindForce() {
     $.when(
       $.get("https://cors-anywhere.herokuapp.com/"+windurl, function(winddata) {
@@ -399,7 +371,6 @@ function getRealTime(selection) {
       getWindDirection();
     });
   }
-
   function getWindDirection() {
     $.when(
       $.get("https://cors-anywhere.herokuapp.com/"+directionurl, function(directiondata) {
@@ -411,72 +382,57 @@ function getRealTime(selection) {
       updateRealTime();
     });
   }
-
   function updateRealTime(){
     document.getElementById('waveheight').innerHTML = golfhoogte;
     document.getElementById('waveperiod').innerHTML = golfperiode;
     document.getElementById('windspeed').innerHTML = windkracht;
     document.getElementById('winddirection').innerHTML = windrichting;
   }
-
 }
-
 function update(day) {
-  // location
   var sl = document.getElementById("selectedLocation");
-  // create chart createChart(location,day)
   var selection = sl.options[sl.selectedIndex];
+  var url = new URL(document.location);
+  const params = new URLSearchParams(url);
+  params.set("location",selection.value);
+  window.history.pushState({},null,'?'+params.toString());
+
 /*
   getRealTime(selection.text);
 */
-  createChart(selection.value,selection.text,day);
-  // create table createTable(selection,day)
-  createTable(selection.value,day);
-
+  createChart("getij"+selection.value,selection.text,day);
+  createTable("getij"+selection.value,day);
   createCam(selection.text);
-
 }
-
-
 function updateLite(day) {
-  // location
   var sl = document.getElementById("selectedLocation");
-  // create chart createChart(location,day)
   var selection = sl.options[sl.selectedIndex];
-
-  createChart(selection.value,selection.text,day);
-  // create table createTable(selection,day)
-  createTable(selection.value,day);
+  createChart("getij"+selection.value,selection.text,day);
+  createTable("getij"+selection.value,day);
 }
-
-// next day and previous day functions
 function nextDay() {
   var date = fp.selectedDates[0];
   var nextday = date.addDays(1);
   fp.setDate(nextday);
   updateLite(nextday);
 };
-
 function previousDay(){
   var date = fp.selectedDates[0];
   var previousday = date.addDays(-1);
   fp.setDate(previousday);
   updateLite(previousday);
 };
-
 function changeLocation() {
   var date = fp.selectedDates[0];
   var selecteddate = date;
   fp.setDate(selecteddate);
   update(selecteddate);
 };
-
 function getUTC(jsdate) {
   var date = jsdate;
   var date_utc = Date.UTC(date.getUTCFullYear(),date.getUTCMonth(),date.getUTCDate(),0,0);
   return new Date(date_utc);
 };
-
 function getNL(jsdate) {
   var date = jsdate;
   var n = 1;
@@ -486,7 +442,6 @@ function getNL(jsdate) {
   var date_nl = Date.UTC(date.getUTCFullYear(),date.getUTCMonth(),date.getUTCDate(),date.getUTCHours()+n,date.getUTCMinutes(),date.getUTCSeconds());
   return new Date(date_nl);
 };
-
 function DST(day) {
   var n = day.getTimezoneOffset();
   var isDST = false;
@@ -495,14 +450,11 @@ function DST(day) {
   }
   return isDST;
 }
-
 Date.prototype.addDays = function(days){
   var date = new Date(this.valueOf());
   date.setDate(date.getDate() + days);
   return date;
 };
-
-
 function openTab(evt, tabNameDesktop, tabNamePortait) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -517,17 +469,12 @@ function openTab(evt, tabNameDesktop, tabNamePortait) {
   document.getElementById(tabNamePortait).style.display = "block";
   evt.currentTarget.className += " active";
 };
-
-$(document).ready(function() {
-  // Construct URL object using current browser URL
-  var url = new URL(document.location);
-console.log(url);
-  // Get query parameters object
-  var params = url.searchParams;
-console.log(params);
-  // Get value of paper
-  var selectedlocation = params.get("location");
-console.log(selectedlocation);
-  // Set it as the dropdown value
-  //$("#selectedLocation").val(selectedlocation);
-});
+function setSelectedIndex(s, valsearch){
+  for (i = 0; i< s.options.length; i++){
+    if (s.options[i].value == valsearch){
+      s.options[i].selected = true;
+      break;
+    }
+  }
+  return;
+}
