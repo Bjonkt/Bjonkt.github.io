@@ -436,9 +436,8 @@ function update(day) {
 
   getRealTime(selection.text);
 
-  createChart(selection.value,selection.text,day);
-  // create table createTable(selection,day)
-  createTable(selection.value,day);
+  createChart("getij"+selection.value,selection.text,day);
+  createTable("getij"+selection.value,day);
 
   createCam(selection.text);
 
@@ -451,9 +450,8 @@ function updateLite(day) {
   // create chart createChart(location,day)
   var selection = sl.options[sl.selectedIndex];
 
-  createChart(selection.value,selection.text,day);
-  // create table createTable(selection,day)
-  createTable(selection.value,day);
+  createChart("getij"+selection.value,selection.text,day);
+  createTable("getij"+selection.value,day);
 }
 
 // next day and previous day functions
