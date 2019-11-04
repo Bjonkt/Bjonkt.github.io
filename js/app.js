@@ -11,6 +11,9 @@ var fp;
        updateLite(dateSelected);
      }
    });
+   var url = new URL(document.location);
+   var params = url.searchParams;
+   setSelectedIndex(document.getElementById("selectedLocation"),params.get("location"));
    fp.setDate(today);
    update(today);
  })
@@ -426,6 +429,10 @@ function update(day) {
   var sl = document.getElementById("selectedLocation");
   // create chart createChart(location,day)
   var selection = sl.options[sl.selectedIndex];
+  var url = new URL(document.location);
+  const params = new URLSearchParams(url);
+  params.set("location",selection.value);
+  window.history.pushState({},null,'?'+params.toString());
 
   getRealTime(selection.text);
 
@@ -517,3 +524,13 @@ function openTab(evt, tabNameDesktop, tabNamePortait) {
   document.getElementById(tabNamePortait).style.display = "block";
   evt.currentTarget.className += " active";
 };
+
+function setSelectedIndex(s, valsearch){
+  for (i = 0; i< s.options.length; i++){
+    if (s.options[i].value == valsearch){
+      s.options[i].selected = true;
+      break;
+    }
+  }
+  return;
+}
