@@ -300,11 +300,8 @@ function getRealTime(selection) {
   var windkracht = "- kts";
   var golfhoogte = "- cm";
   var golfperiode = "- s";
-  document.getElementById('waveheight').innerHTML = golfhoogte;
-  document.getElementById('waveperiod').innerHTML = golfperiode;
-  document.getElementById('windspeed').innerHTML = windkracht;
-  document.getElementById('winddirection').innerHTML = windrichting;
   var location;
+
   if (selection=='Den Helder') {
     wavelocation = 'IJgeul-stroommeetpaal%28SPY%29';
     windlocation = 'De-Kooy%28DEKO%29';
@@ -327,70 +324,50 @@ function getRealTime(selection) {
     wavelocation = 'Cadzand-boei%28CADW%29';
     windlocation = 'Cadzand-wind%28CAWI%29';
   }
-  var waveurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Significante___20golfhoogte___20in___20het___20spectrale___20domein___20Oppervlaktewater___20golffrequentie___20tussen___2030___20en___20500___20mHz___20in___20cm&locationSlug=' + wavelocation + '&user=publiek';
-  var periodurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Gem.___20golfperiode___20langste___201___2F3___20deel___20v.d.___20golven___20%28tijdsdomein%29___20Oppervlaktewater___20s&locationSlug=' + wavelocation + '&user=publiek';
-  var windurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windsnelheid___20Lucht___20t.o.v.___20Mean___20Sea___20Level___20in___20m___2Fs&locationSlug=' + windlocation + '&user=publiek';
-  var directionurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windrichting___20Lucht___20t.o.v.___20ware___20Noorden___20in___20graad&locationSlug='+windlocation+'&user=expert';
-  getWaveHeight();
+  var waveheighturl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Significante___20golfhoogte___20in___20het___20spectrale___20domein___20Oppervlaktewater___20golffrequentie___20tussen___2030___20en___20500___20mHz___20in___20cm&locationSlug=' + wavelocation + '&user=publiek';
+  var waveperiodurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Gem.___20golfperiode___20langste___201___2F3___20deel___20v.d.___20golven___20%28tijdsdomein%29___20Oppervlaktewater___20s&locationSlug=' + wavelocation + '&user=publiek';
+  var windforceurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windsnelheid___20Lucht___20t.o.v.___20Mean___20Sea___20Level___20in___20m___2Fs&locationSlug=' + windlocation + '&user=publiek';
+  var winddirectionurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windrichting___20Lucht___20t.o.v.___20ware___20Noorden___20in___20graad&locationSlug='+windlocation+'&user=expert';
 
-  function getWaveHeight() {
+  function getWaveHeight(url) {
     $.ajax({
       type: "GET",
-      url: waveurl,
-      //data: JSON.stringify(data),
-      success: function(wavedata) {
-        golfhoogte = "" + Math.round(wavedata.latest.data) + " cm";
+      url: url,
+      success: function(result) {
+        golfhoogte = "" + Math.round(result.latest.data) + " cm";
         updateRealTime();
-        getWavePeriod();
       },
       error: function(error){
         updateRealTime();
-        getWavePeriod();
       }
     });
   }
-  function getWavePeriod() {
+  function getWavePeriod(url) {
     $.ajax({
       type: "GET",
-      url: periodurl,
-      //data: JSON.stringify(data),
-      success: function(perioddata) {
-        golfperiode = "" + perioddata.latest.data + " s";
+      url: url,
+      success: function(result) {
+        golfperiode = "" + result.latest.data + " s";
         updateRealTime();
-        getWindForce();
-      },
-      error: function(error){
-        updateRealTime();
-        getWindForce();
       }
     });
   }
-  function getWindForce() {
+  function getWindForce(url) {
     $.ajax({
       type: "GET",
-      url: windurl,
-      //data: JSON.stringify(data),
-      success: function(winddata) {
-        windkracht = "" + Math.round(winddata.latest.data/0.5144) + " kts";
+      url: url,
+      success: function(result) {
+        windkracht = "" + Math.round(result.latest.data/0.5144) + " kts";
         updateRealTime();
-        getWindDirection();
-      },
-      error: function(error){
-        updateRealTime();
-        getWindDirection();
       }
     });
   }
-  function getWindDirection() {
+  function getWindDirection(url) {
     $.ajax({
       type: "GET",
-      url: directionurl,
-      //data: JSON.stringify(data),
-      success: function(directiondata) {
-        windrichting = "" + Math.round(directiondata.latest.data) + "°";
-        updateRealTime();
-      },
-      error: function(error){
+      url: url,
+      success: function(result) {
+        windrichting = "" + Math.round(result.latest.data) + "°";
         updateRealTime();
       }
     });
@@ -401,6 +378,12 @@ function getRealTime(selection) {
     document.getElementById('windspeed').innerHTML = windkracht;
     document.getElementById('winddirection').innerHTML = windrichting;
   }
+
+  getWaveHeight(waveheighturl);
+  getWavePeriod(waveperiodurl);
+  getWindForce(windforceurl);
+  getWindDirection(winddirectionurl);
+
 }
 function update(day) {
   var sl = document.getElementById("selectedLocation");
