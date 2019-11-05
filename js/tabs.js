@@ -332,54 +332,67 @@ function getRealTime(selection) {
   var windurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windsnelheid___20Lucht___20t.o.v.___20Mean___20Sea___20Level___20in___20m___2Fs&locationSlug=' + windlocation + '&user=publiek';
   var directionurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windrichting___20Lucht___20t.o.v.___20ware___20Noorden___20in___20graad&locationSlug='+windlocation+'&user=expert';
   getWaveHeight();
+
   function getWaveHeight() {
-    $.when(
-      $.get("https://cors-anywhere.herokuapp.com/"+waveurl, function(wavedata) {
+    $.ajax({
+      type: "GET",
+      url: waveurl,
+      //data: JSON.stringify(data),
+      success: function(wavedata) {
         golfhoogte = "" + Math.round(wavedata.latest.data) + " cm";
-      }),
-    ).then(function() {
-      updateRealTime();
-      getWavePeriod();
-    }).fail(function() {
-      updateRealTime();
-      getWavePeriod();
+        updateRealTime();
+        getWavePeriod();
+      },
+      error: function(error){
+        updateRealTime();
+        getWavePeriod();
+      }
     });
   }
   function getWavePeriod() {
-    $.when(
-      $.get("https://cors-anywhere.herokuapp.com/"+periodurl, function(perioddata) {
+    $.ajax({
+      type: "GET",
+      url: periodurl,
+      //data: JSON.stringify(data),
+      success: function(perioddata) {
         golfperiode = "" + perioddata.latest.data + " s";
-      }),
-    ).then(function() {
-      updateRealTime();
-      getWindForce();
-    }).fail(function() {
-      updateRealTime();
-      getWindForce();
+        updateRealTime();
+        getWindForce();
+      },
+      error: function(error){
+        updateRealTime();
+        getWindForce();
+      }
     });
   }
   function getWindForce() {
-    $.when(
-      $.get("https://cors-anywhere.herokuapp.com/"+windurl, function(winddata) {
+    $.ajax({
+      type: "GET",
+      url: windurl,
+      //data: JSON.stringify(data),
+      success: function(winddata) {
         windkracht = "" + Math.round(winddata.latest.data/0.5144) + " kts";
-      }),
-    ).then(function() {
-      updateRealTime();
-      getWindDirection()
-    }).fail(function() {
-      updateRealTime();
-      getWindDirection();
+        updateRealTime();
+        getWindDirection();
+      },
+      error: function(error){
+        updateRealTime();
+        getWindDirection();
+      }
     });
   }
   function getWindDirection() {
-    $.when(
-      $.get("https://cors-anywhere.herokuapp.com/"+directionurl, function(directiondata) {
+    $.ajax({
+      type: "GET",
+      url: directionurl,
+      //data: JSON.stringify(data),
+      success: function(directiondata) {
         windrichting = "" + Math.round(directiondata.latest.data) + "°";
-      }),
-    ).then(function() {
-      updateRealTime();
-    }).fail(function() {
-      updateRealTime();
+        updateRealTime();
+      },
+      error: function(error){
+        updateRealTime();
+      }
     });
   }
   function updateRealTime(){
@@ -397,9 +410,9 @@ function update(day) {
   params.set("location",selection.value);
   window.history.pushState({},null,'?'+params.toString());
 
-/*
+
   getRealTime(selection.text);
-*/
+
   createChart("getij"+selection.value,selection.text,day);
   createTable("getij"+selection.value,day);
   createCam(selection.text);
