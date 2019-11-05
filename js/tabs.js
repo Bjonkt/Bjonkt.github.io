@@ -43,12 +43,6 @@ function createChart(selection,title,day) {
         }
       }
     }
-    // Suntimes in secopnd bar from top
-    document.getElementById('dawn').innerHTML = ('0'+suntimes.dawn.getHours()).slice(-2)+':'+('0'+suntimes.dawn.getMinutes()).slice(-2);
-    document.getElementById('rise').innerHTML = ('0'+suntimes.sunrise.getHours()).slice(-2)+':'+('0'+suntimes.sunrise.getMinutes()).slice(-2);
-    document.getElementById('set').innerHTML = ('0'+suntimes.sunset.getHours()).slice(-2)+':'+('0'+suntimes.sunset.getMinutes()).slice(-2);
-    document.getElementById('dusk').innerHTML = ('0'+suntimes.dusk.getHours()).slice(-2)+':'+('0'+suntimes.dusk.getMinutes()).slice(-2);
-
     // chart
     var colortext = "#ffffff";
     var colorchart = "#03a9f4";
@@ -385,6 +379,18 @@ function getRealTime(selection) {
   getWindDirection(winddirectionurl);
 
 }
+function getSunTime(selection,day){
+  var day1 = day.toISOString().split("T")[0];
+  var day2 = day.addDays(1).toISOString().split("T")[0];
+  var url = "json/" + selection + ".json";
+  $.getJSON(url, function(json) {
+    var suntimes = SunCalc.getTimes(day,json.series[0].location[0].latitude,json.series[0].location[0].longitude);
+    document.getElementById('dawn').innerHTML = ('0'+suntimes.dawn.getHours()).slice(-2)+':'+('0'+suntimes.dawn.getMinutes()).slice(-2);
+    document.getElementById('rise').innerHTML = ('0'+suntimes.sunrise.getHours()).slice(-2)+':'+('0'+suntimes.sunrise.getMinutes()).slice(-2);
+    document.getElementById('set').innerHTML = ('0'+suntimes.sunset.getHours()).slice(-2)+':'+('0'+suntimes.sunset.getMinutes()).slice(-2);
+    document.getElementById('dusk').innerHTML = ('0'+suntimes.dusk.getHours()).slice(-2)+':'+('0'+suntimes.dusk.getMinutes()).slice(-2);
+  })
+};
 function update(day) {
   var sl = document.getElementById("selectedLocation");
   var selection = sl.options[sl.selectedIndex];
@@ -393,9 +399,8 @@ function update(day) {
   params.set("location",selection.value);
   window.history.pushState({},null,'?'+params.toString());
 
-
   getRealTime(selection.text);
-
+  getSunTime("getij"+selection.value,day);
   createChart("getij"+selection.value,selection.text,day);
   createTable("getij"+selection.value,day);
   createCam(selection.text);
