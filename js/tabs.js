@@ -319,11 +319,11 @@ function getRealTime(selection) {
     wavelocation = 'Cadzand-boei%28CADW%29';
     windlocation = 'Cadzand-wind%28CAWI%29';
   }
-  var waveheighturl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Significante___20golfhoogte___20in___20het___20spectrale___20domein___20Oppervlaktewater___20golffrequentie___20tussen___2030___20en___20500___20mHz___20in___20cm&locationSlug=' + wavelocation + '&user=publiek';
-  var waveperiodurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Gem.___20golfperiode___20langste___201___2F3___20deel___20v.d.___20golven___20%28tijdsdomein%29___20Oppervlaktewater___20s&locationSlug=' + wavelocation + '&user=publiek';
-  var wavedirectionurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Gemiddelde___20golfrichting___20in___20het___20spectrale___20domein___20Oppervlaktewater___20golffrequentie___20tussen___2030___20en___20500___20mHz___20in___20graad&locationSlug=' + wavelocation + '&user=expert'
-  var windforceurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windsnelheid___20Lucht___20t.o.v.___20Mean___20Sea___20Level___20in___20m___2Fs&locationSlug=' + windlocation + '&user=publiek';
-  var winddirectionurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windrichting___20Lucht___20t.o.v.___20ware___20Noorden___20in___20graad&locationSlug='+windlocation+'&user=expert';
+  var waveheighturl = 'http://waterinfo.rws.nl/api/detail?expertParameter=Significante___20golfhoogte___20in___20het___20spectrale___20domein___20Oppervlaktewater___20golffrequentie___20tussen___2030___20en___20500___20mHz___20in___20cm&locationSlug=' + wavelocation + '&user=publiek';
+  var waveperiodurl = 'http://waterinfo.rws.nl/api/detail?expertParameter=Gem.___20golfperiode___20langste___201___2F3___20deel___20v.d.___20golven___20%28tijdsdomein%29___20Oppervlaktewater___20s&locationSlug=' + wavelocation + '&user=publiek';
+  var wavedirectionurl = 'http://waterinfo.rws.nl/api/detail?expertParameter=Gemiddelde___20golfrichting___20in___20het___20spectrale___20domein___20Oppervlaktewater___20golffrequentie___20tussen___2030___20en___20500___20mHz___20in___20graad&locationSlug=' + wavelocation + '&user=expert'
+  var windforceurl = 'http://waterinfo.rws.nl/api/detail?expertParameter=Windsnelheid___20Lucht___20t.o.v.___20Mean___20Sea___20Level___20in___20m___2Fs&locationSlug=' + windlocation + '&user=publiek';
+  var winddirectionurl = 'http://waterinfo.rws.nl/api/detail?expertParameter=Windrichting___20Lucht___20t.o.v.___20ware___20Noorden___20in___20graad&locationSlug='+windlocation+'&user=expert';
 
   function getWaveHeight(url) {
     $.ajax({
@@ -338,6 +338,7 @@ function getRealTime(selection) {
       }
     });
   }
+
   function getWavePeriod(url) {
     $.ajax({
       type: "GET",
