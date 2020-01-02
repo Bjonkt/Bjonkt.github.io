@@ -293,7 +293,7 @@ function getRealTime(selection) {
   var golfhoogte = "- cm";
   var golfperiode = "- s";
   var golfrichting = "-°";
-  var windkracht = "- kts";
+  var windkracht = "";
   var windrichting = "-°";
   var location;
 
@@ -364,7 +364,7 @@ function getRealTime(selection) {
       type: "GET",
       url: url,
       success: function(result) {
-        windkracht = "" + Math.round(result.latest.data/0.5144) + " kts";
+        windkracht = "" + Math.round(result.latest.data/0.5144) + "";
         updateRealTime();
       }
     });
