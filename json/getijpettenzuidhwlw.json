@@ -1709,7 +1709,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202003290410  "
+            "text": "202003290410  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -1717,7 +1717,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202003290759  "
+            "text": "202003290759  "
           },
           "tide": "HW",
           "val": "   84"
@@ -1725,7 +1725,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202003291624  "
+            "text": "202003291624  "
           },
           "tide": "LW",
           "val": "  -98"
@@ -1733,7 +1733,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202003292016  "
+            "text": "202003292016  "
           },
           "tide": "HW",
           "val": "   82"
@@ -1741,7 +1741,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202003300434  "
+            "text": "202003300434  "
           },
           "tide": "LW",
           "val": "  -85"
@@ -1749,7 +1749,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202003300834  "
+            "text": "202003300834  "
           },
           "tide": "HW",
           "val": "   87"
@@ -1757,7 +1757,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202003301700  "
+            "text": "202003301700  "
           },
           "tide": "LW",
           "val": "  -93"
@@ -1765,7 +1765,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202003302053  "
+            "text": "202003302053  "
           },
           "tide": "HW",
           "val": "   81"
@@ -1773,7 +1773,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202003310504  "
+            "text": "202003310504  "
           },
           "tide": "LW",
           "val": "  -82"
@@ -1781,7 +1781,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202003310906  "
+            "text": "202003310906  "
           },
           "tide": "HW",
           "val": "   87"
@@ -1789,7 +1789,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202003311738  "
+            "text": "202003311738  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -1797,7 +1797,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202003312135  "
+            "text": "202003312135  "
           },
           "tide": "HW",
           "val": "   73"
@@ -1805,7 +1805,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004010549  "
+            "text": "202004010549  "
           },
           "tide": "LW",
           "val": "  -77"
@@ -1813,7 +1813,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004010959  "
+            "text": "202004010959  "
           },
           "tide": "HW",
           "val": "   78"
@@ -1821,7 +1821,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004011834  "
+            "text": "202004011834  "
           },
           "tide": "LW",
           "val": "  -79"
@@ -1829,7 +1829,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004012234  "
+            "text": "202004012234  "
           },
           "tide": "HW",
           "val": "   56"
@@ -1837,7 +1837,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004020638  "
+            "text": "202004020638  "
           },
           "tide": "LW",
           "val": "  -70"
@@ -1845,7 +1845,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004021129  "
+            "text": "202004021129  "
           },
           "tide": "HW",
           "val": "   62"
@@ -1853,7 +1853,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004021942  "
+            "text": "202004021942  "
           },
           "tide": "LW",
           "val": "  -72"
@@ -1861,7 +1861,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004030015  "
+            "text": "202004030015  "
           },
           "tide": "HW",
           "val": "   42"
@@ -1869,7 +1869,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004030750  "
+            "text": "202004030750  "
           },
           "tide": "LW",
           "val": "  -63"
@@ -1877,7 +1877,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004031259  "
+            "text": "202004031259  "
           },
           "tide": "HW",
           "val": "   61"
@@ -1885,7 +1885,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004032119  "
+            "text": "202004032119  "
           },
           "tide": "LW",
           "val": "  -71"
@@ -1893,7 +1893,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004040144  "
+            "text": "202004040144  "
           },
           "tide": "HW",
           "val": "   38"
@@ -1901,7 +1901,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004040949  "
+            "text": "202004040949  "
           },
           "tide": "LW",
           "val": "  -63"
@@ -1909,7 +1909,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004041414  "
+            "text": "202004041414  "
           },
           "tide": "HW",
           "val": "   69"
@@ -1917,7 +1917,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004042247  "
+            "text": "202004042247  "
           },
           "tide": "LW",
           "val": "  -81"
@@ -1925,7 +1925,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004050245  "
+            "text": "202004050245  "
           },
           "tide": "HW",
           "val": "   46"
@@ -1933,7 +1933,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004051116  "
+            "text": "202004051116  "
           },
           "tide": "LW",
           "val": "  -75"
@@ -1941,7 +1941,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004051509  "
+            "text": "202004051509  "
           },
           "tide": "HW",
           "val": "   82"
@@ -1949,7 +1949,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004060018  "
+            "text": "202004060018  "
           },
           "tide": "LW",
           "val": "  -90"
@@ -1957,7 +1957,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004060335  "
+            "text": "202004060335  "
           },
           "tide": "HW",
           "val": "   57"
@@ -1965,7 +1965,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004061215  "
+            "text": "202004061215  "
           },
           "tide": "LW",
           "val": "  -84"
@@ -1973,7 +1973,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004061555  "
+            "text": "202004061555  "
           },
           "tide": "HW",
           "val": "   93"
@@ -1981,7 +1981,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004070142  "
+            "text": "202004070142  "
           },
           "tide": "LW",
           "val": " -100"
@@ -1989,7 +1989,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004070419  "
+            "text": "202004070419  "
           },
           "tide": "HW",
           "val": "   69"
@@ -1997,7 +1997,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004071350  "
+            "text": "202004071350  "
           },
           "tide": "LW",
           "val": "  -89"
@@ -2005,7 +2005,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004071635  "
+            "text": "202004071635  "
           },
           "tide": "HW",
           "val": "  102"
@@ -2013,7 +2013,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004080241  "
+            "text": "202004080241  "
           },
           "tide": "LW",
           "val": " -110"
@@ -2021,7 +2021,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004080500  "
+            "text": "202004080500  "
           },
           "tide": "HW",
           "val": "   78"
@@ -2029,7 +2029,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004081452  "
+            "text": "202004081452  "
           },
           "tide": "LW",
           "val": " -101"
@@ -2037,7 +2037,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004081719  "
+            "text": "202004081719  "
           },
           "tide": "HW",
           "val": "  106"
@@ -2045,7 +2045,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004090330  "
+            "text": "202004090330  "
           },
           "tide": "LW",
           "val": " -114"
@@ -2053,7 +2053,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004090542  "
+            "text": "202004090542  "
           },
           "tide": "HW",
           "val": "   86"
@@ -2061,7 +2061,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004091540  "
+            "text": "202004091540  "
           },
           "tide": "LW",
           "val": " -111"
@@ -2069,7 +2069,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004091803  "
+            "text": "202004091803  "
           },
           "tide": "HW",
           "val": "  105"
@@ -2077,7 +2077,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004100411  "
+            "text": "202004100411  "
           },
           "tide": "LW",
           "val": " -113"
@@ -2085,7 +2085,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004100625  "
+            "text": "202004100625  "
           },
           "tide": "HW",
           "val": "   91"
@@ -2093,7 +2093,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004101624  "
+            "text": "202004101624  "
           },
           "tide": "LW",
           "val": " -117"
@@ -2101,7 +2101,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004101845  "
+            "text": "202004101845  "
           },
           "tide": "HW",
           "val": "  100"
@@ -2109,7 +2109,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004110450  "
+            "text": "202004110450  "
           },
           "tide": "LW",
           "val": " -105"
@@ -2117,7 +2117,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004110706  "
+            "text": "202004110706  "
           },
           "tide": "HW",
           "val": "   92"
@@ -2125,7 +2125,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004111703  "
+            "text": "202004111703  "
           },
           "tide": "LW",
           "val": " -116"
@@ -2133,7 +2133,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004111930  "
+            "text": "202004111930  "
           },
           "tide": "HW",
           "val": "   91"
@@ -2141,7 +2141,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004120522  "
+            "text": "202004120522  "
           },
           "tide": "LW",
           "val": "  -93"
@@ -2149,7 +2149,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004120754  "
+            "text": "202004120754  "
           },
           "tide": "HW",
           "val": "   90"
@@ -2157,7 +2157,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004121736  "
+            "text": "202004121736  "
           },
           "tide": "LW",
           "val": " -108"
@@ -2165,7 +2165,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004122018  "
+            "text": "202004122018  "
           },
           "tide": "HW",
           "val": "   79"
@@ -2173,7 +2173,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004130447  "
+            "text": "202004130447  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -2181,7 +2181,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004130839  "
+            "text": "202004130839  "
           },
           "tide": "HW",
           "val": "   86"
@@ -2189,7 +2189,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004131759  "
+            "text": "202004131759  "
           },
           "tide": "LW",
           "val": "  -98"
@@ -2197,7 +2197,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004132113  "
+            "text": "202004132113  "
           },
           "tide": "HW",
           "val": "   66"
@@ -2205,7 +2205,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004140525  "
+            "text": "202004140525  "
           },
           "tide": "LW",
           "val": "  -84"
@@ -2213,7 +2213,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004140933  "
+            "text": "202004140933  "
           },
           "tide": "HW",
           "val": "   78"
@@ -2221,7 +2221,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004141825  "
+            "text": "202004141825  "
           },
           "tide": "LW",
           "val": "  -88"
@@ -2229,7 +2229,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004142215  "
+            "text": "202004142215  "
           },
           "tide": "HW",
           "val": "   52"
@@ -2237,7 +2237,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004150609  "
+            "text": "202004150609  "
           },
           "tide": "LW",
           "val": "  -78"
@@ -2245,7 +2245,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004151101  "
+            "text": "202004151101  "
           },
           "tide": "HW",
           "val": "   70"
@@ -2253,7 +2253,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004151909  "
+            "text": "202004151909  "
           },
           "tide": "LW",
           "val": "  -77"
@@ -2261,7 +2261,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004152343  "
+            "text": "202004152343  "
           },
           "tide": "HW",
           "val": "   38"
@@ -2269,7 +2269,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004160708  "
+            "text": "202004160708  "
           },
           "tide": "LW",
           "val": "  -71"
@@ -2277,7 +2277,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004161230  "
+            "text": "202004161230  "
           },
           "tide": "HW",
           "val": "   65"
@@ -2285,7 +2285,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004162025  "
+            "text": "202004162025  "
           },
           "tide": "LW",
           "val": "  -70"
@@ -2293,7 +2293,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004170105  "
+            "text": "202004170105  "
           },
           "tide": "HW",
           "val": "   32"
@@ -2301,7 +2301,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004170819  "
+            "text": "202004170819  "
           },
           "tide": "LW",
           "val": "  -67"
@@ -2309,7 +2309,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004171357  "
+            "text": "202004171357  "
           },
           "tide": "HW",
           "val": "   68"
@@ -2317,7 +2317,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004172153  "
+            "text": "202004172153  "
           },
           "tide": "LW",
           "val": "  -72"
@@ -2325,7 +2325,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004180216  "
+            "text": "202004180216  "
           },
           "tide": "HW",
           "val": "   38"
@@ -2333,7 +2333,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004180944  "
+            "text": "202004180944  "
           },
           "tide": "LW",
           "val": "  -72"
@@ -2341,7 +2341,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004181446  "
+            "text": "202004181446  "
           },
           "tide": "HW",
           "val": "   76"
@@ -2349,7 +2349,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004182309  "
+            "text": "202004182309  "
           },
           "tide": "LW",
           "val": "  -82"
@@ -2357,7 +2357,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004190313  "
+            "text": "202004190313  "
           },
           "tide": "HW",
           "val": "   48"
@@ -2365,7 +2365,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004191104  "
+            "text": "202004191104  "
           },
           "tide": "LW",
           "val": "  -83"
@@ -2373,7 +2373,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004191534  "
+            "text": "202004191534  "
           },
           "tide": "HW",
           "val": "   82"
@@ -2381,7 +2381,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004200010  "
+            "text": "202004200010  "
           },
           "tide": "LW",
           "val": "  -90"
@@ -2389,7 +2389,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004200355  "
+            "text": "202004200355  "
           },
           "tide": "HW",
           "val": "   56"
@@ -2397,7 +2397,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004201210  "
+            "text": "202004201210  "
           },
           "tide": "LW",
           "val": "  -90"
@@ -2405,7 +2405,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004201615  "
+            "text": "202004201615  "
           },
           "tide": "HW",
           "val": "   85"
@@ -2413,7 +2413,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004210116  "
+            "text": "202004210116  "
           },
           "tide": "LW",
           "val": "  -92"
@@ -2421,7 +2421,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004210428  "
+            "text": "202004210428  "
           },
           "tide": "HW",
           "val": "   63"
@@ -2429,7 +2429,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004211259  "
+            "text": "202004211259  "
           },
           "tide": "LW",
           "val": "  -91"
@@ -2437,7 +2437,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004211645  "
+            "text": "202004211645  "
           },
           "tide": "HW",
           "val": "   86"
@@ -2445,7 +2445,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004220159  "
+            "text": "202004220159  "
           },
           "tide": "LW",
           "val": "  -91"
@@ -2453,7 +2453,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004220459  "
+            "text": "202004220459  "
           },
           "tide": "HW",
           "val": "   69"
@@ -2461,7 +2461,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004221355  "
+            "text": "202004221355  "
           },
           "tide": "LW",
           "val": "  -91"
@@ -2469,7 +2469,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004221717  "
+            "text": "202004221717  "
           },
           "tide": "HW",
           "val": "   88"
@@ -2477,7 +2477,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004230235  "
+            "text": "202004230235  "
           },
           "tide": "LW",
           "val": "  -90"
@@ -2485,7 +2485,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004230528  "
+            "text": "202004230528  "
           },
           "tide": "HW",
           "val": "   76"
@@ -2493,7 +2493,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004231436  "
+            "text": "202004231436  "
           },
           "tide": "LW",
           "val": "  -92"
@@ -2501,7 +2501,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004231746  "
+            "text": "202004231746  "
           },
           "tide": "HW",
           "val": "   88"
@@ -2509,7 +2509,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004240306  "
+            "text": "202004240306  "
           },
           "tide": "LW",
           "val": "  -90"
@@ -2517,7 +2517,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004240559  "
+            "text": "202004240559  "
           },
           "tide": "HW",
           "val": "   81"
@@ -2525,7 +2525,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004241505  "
+            "text": "202004241505  "
           },
           "tide": "LW",
           "val": "  -94"
@@ -2533,7 +2533,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004241818  "
+            "text": "202004241818  "
           },
           "tide": "HW",
           "val": "   86"
@@ -2541,7 +2541,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004250329  "
+            "text": "202004250329  "
           },
           "tide": "LW",
           "val": "  -91"
@@ -2549,7 +2549,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004250629  "
+            "text": "202004250629  "
           },
           "tide": "HW",
           "val": "   83"
@@ -2557,7 +2557,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004251502  "
+            "text": "202004251502  "
           },
           "tide": "LW",
           "val": "  -96"
@@ -2565,7 +2565,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004251848  "
+            "text": "202004251848  "
           },
           "tide": "HW",
           "val": "   82"
@@ -2573,7 +2573,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004260340  "
+            "text": "202004260340  "
           },
           "tide": "LW",
           "val": "  -92"
@@ -2581,7 +2581,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004260658  "
+            "text": "202004260658  "
           },
           "tide": "HW",
           "val": "   83"
@@ -2589,7 +2589,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004261540  "
+            "text": "202004261540  "
           },
           "tide": "LW",
           "val": "  -97"
@@ -2597,7 +2597,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004261919  "
+            "text": "202004261919  "
           },
           "tide": "HW",
           "val": "   77"
@@ -2605,7 +2605,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004270350  "
+            "text": "202004270350  "
           },
           "tide": "LW",
           "val": "  -93"
@@ -2613,7 +2613,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004270731  "
+            "text": "202004270731  "
           },
           "tide": "HW",
           "val": "   85"
@@ -2621,7 +2621,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004271620  "
+            "text": "202004271620  "
           },
           "tide": "LW",
           "val": "  -94"
@@ -2629,7 +2629,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004271949  "
+            "text": "202004271949  "
           },
           "tide": "HW",
           "val": "   75"
@@ -2637,7 +2637,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004280425  "
+            "text": "202004280425  "
           },
           "tide": "LW",
           "val": "  -90"
@@ -2645,7 +2645,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004280806  "
+            "text": "202004280806  "
           },
           "tide": "HW",
           "val": "   88"
@@ -2653,7 +2653,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004281655  "
+            "text": "202004281655  "
           },
           "tide": "LW",
           "val": "  -90"
@@ -2661,7 +2661,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004282026  "
+            "text": "202004282026  "
           },
           "tide": "HW",
           "val": "   73"
@@ -2669,7 +2669,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004290458  "
+            "text": "202004290458  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -2677,7 +2677,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004290845  "
+            "text": "202004290845  "
           },
           "tide": "HW",
           "val": "   89"
@@ -2685,7 +2685,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004291728  "
+            "text": "202004291728  "
           },
           "tide": "LW",
           "val": "  -84"
@@ -2693,7 +2693,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004292116  "
+            "text": "202004292116  "
           },
           "tide": "HW",
           "val": "   63"
@@ -2701,7 +2701,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004300535  "
+            "text": "202004300535  "
           },
           "tide": "LW",
           "val": "  -82"
@@ -2709,7 +2709,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004300936  "
+            "text": "202004300936  "
           },
           "tide": "HW",
           "val": "   80"
@@ -2717,7 +2717,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004301815  "
+            "text": "202004301815  "
           },
           "tide": "LW",
           "val": "  -79"
@@ -2725,7 +2725,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202004302219  "
+            "text": "202004302219  "
           },
           "tide": "HW",
           "val": "   48"
@@ -2733,7 +2733,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005010614  "
+            "text": "202005010614  "
           },
           "tide": "LW",
           "val": "  -76"
@@ -2741,7 +2741,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005011055  "
+            "text": "202005011055  "
           },
           "tide": "HW",
           "val": "   68"
@@ -2749,7 +2749,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005011940  "
+            "text": "202005011940  "
           },
           "tide": "LW",
           "val": "  -73"
@@ -2757,7 +2757,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005012350  "
+            "text": "202005012350  "
           },
           "tide": "HW",
           "val": "   37"
@@ -2765,7 +2765,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005020727  "
+            "text": "202005020727  "
           },
           "tide": "LW",
           "val": "  -69"
@@ -2773,7 +2773,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005021235  "
+            "text": "202005021235  "
           },
           "tide": "HW",
           "val": "   68"
@@ -2781,7 +2781,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005022100  "
+            "text": "202005022100  "
           },
           "tide": "LW",
           "val": "  -75"
@@ -2789,7 +2789,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005030104  "
+            "text": "202005030104  "
           },
           "tide": "HW",
           "val": "   34"
@@ -2797,7 +2797,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005030910  "
+            "text": "202005030910  "
           },
           "tide": "LW",
           "val": "  -70"
@@ -2805,7 +2805,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005031348  "
+            "text": "202005031348  "
           },
           "tide": "HW",
           "val": "   74"
@@ -2813,7 +2813,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005032235  "
+            "text": "202005032235  "
           },
           "tide": "LW",
           "val": "  -85"
@@ -2821,7 +2821,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005040215  "
+            "text": "202005040215  "
           },
           "tide": "HW",
           "val": "   42"
@@ -2829,7 +2829,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005041035  "
+            "text": "202005041035  "
           },
           "tide": "LW",
           "val": "  -79"
@@ -2837,7 +2837,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005041439  "
+            "text": "202005041439  "
           },
           "tide": "HW",
           "val": "   85"
@@ -2845,7 +2845,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005042356  "
+            "text": "202005042356  "
           },
           "tide": "LW",
           "val": "  -93"
@@ -2853,7 +2853,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005050306  "
+            "text": "202005050306  "
           },
           "tide": "HW",
           "val": "   55"
@@ -2861,7 +2861,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005051140  "
+            "text": "202005051140  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -2869,7 +2869,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005051528  "
+            "text": "202005051528  "
           },
           "tide": "HW",
           "val": "   94"
@@ -2877,7 +2877,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005060112  "
+            "text": "202005060112  "
           },
           "tide": "LW",
           "val": "  -98"
@@ -2885,7 +2885,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005060355  "
+            "text": "202005060355  "
           },
           "tide": "HW",
           "val": "   68"
@@ -2893,7 +2893,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005061311  "
+            "text": "202005061311  "
           },
           "tide": "LW",
           "val": "  -88"
@@ -2901,7 +2901,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005061615  "
+            "text": "202005061615  "
           },
           "tide": "HW",
           "val": "   99"
@@ -2909,7 +2909,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005070212  "
+            "text": "202005070212  "
           },
           "tide": "LW",
           "val": " -102"
@@ -2917,7 +2917,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005070437  "
+            "text": "202005070437  "
           },
           "tide": "HW",
           "val": "   79"
@@ -2925,7 +2925,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005071427  "
+            "text": "202005071427  "
           },
           "tide": "LW",
           "val": "  -96"
@@ -2933,7 +2933,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005071657  "
+            "text": "202005071657  "
           },
           "tide": "HW",
           "val": "  100"
@@ -2941,7 +2941,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005080302  "
+            "text": "202005080302  "
           },
           "tide": "LW",
           "val": " -103"
@@ -2949,7 +2949,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005080519  "
+            "text": "202005080519  "
           },
           "tide": "HW",
           "val": "   87"
@@ -2957,7 +2957,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005081516  "
+            "text": "202005081516  "
           },
           "tide": "LW",
           "val": " -106"
@@ -2965,7 +2965,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005081742  "
+            "text": "202005081742  "
           },
           "tide": "HW",
           "val": "   96"
@@ -2973,7 +2973,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005090346  "
+            "text": "202005090346  "
           },
           "tide": "LW",
           "val": " -101"
@@ -2981,7 +2981,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005090602  "
+            "text": "202005090602  "
           },
           "tide": "HW",
           "val": "   91"
@@ -2989,7 +2989,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005091602  "
+            "text": "202005091602  "
           },
           "tide": "LW",
           "val": " -109"
@@ -2997,7 +2997,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005091826  "
+            "text": "202005091826  "
           },
           "tide": "HW",
           "val": "   88"
@@ -3005,7 +3005,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005100417  "
+            "text": "202005100417  "
           },
           "tide": "LW",
           "val": "  -95"
@@ -3013,7 +3013,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005100645  "
+            "text": "202005100645  "
           },
           "tide": "HW",
           "val": "   93"
@@ -3021,7 +3021,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005101642  "
+            "text": "202005101642  "
           },
           "tide": "LW",
           "val": " -108"
@@ -3029,7 +3029,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005101910  "
+            "text": "202005101910  "
           },
           "tide": "HW",
           "val": "   78"
@@ -3037,7 +3037,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005110335  "
+            "text": "202005110335  "
           },
           "tide": "LW",
           "val": "  -92"
@@ -3045,7 +3045,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005110728  "
+            "text": "202005110728  "
           },
           "tide": "HW",
           "val": "   90"
@@ -3053,7 +3053,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005111706  "
+            "text": "202005111706  "
           },
           "tide": "LW",
           "val": " -102"
@@ -3061,7 +3061,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005111958  "
+            "text": "202005111958  "
           },
           "tide": "HW",
           "val": "   67"
@@ -3069,7 +3069,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005120418  "
+            "text": "202005120418  "
           },
           "tide": "LW",
           "val": "  -94"
@@ -3077,7 +3077,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005120815  "
+            "text": "202005120815  "
           },
           "tide": "HW",
           "val": "   86"
@@ -3085,7 +3085,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005121731  "
+            "text": "202005121731  "
           },
           "tide": "LW",
           "val": "  -94"
@@ -3093,7 +3093,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005122051  "
+            "text": "202005122051  "
           },
           "tide": "HW",
           "val": "   57"
@@ -3101,7 +3101,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005130505  "
+            "text": "202005130505  "
           },
           "tide": "LW",
           "val": "  -92"
@@ -3109,7 +3109,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005130914  "
+            "text": "202005130914  "
           },
           "tide": "HW",
           "val": "   80"
@@ -3117,7 +3117,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005131805  "
+            "text": "202005131805  "
           },
           "tide": "LW",
           "val": "  -84"
@@ -3125,7 +3125,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005132155  "
+            "text": "202005132155  "
           },
           "tide": "HW",
           "val": "   46"
@@ -3133,7 +3133,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005140550  "
+            "text": "202005140550  "
           },
           "tide": "LW",
           "val": "  -87"
@@ -3141,7 +3141,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005141034  "
+            "text": "202005141034  "
           },
           "tide": "HW",
           "val": "   74"
@@ -3149,7 +3149,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005141851  "
+            "text": "202005141851  "
           },
           "tide": "LW",
           "val": "  -75"
@@ -3157,7 +3157,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005142255  "
+            "text": "202005142255  "
           },
           "tide": "HW",
           "val": "   35"
@@ -3165,7 +3165,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005150645  "
+            "text": "202005150645  "
           },
           "tide": "LW",
           "val": "  -80"
@@ -3173,7 +3173,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005151154  "
+            "text": "202005151154  "
           },
           "tide": "HW",
           "val": "   69"
@@ -3181,7 +3181,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005151953  "
+            "text": "202005151953  "
           },
           "tide": "LW",
           "val": "  -68"
@@ -3189,7 +3189,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005160024  "
+            "text": "202005160024  "
           },
           "tide": "HW",
           "val": "   28"
@@ -3197,7 +3197,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005160745  "
+            "text": "202005160745  "
           },
           "tide": "LW",
           "val": "  -75"
@@ -3205,7 +3205,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005161320  "
+            "text": "202005161320  "
           },
           "tide": "HW",
           "val": "   69"
@@ -3213,7 +3213,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005162100  "
+            "text": "202005162100  "
           },
           "tide": "LW",
           "val": "  -68"
@@ -3221,7 +3221,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005170145  "
+            "text": "202005170145  "
           },
           "tide": "HW",
           "val": "   32"
@@ -3229,7 +3229,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005170845  "
+            "text": "202005170845  "
           },
           "tide": "LW",
           "val": "  -74"
@@ -3237,7 +3237,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005171415  "
+            "text": "202005171415  "
           },
           "tide": "HW",
           "val": "   73"
@@ -3245,7 +3245,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005172225  "
+            "text": "202005172225  "
           },
           "tide": "LW",
           "val": "  -75"
@@ -3253,7 +3253,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005180235  "
+            "text": "202005180235  "
           },
           "tide": "HW",
           "val": "   41"
@@ -3261,7 +3261,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005181008  "
+            "text": "202005181008  "
           },
           "tide": "LW",
           "val": "  -77"
@@ -3269,7 +3269,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005181505  "
+            "text": "202005181505  "
           },
           "tide": "HW",
           "val": "   78"
@@ -3277,7 +3277,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005182316  "
+            "text": "202005182316  "
           },
           "tide": "LW",
           "val": "  -83"
@@ -3285,7 +3285,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005190315  "
+            "text": "202005190315  "
           },
           "tide": "HW",
           "val": "   50"
@@ -3293,7 +3293,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005191124  "
+            "text": "202005191124  "
           },
           "tide": "LW",
           "val": "  -81"
@@ -3301,7 +3301,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005191535  "
+            "text": "202005191535  "
           },
           "tide": "HW",
           "val": "   81"
@@ -3309,7 +3309,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005200005  "
+            "text": "202005200005  "
           },
           "tide": "LW",
           "val": "  -87"
@@ -3317,7 +3317,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005200356  "
+            "text": "202005200356  "
           },
           "tide": "HW",
           "val": "   59"
@@ -3325,7 +3325,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005201215  "
+            "text": "202005201215  "
           },
           "tide": "LW",
           "val": "  -83"
@@ -3333,7 +3333,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005201611  "
+            "text": "202005201611  "
           },
           "tide": "HW",
           "val": "   84"
@@ -3341,7 +3341,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005210106  "
+            "text": "202005210106  "
           },
           "tide": "LW",
           "val": "  -89"
@@ -3349,7 +3349,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005210426  "
+            "text": "202005210426  "
           },
           "tide": "HW",
           "val": "   68"
@@ -3357,7 +3357,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005211309  "
+            "text": "202005211309  "
           },
           "tide": "LW",
           "val": "  -83"
@@ -3365,7 +3365,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005211646  "
+            "text": "202005211646  "
           },
           "tide": "HW",
           "val": "   86"
@@ -3373,7 +3373,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005220146  "
+            "text": "202005220146  "
           },
           "tide": "LW",
           "val": "  -90"
@@ -3381,7 +3381,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005220456  "
+            "text": "202005220456  "
           },
           "tide": "HW",
           "val": "   76"
@@ -3389,7 +3389,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005221358  "
+            "text": "202005221358  "
           },
           "tide": "LW",
           "val": "  -84"
@@ -3397,7 +3397,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005221715  "
+            "text": "202005221715  "
           },
           "tide": "HW",
           "val": "   86"
@@ -3405,7 +3405,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005230223  "
+            "text": "202005230223  "
           },
           "tide": "LW",
           "val": "  -91"
@@ -3413,7 +3413,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005230529  "
+            "text": "202005230529  "
           },
           "tide": "HW",
           "val": "   82"
@@ -3421,7 +3421,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005231437  "
+            "text": "202005231437  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -3429,7 +3429,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005231751  "
+            "text": "202005231751  "
           },
           "tide": "HW",
           "val": "   84"
@@ -3437,7 +3437,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005240248  "
+            "text": "202005240248  "
           },
           "tide": "LW",
           "val": "  -92"
@@ -3445,7 +3445,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005240604  "
+            "text": "202005240604  "
           },
           "tide": "HW",
           "val": "   84"
@@ -3453,7 +3453,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005241458  "
+            "text": "202005241458  "
           },
           "tide": "LW",
           "val": "  -89"
@@ -3461,7 +3461,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005241825  "
+            "text": "202005241825  "
           },
           "tide": "HW",
           "val": "   78"
@@ -3469,7 +3469,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005250259  "
+            "text": "202005250259  "
           },
           "tide": "LW",
           "val": "  -94"
@@ -3477,7 +3477,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005250637  "
+            "text": "202005250637  "
           },
           "tide": "HW",
           "val": "   84"
@@ -3485,7 +3485,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005251533  "
+            "text": "202005251533  "
           },
           "tide": "LW",
           "val": "  -90"
@@ -3493,7 +3493,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005251858  "
+            "text": "202005251858  "
           },
           "tide": "HW",
           "val": "   72"
@@ -3501,7 +3501,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005260325  "
+            "text": "202005260325  "
           },
           "tide": "LW",
           "val": "  -94"
@@ -3509,7 +3509,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005260711  "
+            "text": "202005260711  "
           },
           "tide": "HW",
           "val": "   85"
@@ -3517,7 +3517,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005261600  "
+            "text": "202005261600  "
           },
           "tide": "LW",
           "val": "  -89"
@@ -3525,7 +3525,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005261932  "
+            "text": "202005261932  "
           },
           "tide": "HW",
           "val": "   67"
@@ -3533,7 +3533,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005270405  "
+            "text": "202005270405  "
           },
           "tide": "LW",
           "val": "  -92"
@@ -3541,7 +3541,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005270747  "
+            "text": "202005270747  "
           },
           "tide": "HW",
           "val": "   87"
@@ -3549,7 +3549,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005271625  "
+            "text": "202005271625  "
           },
           "tide": "LW",
           "val": "  -85"
@@ -3557,7 +3557,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005272015  "
+            "text": "202005272015  "
           },
           "tide": "HW",
           "val": "   61"
@@ -3565,7 +3565,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005280445  "
+            "text": "202005280445  "
           },
           "tide": "LW",
           "val": "  -89"
@@ -3573,7 +3573,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005280831  "
+            "text": "202005280831  "
           },
           "tide": "HW",
           "val": "   87"
@@ -3581,7 +3581,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005281715  "
+            "text": "202005281715  "
           },
           "tide": "LW",
           "val": "  -82"
@@ -3589,7 +3589,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005282106  "
+            "text": "202005282106  "
           },
           "tide": "HW",
           "val": "   53"
@@ -3597,7 +3597,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005290525  "
+            "text": "202005290525  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -3605,7 +3605,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005290927  "
+            "text": "202005290927  "
           },
           "tide": "HW",
           "val": "   82"
@@ -3613,7 +3613,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005291751  "
+            "text": "202005291751  "
           },
           "tide": "LW",
           "val": "  -77"
@@ -3621,7 +3621,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005292205  "
+            "text": "202005292205  "
           },
           "tide": "HW",
           "val": "   44"
@@ -3629,7 +3629,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005300604  "
+            "text": "202005300604  "
           },
           "tide": "LW",
           "val": "  -82"
@@ -3637,7 +3637,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005301044  "
+            "text": "202005301044  "
           },
           "tide": "HW",
           "val": "   77"
@@ -3645,7 +3645,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005301909  "
+            "text": "202005301909  "
           },
           "tide": "LW",
           "val": "  -74"
@@ -3653,7 +3653,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005302325  "
+            "text": "202005302325  "
           },
           "tide": "HW",
           "val": "   40"
@@ -3661,7 +3661,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005310718  "
+            "text": "202005310718  "
           },
           "tide": "LW",
           "val": "  -77"
@@ -3669,7 +3669,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005311204  "
+            "text": "202005311204  "
           },
           "tide": "HW",
           "val": "   79"
@@ -3677,7 +3677,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202005312100  "
+            "text": "202005312100  "
           },
           "tide": "LW",
           "val": "  -76"
@@ -3685,7 +3685,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006010035  "
+            "text": "202006010035  "
           },
           "tide": "HW",
           "val": "   41"
@@ -3693,7 +3693,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006010842  "
+            "text": "202006010842  "
           },
           "tide": "LW",
           "val": "  -77"
@@ -3701,7 +3701,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006011314  "
+            "text": "202006011314  "
           },
           "tide": "HW",
           "val": "   82"
@@ -3709,7 +3709,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006012216  "
+            "text": "202006012216  "
           },
           "tide": "LW",
           "val": "  -83"
@@ -3717,7 +3717,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006020145  "
+            "text": "202006020145  "
           },
           "tide": "HW",
           "val": "   47"
@@ -3725,7 +3725,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006020954  "
+            "text": "202006020954  "
           },
           "tide": "LW",
           "val": "  -81"
@@ -3733,7 +3733,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006021414  "
+            "text": "202006021414  "
           },
           "tide": "HW",
           "val": "   87"
@@ -3741,7 +3741,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006022322  "
+            "text": "202006022322  "
           },
           "tide": "LW",
           "val": "  -88"
@@ -3749,7 +3749,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006030236  "
+            "text": "202006030236  "
           },
           "tide": "HW",
           "val": "   58"
@@ -3757,7 +3757,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006031114  "
+            "text": "202006031114  "
           },
           "tide": "LW",
           "val": "  -84"
@@ -3765,7 +3765,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006031505  "
+            "text": "202006031505  "
           },
           "tide": "HW",
           "val": "   92"
@@ -3773,7 +3773,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006040025  "
+            "text": "202006040025  "
           },
           "tide": "LW",
           "val": "  -89"
@@ -3781,7 +3781,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006040329  "
+            "text": "202006040329  "
           },
           "tide": "HW",
           "val": "   70"
@@ -3789,7 +3789,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006041222  "
+            "text": "202006041222  "
           },
           "tide": "LW",
           "val": "  -85"
@@ -3797,7 +3797,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006041555  "
+            "text": "202006041555  "
           },
           "tide": "HW",
           "val": "   93"
@@ -3805,7 +3805,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006050136  "
+            "text": "202006050136  "
           },
           "tide": "LW",
           "val": "  -88"
@@ -3813,7 +3813,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006050415  "
+            "text": "202006050415  "
           },
           "tide": "HW",
           "val": "   80"
@@ -3821,7 +3821,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006051356  "
+            "text": "202006051356  "
           },
           "tide": "LW",
           "val": "  -88"
@@ -3829,7 +3829,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006051640  "
+            "text": "202006051640  "
           },
           "tide": "HW",
           "val": "   91"
@@ -3837,7 +3837,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006060236  "
+            "text": "202006060236  "
           },
           "tide": "LW",
           "val": "  -88"
@@ -3845,7 +3845,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006060459  "
+            "text": "202006060459  "
           },
           "tide": "HW",
           "val": "   87"
@@ -3853,7 +3853,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006061457  "
+            "text": "202006061457  "
           },
           "tide": "LW",
           "val": "  -94"
@@ -3861,7 +3861,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006061725  "
+            "text": "202006061725  "
           },
           "tide": "HW",
           "val": "   86"
@@ -3869,7 +3869,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006070316  "
+            "text": "202006070316  "
           },
           "tide": "LW",
           "val": "  -87"
@@ -3877,7 +3877,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006070545  "
+            "text": "202006070545  "
           },
           "tide": "HW",
           "val": "   90"
@@ -3885,7 +3885,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006071544  "
+            "text": "202006071544  "
           },
           "tide": "LW",
           "val": "  -98"
@@ -3893,7 +3893,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006071812  "
+            "text": "202006071812  "
           },
           "tide": "HW",
           "val": "   78"
@@ -3901,7 +3901,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006080228  "
+            "text": "202006080228  "
           },
           "tide": "LW",
           "val": "  -90"
@@ -3909,7 +3909,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006080628  "
+            "text": "202006080628  "
           },
           "tide": "HW",
           "val": "   91"
@@ -3917,7 +3917,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006081626  "
+            "text": "202006081626  "
           },
           "tide": "LW",
           "val": "  -96"
@@ -3925,7 +3925,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006081857  "
+            "text": "202006081857  "
           },
           "tide": "HW",
           "val": "   70"
@@ -3933,7 +3933,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006090320  "
+            "text": "202006090320  "
           },
           "tide": "LW",
           "val": "  -96"
@@ -3941,7 +3941,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006090715  "
+            "text": "202006090715  "
           },
           "tide": "HW",
           "val": "   90"
@@ -3949,7 +3949,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006091656  "
+            "text": "202006091656  "
           },
           "tide": "LW",
           "val": "  -92"
@@ -3957,7 +3957,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006091944  "
+            "text": "202006091944  "
           },
           "tide": "HW",
           "val": "   62"
@@ -3965,7 +3965,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006100405  "
+            "text": "202006100405  "
           },
           "tide": "LW",
           "val": "  -98"
@@ -3973,7 +3973,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006100802  "
+            "text": "202006100802  "
           },
           "tide": "HW",
           "val": "   88"
@@ -3981,7 +3981,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006101720  "
+            "text": "202006101720  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -3989,7 +3989,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006102031  "
+            "text": "202006102031  "
           },
           "tide": "HW",
           "val": "   56"
@@ -3997,7 +3997,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006110450  "
+            "text": "202006110450  "
           },
           "tide": "LW",
           "val": "  -97"
@@ -4005,7 +4005,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006110855  "
+            "text": "202006110855  "
           },
           "tide": "HW",
           "val": "   85"
@@ -4013,7 +4013,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006111750  "
+            "text": "202006111750  "
           },
           "tide": "LW",
           "val": "  -78"
@@ -4021,7 +4021,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006112119  "
+            "text": "202006112119  "
           },
           "tide": "HW",
           "val": "   50"
@@ -4029,7 +4029,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006120525  "
+            "text": "202006120525  "
           },
           "tide": "LW",
           "val": "  -92"
@@ -4037,7 +4037,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006120954  "
+            "text": "202006120954  "
           },
           "tide": "HW",
           "val": "   80"
@@ -4045,7 +4045,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006121835  "
+            "text": "202006121835  "
           },
           "tide": "LW",
           "val": "  -71"
@@ -4053,7 +4053,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006122214  "
+            "text": "202006122214  "
           },
           "tide": "HW",
           "val": "   43"
@@ -4061,7 +4061,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006130620  "
+            "text": "202006130620  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -4069,7 +4069,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006131055  "
+            "text": "202006131055  "
           },
           "tide": "HW",
           "val": "   74"
@@ -4077,7 +4077,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006131925  "
+            "text": "202006131925  "
           },
           "tide": "LW",
           "val": "  -65"
@@ -4085,7 +4085,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006132315  "
+            "text": "202006132315  "
           },
           "tide": "HW",
           "val": "   37"
@@ -4093,7 +4093,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006140705  "
+            "text": "202006140705  "
           },
           "tide": "LW",
           "val": "  -81"
@@ -4101,7 +4101,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006141217  "
+            "text": "202006141217  "
           },
           "tide": "HW",
           "val": "   69"
@@ -4109,7 +4109,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006142013  "
+            "text": "202006142013  "
           },
           "tide": "LW",
           "val": "  -63"
@@ -4117,7 +4117,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006150026  "
+            "text": "202006150026  "
           },
           "tide": "HW",
           "val": "   34"
@@ -4125,7 +4125,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006150805  "
+            "text": "202006150805  "
           },
           "tide": "LW",
           "val": "  -76"
@@ -4133,7 +4133,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006151335  "
+            "text": "202006151335  "
           },
           "tide": "HW",
           "val": "   70"
@@ -4141,7 +4141,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006152104  "
+            "text": "202006152104  "
           },
           "tide": "LW",
           "val": "  -65"
@@ -4149,7 +4149,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006160148  "
+            "text": "202006160148  "
           },
           "tide": "HW",
           "val": "   39"
@@ -4157,7 +4157,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006160855  "
+            "text": "202006160855  "
           },
           "tide": "LW",
           "val": "  -74"
@@ -4165,7 +4165,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006161425  "
+            "text": "202006161425  "
           },
           "tide": "HW",
           "val": "   73"
@@ -4173,7 +4173,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006162218  "
+            "text": "202006162218  "
           },
           "tide": "LW",
           "val": "  -69"
@@ -4181,7 +4181,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006170230  "
+            "text": "202006170230  "
           },
           "tide": "HW",
           "val": "   49"
@@ -4189,7 +4189,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006170947  "
+            "text": "202006170947  "
           },
           "tide": "LW",
           "val": "  -73"
@@ -4197,7 +4197,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006171505  "
+            "text": "202006171505  "
           },
           "tide": "HW",
           "val": "   77"
@@ -4205,7 +4205,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006172325  "
+            "text": "202006172325  "
           },
           "tide": "LW",
           "val": "  -76"
@@ -4213,7 +4213,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006180312  "
+            "text": "202006180312  "
           },
           "tide": "HW",
           "val": "   59"
@@ -4221,7 +4221,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006181048  "
+            "text": "202006181048  "
           },
           "tide": "LW",
           "val": "  -73"
@@ -4229,7 +4229,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006181539  "
+            "text": "202006181539  "
           },
           "tide": "HW",
           "val": "   81"
@@ -4237,7 +4237,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006190016  "
+            "text": "202006190016  "
           },
           "tide": "LW",
           "val": "  -82"
@@ -4245,7 +4245,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006190354  "
+            "text": "202006190354  "
           },
           "tide": "HW",
           "val": "   68"
@@ -4253,7 +4253,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006191152  "
+            "text": "202006191152  "
           },
           "tide": "LW",
           "val": "  -74"
@@ -4261,7 +4261,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006191615  "
+            "text": "202006191615  "
           },
           "tide": "HW",
           "val": "   83"
@@ -4269,7 +4269,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006200055  "
+            "text": "202006200055  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -4277,7 +4277,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006200429  "
+            "text": "202006200429  "
           },
           "tide": "HW",
           "val": "   77"
@@ -4285,7 +4285,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006201304  "
+            "text": "202006201304  "
           },
           "tide": "LW",
           "val": "  -77"
@@ -4293,7 +4293,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006201655  "
+            "text": "202006201655  "
           },
           "tide": "HW",
           "val": "   83"
@@ -4301,7 +4301,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006210135  "
+            "text": "202006210135  "
           },
           "tide": "LW",
           "val": "  -88"
@@ -4309,7 +4309,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006210506  "
+            "text": "202006210506  "
           },
           "tide": "HW",
           "val": "   82"
@@ -4317,7 +4317,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006211358  "
+            "text": "202006211358  "
           },
           "tide": "LW",
           "val": "  -79"
@@ -4325,7 +4325,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006211728  "
+            "text": "202006211728  "
           },
           "tide": "HW",
           "val": "   81"
@@ -4333,7 +4333,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006220204  "
+            "text": "202006220204  "
           },
           "tide": "LW",
           "val": "  -89"
@@ -4341,7 +4341,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006220545  "
+            "text": "202006220545  "
           },
           "tide": "HW",
           "val": "   85"
@@ -4349,7 +4349,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006221421  "
+            "text": "202006221421  "
           },
           "tide": "LW",
           "val": "  -80"
@@ -4357,7 +4357,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006221805  "
+            "text": "202006221805  "
           },
           "tide": "HW",
           "val": "   76"
@@ -4365,7 +4365,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006230234  "
+            "text": "202006230234  "
           },
           "tide": "LW",
           "val": "  -90"
@@ -4373,7 +4373,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006230617  "
+            "text": "202006230617  "
           },
           "tide": "HW",
           "val": "   87"
@@ -4381,7 +4381,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006231512  "
+            "text": "202006231512  "
           },
           "tide": "LW",
           "val": "  -81"
@@ -4389,7 +4389,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006231841  "
+            "text": "202006231841  "
           },
           "tide": "HW",
           "val": "   70"
@@ -4397,7 +4397,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006240304  "
+            "text": "202006240304  "
           },
           "tide": "LW",
           "val": "  -90"
@@ -4405,7 +4405,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006240657  "
+            "text": "202006240657  "
           },
           "tide": "HW",
           "val": "   88"
@@ -4413,7 +4413,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006241540  "
+            "text": "202006241540  "
           },
           "tide": "LW",
           "val": "  -80"
@@ -4421,7 +4421,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006241921  "
+            "text": "202006241921  "
           },
           "tide": "HW",
           "val": "   64"
@@ -4429,7 +4429,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006250350  "
+            "text": "202006250350  "
           },
           "tide": "LW",
           "val": "  -91"
@@ -4437,7 +4437,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006250737  "
+            "text": "202006250737  "
           },
           "tide": "HW",
           "val": "   89"
@@ -4445,7 +4445,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006251623  "
+            "text": "202006251623  "
           },
           "tide": "LW",
           "val": "  -79"
@@ -4453,7 +4453,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006252006  "
+            "text": "202006252006  "
           },
           "tide": "HW",
           "val": "   58"
@@ -4461,7 +4461,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006260431  "
+            "text": "202006260431  "
           },
           "tide": "LW",
           "val": "  -90"
@@ -4469,7 +4469,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006260825  "
+            "text": "202006260825  "
           },
           "tide": "HW",
           "val": "   89"
@@ -4477,7 +4477,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006261651  "
+            "text": "202006261651  "
           },
           "tide": "LW",
           "val": "  -76"
@@ -4485,7 +4485,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006262058  "
+            "text": "202006262058  "
           },
           "tide": "HW",
           "val": "   54"
@@ -4493,7 +4493,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006270504  "
+            "text": "202006270504  "
           },
           "tide": "LW",
           "val": "  -89"
@@ -4501,7 +4501,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006270915  "
+            "text": "202006270915  "
           },
           "tide": "HW",
           "val": "   88"
@@ -4509,7 +4509,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006271733  "
+            "text": "202006271733  "
           },
           "tide": "LW",
           "val": "  -74"
@@ -4517,7 +4517,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006272155  "
+            "text": "202006272155  "
           },
           "tide": "HW",
           "val": "   51"
@@ -4525,7 +4525,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006280550  "
+            "text": "202006280550  "
           },
           "tide": "LW",
           "val": "  -87"
@@ -4533,7 +4533,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006281029  "
+            "text": "202006281029  "
           },
           "tide": "HW",
           "val": "   88"
@@ -4541,7 +4541,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006281949  "
+            "text": "202006281949  "
           },
           "tide": "LW",
           "val": "  -72"
@@ -4549,7 +4549,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006282305  "
+            "text": "202006282305  "
           },
           "tide": "HW",
           "val": "   51"
@@ -4557,7 +4557,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006290644  "
+            "text": "202006290644  "
           },
           "tide": "LW",
           "val": "  -83"
@@ -4565,7 +4565,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006291136  "
+            "text": "202006291136  "
           },
           "tide": "HW",
           "val": "   88"
@@ -4573,7 +4573,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006292046  "
+            "text": "202006292046  "
           },
           "tide": "LW",
           "val": "  -72"
@@ -4581,7 +4581,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006300006  "
+            "text": "202006300006  "
           },
           "tide": "HW",
           "val": "   52"
@@ -4589,7 +4589,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006300804  "
+            "text": "202006300804  "
           },
           "tide": "LW",
           "val": "  -80"
@@ -4597,7 +4597,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006301239  "
+            "text": "202006301239  "
           },
           "tide": "HW",
           "val": "   87"
@@ -4605,7 +4605,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202006302149  "
+            "text": "202006302149  "
           },
           "tide": "LW",
           "val": "  -73"
@@ -4613,7 +4613,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007010109  "
+            "text": "202007010109  "
           },
           "tide": "HW",
           "val": "   56"
@@ -4621,7 +4621,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007010929  "
+            "text": "202007010929  "
           },
           "tide": "LW",
           "val": "  -78"
@@ -4629,7 +4629,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007011347  "
+            "text": "202007011347  "
           },
           "tide": "HW",
           "val": "   86"
@@ -4637,7 +4637,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007012245  "
+            "text": "202007012245  "
           },
           "tide": "LW",
           "val": "  -76"
@@ -4645,7 +4645,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007020215  "
+            "text": "202007020215  "
           },
           "tide": "HW",
           "val": "   63"
@@ -4653,7 +4653,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007021050  "
+            "text": "202007021050  "
           },
           "tide": "LW",
           "val": "  -78"
@@ -4661,7 +4661,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007021445  "
+            "text": "202007021445  "
           },
           "tide": "HW",
           "val": "   85"
@@ -4669,7 +4669,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007022342  "
+            "text": "202007022342  "
           },
           "tide": "LW",
           "val": "  -77"
@@ -4677,7 +4677,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007030309  "
+            "text": "202007030309  "
           },
           "tide": "HW",
           "val": "   72"
@@ -4685,7 +4685,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007031159  "
+            "text": "202007031159  "
           },
           "tide": "LW",
           "val": "  -79"
@@ -4693,7 +4693,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007031541  "
+            "text": "202007031541  "
           },
           "tide": "HW",
           "val": "   85"
@@ -4701,7 +4701,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007040012  "
+            "text": "202007040012  "
           },
           "tide": "LW",
           "val": "  -77"
@@ -4709,7 +4709,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007040401  "
+            "text": "202007040401  "
           },
           "tide": "HW",
           "val": "   81"
@@ -4717,7 +4717,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007041340  "
+            "text": "202007041340  "
           },
           "tide": "LW",
           "val": "  -80"
@@ -4725,7 +4725,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007041635  "
+            "text": "202007041635  "
           },
           "tide": "HW",
           "val": "   82"
@@ -4733,7 +4733,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007050049  "
+            "text": "202007050049  "
           },
           "tide": "LW",
           "val": "  -79"
@@ -4741,7 +4741,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007050448  "
+            "text": "202007050448  "
           },
           "tide": "HW",
           "val": "   87"
@@ -4749,7 +4749,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007051446  "
+            "text": "202007051446  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -4757,7 +4757,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007051719  "
+            "text": "202007051719  "
           },
           "tide": "HW",
           "val": "   78"
@@ -4765,7 +4765,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007060124  "
+            "text": "202007060124  "
           },
           "tide": "LW",
           "val": "  -83"
@@ -4773,7 +4773,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007060537  "
+            "text": "202007060537  "
           },
           "tide": "HW",
           "val": "   91"
@@ -4781,7 +4781,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007061532  "
+            "text": "202007061532  "
           },
           "tide": "LW",
           "val": "  -89"
@@ -4789,7 +4789,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007061805  "
+            "text": "202007061805  "
           },
           "tide": "HW",
           "val": "   73"
@@ -4797,7 +4797,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007070209  "
+            "text": "202007070209  "
           },
           "tide": "LW",
           "val": "  -89"
@@ -4805,7 +4805,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007070618  "
+            "text": "202007070618  "
           },
           "tide": "HW",
           "val": "   93"
@@ -4813,7 +4813,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007071614  "
+            "text": "202007071614  "
           },
           "tide": "LW",
           "val": "  -88"
@@ -4821,7 +4821,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007071847  "
+            "text": "202007071847  "
           },
           "tide": "HW",
           "val": "   69"
@@ -4829,7 +4829,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007080300  "
+            "text": "202007080300  "
           },
           "tide": "LW",
           "val": "  -94"
@@ -4837,7 +4837,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007080705  "
+            "text": "202007080705  "
           },
           "tide": "HW",
           "val": "   93"
@@ -4845,7 +4845,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007081651  "
+            "text": "202007081651  "
           },
           "tide": "LW",
           "val": "  -84"
@@ -4853,7 +4853,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007081929  "
+            "text": "202007081929  "
           },
           "tide": "HW",
           "val": "   65"
@@ -4861,7 +4861,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007090345  "
+            "text": "202007090345  "
           },
           "tide": "LW",
           "val": "  -97"
@@ -4869,7 +4869,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007090745  "
+            "text": "202007090745  "
           },
           "tide": "HW",
           "val": "   93"
@@ -4877,7 +4877,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007091716  "
+            "text": "202007091716  "
           },
           "tide": "LW",
           "val": "  -79"
@@ -4885,7 +4885,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007092008  "
+            "text": "202007092008  "
           },
           "tide": "HW",
           "val": "   63"
@@ -4893,7 +4893,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007100435  "
+            "text": "202007100435  "
           },
           "tide": "LW",
           "val": "  -97"
@@ -4901,7 +4901,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007100829  "
+            "text": "202007100829  "
           },
           "tide": "HW",
           "val": "   91"
@@ -4909,7 +4909,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007101746  "
+            "text": "202007101746  "
           },
           "tide": "LW",
           "val": "  -73"
@@ -4917,7 +4917,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007102052  "
+            "text": "202007102052  "
           },
           "tide": "HW",
           "val": "   61"
@@ -4925,7 +4925,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007110520  "
+            "text": "202007110520  "
           },
           "tide": "LW",
           "val": "  -93"
@@ -4933,7 +4933,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007110919  "
+            "text": "202007110919  "
           },
           "tide": "HW",
           "val": "   87"
@@ -4941,7 +4941,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007111816  "
+            "text": "202007111816  "
           },
           "tide": "LW",
           "val": "  -67"
@@ -4949,7 +4949,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007112135  "
+            "text": "202007112135  "
           },
           "tide": "HW",
           "val": "   58"
@@ -4957,7 +4957,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007120553  "
+            "text": "202007120553  "
           },
           "tide": "LW",
           "val": "  -88"
@@ -4965,7 +4965,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007121009  "
+            "text": "202007121009  "
           },
           "tide": "HW",
           "val": "   82"
@@ -4973,7 +4973,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007121848  "
+            "text": "202007121848  "
           },
           "tide": "LW",
           "val": "  -61"
@@ -4981,7 +4981,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007122226  "
+            "text": "202007122226  "
           },
           "tide": "HW",
           "val": "   55"
@@ -4989,7 +4989,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007130629  "
+            "text": "202007130629  "
           },
           "tide": "LW",
           "val": "  -82"
@@ -4997,7 +4997,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007131105  "
+            "text": "202007131105  "
           },
           "tide": "HW",
           "val": "   76"
@@ -5005,7 +5005,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007131919  "
+            "text": "202007131919  "
           },
           "tide": "LW",
           "val": "  -58"
@@ -5013,7 +5013,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007132315  "
+            "text": "202007132315  "
           },
           "tide": "HW",
           "val": "   51"
@@ -5021,7 +5021,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007140704  "
+            "text": "202007140704  "
           },
           "tide": "LW",
           "val": "  -77"
@@ -5029,7 +5029,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007141208  "
+            "text": "202007141208  "
           },
           "tide": "HW",
           "val": "   70"
@@ -5037,7 +5037,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007141959  "
+            "text": "202007141959  "
           },
           "tide": "LW",
           "val": "  -58"
@@ -5045,7 +5045,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007150030  "
+            "text": "202007150030  "
           },
           "tide": "HW",
           "val": "   48"
@@ -5053,7 +5053,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007150800  "
+            "text": "202007150800  "
           },
           "tide": "LW",
           "val": "  -72"
@@ -5061,7 +5061,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007151329  "
+            "text": "202007151329  "
           },
           "tide": "HW",
           "val": "   68"
@@ -5069,7 +5069,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007152050  "
+            "text": "202007152050  "
           },
           "tide": "LW",
           "val": "  -60"
@@ -5077,7 +5077,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007160146  "
+            "text": "202007160146  "
           },
           "tide": "HW",
           "val": "   51"
@@ -5085,7 +5085,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007160855  "
+            "text": "202007160855  "
           },
           "tide": "LW",
           "val": "  -68"
@@ -5093,7 +5093,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007161418  "
+            "text": "202007161418  "
           },
           "tide": "HW",
           "val": "   71"
@@ -5101,7 +5101,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007162154  "
+            "text": "202007162154  "
           },
           "tide": "LW",
           "val": "  -63"
@@ -5109,7 +5109,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007170235  "
+            "text": "202007170235  "
           },
           "tide": "HW",
           "val": "   59"
@@ -5117,7 +5117,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007170959  "
+            "text": "202007170959  "
           },
           "tide": "LW",
           "val": "  -66"
@@ -5125,7 +5125,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007171514  "
+            "text": "202007171514  "
           },
           "tide": "HW",
           "val": "   75"
@@ -5133,7 +5133,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007172319  "
+            "text": "202007172319  "
           },
           "tide": "LW",
           "val": "  -69"
@@ -5141,7 +5141,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007180319  "
+            "text": "202007180319  "
           },
           "tide": "HW",
           "val": "   69"
@@ -5149,7 +5149,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007181129  "
+            "text": "202007181129  "
           },
           "tide": "LW",
           "val": "  -66"
@@ -5157,7 +5157,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007181555  "
+            "text": "202007181555  "
           },
           "tide": "HW",
           "val": "   78"
@@ -5165,7 +5165,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007190021  "
+            "text": "202007190021  "
           },
           "tide": "LW",
           "val": "  -76"
@@ -5173,7 +5173,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007190407  "
+            "text": "202007190407  "
           },
           "tide": "HW",
           "val": "   78"
@@ -5181,7 +5181,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007191230  "
+            "text": "202007191230  "
           },
           "tide": "LW",
           "val": "  -70"
@@ -5189,7 +5189,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007191631  "
+            "text": "202007191631  "
           },
           "tide": "HW",
           "val": "   80"
@@ -5197,7 +5197,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007200055  "
+            "text": "202007200055  "
           },
           "tide": "LW",
           "val": "  -80"
@@ -5205,7 +5205,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007200446  "
+            "text": "202007200446  "
           },
           "tide": "HW",
           "val": "   85"
@@ -5213,7 +5213,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007201321  "
+            "text": "202007201321  "
           },
           "tide": "LW",
           "val": "  -72"
@@ -5221,7 +5221,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007201713  "
+            "text": "202007201713  "
           },
           "tide": "HW",
           "val": "   79"
@@ -5229,7 +5229,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007210135  "
+            "text": "202007210135  "
           },
           "tide": "LW",
           "val": "  -81"
@@ -5237,7 +5237,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007210526  "
+            "text": "202007210526  "
           },
           "tide": "HW",
           "val": "   90"
@@ -5245,7 +5245,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007211507  "
+            "text": "202007211507  "
           },
           "tide": "LW",
           "val": "  -74"
@@ -5253,7 +5253,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007211748  "
+            "text": "202007211748  "
           },
           "tide": "HW",
           "val": "   77"
@@ -5261,7 +5261,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007220219  "
+            "text": "202007220219  "
           },
           "tide": "LW",
           "val": "  -82"
@@ -5269,7 +5269,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007220605  "
+            "text": "202007220605  "
           },
           "tide": "HW",
           "val": "   94"
@@ -5277,7 +5277,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007221602  "
+            "text": "202007221602  "
           },
           "tide": "LW",
           "val": "  -80"
@@ -5285,7 +5285,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007221827  "
+            "text": "202007221827  "
           },
           "tide": "HW",
           "val": "   74"
@@ -5293,7 +5293,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007230248  "
+            "text": "202007230248  "
           },
           "tide": "LW",
           "val": "  -83"
@@ -5301,7 +5301,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007230644  "
+            "text": "202007230644  "
           },
           "tide": "HW",
           "val": "   97"
@@ -5309,7 +5309,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007231646  "
+            "text": "202007231646  "
           },
           "tide": "LW",
           "val": "  -85"
@@ -5317,7 +5317,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007231908  "
+            "text": "202007231908  "
           },
           "tide": "HW",
           "val": "   70"
@@ -5325,7 +5325,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007240325  "
+            "text": "202007240325  "
           },
           "tide": "LW",
           "val": "  -85"
@@ -5333,7 +5333,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007240724  "
+            "text": "202007240724  "
           },
           "tide": "HW",
           "val": "   99"
@@ -5341,7 +5341,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007241732  "
+            "text": "202007241732  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -5349,7 +5349,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007241954  "
+            "text": "202007241954  "
           },
           "tide": "HW",
           "val": "   67"
@@ -5357,7 +5357,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007250405  "
+            "text": "202007250405  "
           },
           "tide": "LW",
           "val": "  -87"
@@ -5365,7 +5365,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007250808  "
+            "text": "202007250808  "
           },
           "tide": "HW",
           "val": "   99"
@@ -5373,7 +5373,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007251816  "
+            "text": "202007251816  "
           },
           "tide": "LW",
           "val": "  -84"
@@ -5381,7 +5381,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007252043  "
+            "text": "202007252043  "
           },
           "tide": "HW",
           "val": "   65"
@@ -5389,7 +5389,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007260445  "
+            "text": "202007260445  "
           },
           "tide": "LW",
           "val": "  -88"
@@ -5397,7 +5397,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007260901  "
+            "text": "202007260901  "
           },
           "tide": "HW",
           "val": "   98"
@@ -5405,7 +5405,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007261856  "
+            "text": "202007261856  "
           },
           "tide": "LW",
           "val": "  -76"
@@ -5413,7 +5413,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007262132  "
+            "text": "202007262132  "
           },
           "tide": "HW",
           "val": "   65"
@@ -5421,7 +5421,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007270538  "
+            "text": "202007270538  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -5429,7 +5429,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007270959  "
+            "text": "202007270959  "
           },
           "tide": "HW",
           "val": "   95"
@@ -5437,7 +5437,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007271936  "
+            "text": "202007271936  "
           },
           "tide": "LW",
           "val": "  -68"
@@ -5445,7 +5445,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007272229  "
+            "text": "202007272229  "
           },
           "tide": "HW",
           "val": "   65"
@@ -5453,7 +5453,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007280624  "
+            "text": "202007280624  "
           },
           "tide": "LW",
           "val": "  -82"
@@ -5461,7 +5461,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007281106  "
+            "text": "202007281106  "
           },
           "tide": "HW",
           "val": "   91"
@@ -5469,7 +5469,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007282015  "
+            "text": "202007282015  "
           },
           "tide": "LW",
           "val": "  -62"
@@ -5477,7 +5477,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007282337  "
+            "text": "202007282337  "
           },
           "tide": "HW",
           "val": "   65"
@@ -5485,7 +5485,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007290734  "
+            "text": "202007290734  "
           },
           "tide": "LW",
           "val": "  -76"
@@ -5493,7 +5493,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007291216  "
+            "text": "202007291216  "
           },
           "tide": "HW",
           "val": "   84"
@@ -5501,7 +5501,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007292111  "
+            "text": "202007292111  "
           },
           "tide": "LW",
           "val": "  -58"
@@ -5509,7 +5509,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007300044  "
+            "text": "202007300044  "
           },
           "tide": "HW",
           "val": "   64"
@@ -5517,7 +5517,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007300854  "
+            "text": "202007300854  "
           },
           "tide": "LW",
           "val": "  -71"
@@ -5525,7 +5525,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007301325  "
+            "text": "202007301325  "
           },
           "tide": "HW",
           "val": "   77"
@@ -5533,7 +5533,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007302204  "
+            "text": "202007302204  "
           },
           "tide": "LW",
           "val": "  -60"
@@ -5541,7 +5541,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007310154  "
+            "text": "202007310154  "
           },
           "tide": "HW",
           "val": "   67"
@@ -5549,7 +5549,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007311012  "
+            "text": "202007311012  "
           },
           "tide": "LW",
           "val": "  -69"
@@ -5557,7 +5557,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007311434  "
+            "text": "202007311434  "
           },
           "tide": "HW",
           "val": "   74"
@@ -5565,7 +5565,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202007312309  "
+            "text": "202007312309  "
           },
           "tide": "LW",
           "val": "  -65"
@@ -5573,7 +5573,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008010259  "
+            "text": "202008010259  "
           },
           "tide": "HW",
           "val": "   75"
@@ -5581,7 +5581,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008011144  "
+            "text": "202008011144  "
           },
           "tide": "LW",
           "val": "  -73"
@@ -5589,7 +5589,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008011539  "
+            "text": "202008011539  "
           },
           "tide": "HW",
           "val": "   76"
@@ -5597,7 +5597,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008012358  "
+            "text": "202008012358  "
           },
           "tide": "LW",
           "val": "  -71"
@@ -5605,7 +5605,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008020354  "
+            "text": "202008020354  "
           },
           "tide": "HW",
           "val": "   84"
@@ -5613,7 +5613,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008021331  "
+            "text": "202008021331  "
           },
           "tide": "LW",
           "val": "  -77"
@@ -5621,7 +5621,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008021629  "
+            "text": "202008021629  "
           },
           "tide": "HW",
           "val": "   77"
@@ -5629,7 +5629,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008030030  "
+            "text": "202008030030  "
           },
           "tide": "LW",
           "val": "  -76"
@@ -5637,7 +5637,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008030444  "
+            "text": "202008030444  "
           },
           "tide": "HW",
           "val": "   92"
@@ -5645,7 +5645,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008031433  "
+            "text": "202008031433  "
           },
           "tide": "LW",
           "val": "  -85"
@@ -5653,7 +5653,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008031714  "
+            "text": "202008031714  "
           },
           "tide": "HW",
           "val": "   77"
@@ -5661,7 +5661,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008040109  "
+            "text": "202008040109  "
           },
           "tide": "LW",
           "val": "  -80"
@@ -5669,7 +5669,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008040534  "
+            "text": "202008040534  "
           },
           "tide": "HW",
           "val": "   96"
@@ -5677,7 +5677,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008041519  "
+            "text": "202008041519  "
           },
           "tide": "LW",
           "val": "  -87"
@@ -5685,7 +5685,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008041756  "
+            "text": "202008041756  "
           },
           "tide": "HW",
           "val": "   75"
@@ -5693,7 +5693,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008050157  "
+            "text": "202008050157  "
           },
           "tide": "LW",
           "val": "  -83"
@@ -5701,7 +5701,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008050613  "
+            "text": "202008050613  "
           },
           "tide": "HW",
           "val": "   98"
@@ -5709,7 +5709,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008051602  "
+            "text": "202008051602  "
           },
           "tide": "LW",
           "val": "  -83"
@@ -5717,7 +5717,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008051835  "
+            "text": "202008051835  "
           },
           "tide": "HW",
           "val": "   74"
@@ -5725,7 +5725,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008060244  "
+            "text": "202008060244  "
           },
           "tide": "LW",
           "val": "  -88"
@@ -5733,7 +5733,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008060647  "
+            "text": "202008060647  "
           },
           "tide": "HW",
           "val": "   99"
@@ -5741,7 +5741,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008061631  "
+            "text": "202008061631  "
           },
           "tide": "LW",
           "val": "  -78"
@@ -5749,7 +5749,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008061909  "
+            "text": "202008061909  "
           },
           "tide": "HW",
           "val": "   74"
@@ -5757,7 +5757,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008070334  "
+            "text": "202008070334  "
           },
           "tide": "LW",
           "val": "  -92"
@@ -5765,7 +5765,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008070724  "
+            "text": "202008070724  "
           },
           "tide": "HW",
           "val": "   98"
@@ -5773,7 +5773,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008071656  "
+            "text": "202008071656  "
           },
           "tide": "LW",
           "val": "  -73"
@@ -5781,7 +5781,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008071945  "
+            "text": "202008071945  "
           },
           "tide": "HW",
           "val": "   74"
@@ -5789,7 +5789,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008080415  "
+            "text": "202008080415  "
           },
           "tide": "LW",
           "val": "  -93"
@@ -5797,7 +5797,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008080801  "
+            "text": "202008080801  "
           },
           "tide": "HW",
           "val": "   96"
@@ -5805,7 +5805,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008081721  "
+            "text": "202008081721  "
           },
           "tide": "LW",
           "val": "  -69"
@@ -5813,7 +5813,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008082021  "
+            "text": "202008082021  "
           },
           "tide": "HW",
           "val": "   75"
@@ -5821,7 +5821,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008090506  "
+            "text": "202008090506  "
           },
           "tide": "LW",
           "val": "  -90"
@@ -5829,7 +5829,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008090844  "
+            "text": "202008090844  "
           },
           "tide": "HW",
           "val": "   92"
@@ -5837,7 +5837,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008091750  "
+            "text": "202008091750  "
           },
           "tide": "LW",
           "val": "  -62"
@@ -5845,7 +5845,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008092059  "
+            "text": "202008092059  "
           },
           "tide": "HW",
           "val": "   74"
@@ -5853,7 +5853,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008100530  "
+            "text": "202008100530  "
           },
           "tide": "LW",
           "val": "  -84"
@@ -5861,7 +5861,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008100925  "
+            "text": "202008100925  "
           },
           "tide": "HW",
           "val": "   87"
@@ -5869,7 +5869,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008101759  "
+            "text": "202008101759  "
           },
           "tide": "LW",
           "val": "  -57"
@@ -5877,7 +5877,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008102139  "
+            "text": "202008102139  "
           },
           "tide": "HW",
           "val": "   72"
@@ -5885,7 +5885,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008110538  "
+            "text": "202008110538  "
           },
           "tide": "LW",
           "val": "  -79"
@@ -5893,7 +5893,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008111010  "
+            "text": "202008111010  "
           },
           "tide": "HW",
           "val": "   82"
@@ -5901,7 +5901,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008111752  "
+            "text": "202008111752  "
           },
           "tide": "LW",
           "val": "  -56"
@@ -5909,7 +5909,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008112225  "
+            "text": "202008112225  "
           },
           "tide": "HW",
           "val": "   68"
@@ -5917,7 +5917,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008120620  "
+            "text": "202008120620  "
           },
           "tide": "LW",
           "val": "  -73"
@@ -5925,7 +5925,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008121105  "
+            "text": "202008121105  "
           },
           "tide": "HW",
           "val": "   75"
@@ -5933,7 +5933,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008121840  "
+            "text": "202008121840  "
           },
           "tide": "LW",
           "val": "  -56"
@@ -5941,7 +5941,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008122325  "
+            "text": "202008122325  "
           },
           "tide": "HW",
           "val": "   62"
@@ -5949,7 +5949,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008130720  "
+            "text": "202008130720  "
           },
           "tide": "LW",
           "val": "  -66"
@@ -5957,7 +5957,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008131209  "
+            "text": "202008131209  "
           },
           "tide": "HW",
           "val": "   67"
@@ -5965,7 +5965,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008131944  "
+            "text": "202008131944  "
           },
           "tide": "LW",
           "val": "  -54"
@@ -5973,7 +5973,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008140035  "
+            "text": "202008140035  "
           },
           "tide": "HW",
           "val": "   57"
@@ -5981,7 +5981,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008140820  "
+            "text": "202008140820  "
           },
           "tide": "LW",
           "val": "  -60"
@@ -5989,7 +5989,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008141324  "
+            "text": "202008141324  "
           },
           "tide": "HW",
           "val": "   63"
@@ -5997,7 +5997,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008142050  "
+            "text": "202008142050  "
           },
           "tide": "LW",
           "val": "  -53"
@@ -6005,7 +6005,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008150205  "
+            "text": "202008150205  "
           },
           "tide": "HW",
           "val": "   60"
@@ -6013,7 +6013,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008150925  "
+            "text": "202008150925  "
           },
           "tide": "LW",
           "val": "  -57"
@@ -6021,7 +6021,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008151447  "
+            "text": "202008151447  "
           },
           "tide": "HW",
           "val": "   65"
@@ -6029,7 +6029,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008152218  "
+            "text": "202008152218  "
           },
           "tide": "LW",
           "val": "  -55"
@@ -6037,7 +6037,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008160300  "
+            "text": "202008160300  "
           },
           "tide": "HW",
           "val": "   70"
@@ -6045,7 +6045,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008161050  "
+            "text": "202008161050  "
           },
           "tide": "LW",
           "val": "  -59"
@@ -6053,7 +6053,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008161535  "
+            "text": "202008161535  "
           },
           "tide": "HW",
           "val": "   71"
@@ -6061,7 +6061,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008162345  "
+            "text": "202008162345  "
           },
           "tide": "LW",
           "val": "  -64"
@@ -6069,7 +6069,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008170345  "
+            "text": "202008170345  "
           },
           "tide": "HW",
           "val": "   81"
@@ -6077,7 +6077,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008171213  "
+            "text": "202008171213  "
           },
           "tide": "LW",
           "val": "  -65"
@@ -6085,7 +6085,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008171615  "
+            "text": "202008171615  "
           },
           "tide": "HW",
           "val": "   75"
@@ -6093,7 +6093,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008180035  "
+            "text": "202008180035  "
           },
           "tide": "LW",
           "val": "  -71"
@@ -6101,7 +6101,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008180425  "
+            "text": "202008180425  "
           },
           "tide": "HW",
           "val": "   91"
@@ -6109,7 +6109,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008181347  "
+            "text": "202008181347  "
           },
           "tide": "LW",
           "val": "  -68"
@@ -6117,7 +6117,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008181654  "
+            "text": "202008181654  "
           },
           "tide": "HW",
           "val": "   79"
@@ -6125,7 +6125,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008190115  "
+            "text": "202008190115  "
           },
           "tide": "LW",
           "val": "  -73"
@@ -6133,7 +6133,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008190507  "
+            "text": "202008190507  "
           },
           "tide": "HW",
           "val": "  100"
@@ -6141,7 +6141,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008191459  "
+            "text": "202008191459  "
           },
           "tide": "LW",
           "val": "  -78"
@@ -6149,7 +6149,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008191731  "
+            "text": "202008191731  "
           },
           "tide": "HW",
           "val": "   82"
@@ -6157,7 +6157,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008200256  "
+            "text": "202008200256  "
           },
           "tide": "LW",
           "val": "  -75"
@@ -6165,7 +6165,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008200545  "
+            "text": "202008200545  "
           },
           "tide": "HW",
           "val": "  106"
@@ -6173,7 +6173,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008201550  "
+            "text": "202008201550  "
           },
           "tide": "LW",
           "val": "  -87"
@@ -6181,7 +6181,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008201807  "
+            "text": "202008201807  "
           },
           "tide": "HW",
           "val": "   83"
@@ -6189,7 +6189,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008210356  "
+            "text": "202008210356  "
           },
           "tide": "LW",
           "val": "  -82"
@@ -6197,7 +6197,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008210625  "
+            "text": "202008210625  "
           },
           "tide": "HW",
           "val": "  110"
@@ -6205,7 +6205,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008211636  "
+            "text": "202008211636  "
           },
           "tide": "LW",
           "val": "  -94"
@@ -6213,7 +6213,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008211847  "
+            "text": "202008211847  "
           },
           "tide": "HW",
           "val": "   83"
@@ -6221,7 +6221,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008220437  "
+            "text": "202008220437  "
           },
           "tide": "LW",
           "val": "  -89"
@@ -6229,7 +6229,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008220705  "
+            "text": "202008220705  "
           },
           "tide": "HW",
           "val": "  112"
@@ -6237,7 +6237,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008221717  "
+            "text": "202008221717  "
           },
           "tide": "LW",
           "val": "  -94"
@@ -6245,7 +6245,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008221932  "
+            "text": "202008221932  "
           },
           "tide": "HW",
           "val": "   83"
@@ -6253,7 +6253,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008230523  "
+            "text": "202008230523  "
           },
           "tide": "LW",
           "val": "  -91"
@@ -6261,7 +6261,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008230750  "
+            "text": "202008230750  "
           },
           "tide": "HW",
           "val": "  109"
@@ -6269,7 +6269,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008231756  "
+            "text": "202008231756  "
           },
           "tide": "LW",
           "val": "  -87"
@@ -6277,7 +6277,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008232015  "
+            "text": "202008232015  "
           },
           "tide": "HW",
           "val": "   83"
@@ -6285,7 +6285,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008240600  "
+            "text": "202008240600  "
           },
           "tide": "LW",
           "val": "  -89"
@@ -6293,7 +6293,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008240838  "
+            "text": "202008240838  "
           },
           "tide": "HW",
           "val": "  104"
@@ -6301,7 +6301,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008241836  "
+            "text": "202008241836  "
           },
           "tide": "LW",
           "val": "  -73"
@@ -6309,7 +6309,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008242105  "
+            "text": "202008242105  "
           },
           "tide": "HW",
           "val": "   81"
@@ -6317,7 +6317,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008250636  "
+            "text": "202008250636  "
           },
           "tide": "LW",
           "val": "  -82"
@@ -6325,7 +6325,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008250931  "
+            "text": "202008250931  "
           },
           "tide": "HW",
           "val": "   97"
@@ -6333,7 +6333,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008251915  "
+            "text": "202008251915  "
           },
           "tide": "LW",
           "val": "  -59"
@@ -6341,7 +6341,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008252205  "
+            "text": "202008252205  "
           },
           "tide": "HW",
           "val": "   78"
@@ -6349,7 +6349,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008260604  "
+            "text": "202008260604  "
           },
           "tide": "LW",
           "val": "  -75"
@@ -6357,7 +6357,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008261035  "
+            "text": "202008261035  "
           },
           "tide": "HW",
           "val": "   87"
@@ -6365,7 +6365,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008261816  "
+            "text": "202008261816  "
           },
           "tide": "LW",
           "val": "  -53"
@@ -6373,7 +6373,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008262305  "
+            "text": "202008262305  "
           },
           "tide": "HW",
           "val": "   74"
@@ -6381,7 +6381,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008270733  "
+            "text": "202008270733  "
           },
           "tide": "LW",
           "val": "  -67"
@@ -6389,7 +6389,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008271144  "
+            "text": "202008271144  "
           },
           "tide": "HW",
           "val": "   75"
@@ -6397,7 +6397,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008271930  "
+            "text": "202008271930  "
           },
           "tide": "LW",
           "val": "  -49"
@@ -6405,7 +6405,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008280024  "
+            "text": "202008280024  "
           },
           "tide": "HW",
           "val": "   70"
@@ -6413,7 +6413,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008280849  "
+            "text": "202008280849  "
           },
           "tide": "LW",
           "val": "  -60"
@@ -6421,7 +6421,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008281305  "
+            "text": "202008281305  "
           },
           "tide": "HW",
           "val": "   65"
@@ -6429,7 +6429,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008282054  "
+            "text": "202008282054  "
           },
           "tide": "LW",
           "val": "  -48"
@@ -6437,7 +6437,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008290145  "
+            "text": "202008290145  "
           },
           "tide": "HW",
           "val": "   71"
@@ -6445,7 +6445,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008291019  "
+            "text": "202008291019  "
           },
           "tide": "LW",
           "val": "  -61"
@@ -6453,7 +6453,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008291429  "
+            "text": "202008291429  "
           },
           "tide": "HW",
           "val": "   64"
@@ -6461,7 +6461,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008292243  "
+            "text": "202008292243  "
           },
           "tide": "LW",
           "val": "  -56"
@@ -6469,7 +6469,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008300300  "
+            "text": "202008300300  "
           },
           "tide": "HW",
           "val": "   81"
@@ -6477,7 +6477,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008301139  "
+            "text": "202008301139  "
           },
           "tide": "LW",
           "val": "  -68"
@@ -6485,7 +6485,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008301535  "
+            "text": "202008301535  "
           },
           "tide": "HW",
           "val": "   70"
@@ -6493,7 +6493,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008302340  "
+            "text": "202008302340  "
           },
           "tide": "LW",
           "val": "  -67"
@@ -6501,7 +6501,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008310357  "
+            "text": "202008310357  "
           },
           "tide": "HW",
           "val": "   93"
@@ -6509,7 +6509,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008311325  "
+            "text": "202008311325  "
           },
           "tide": "LW",
           "val": "  -77"
@@ -6517,7 +6517,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202008311619  "
+            "text": "202008311619  "
           },
           "tide": "HW",
           "val": "   76"
@@ -6525,7 +6525,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009010021  "
+            "text": "202009010021  "
           },
           "tide": "LW",
           "val": "  -73"
@@ -6533,7 +6533,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009010445  "
+            "text": "202009010445  "
           },
           "tide": "HW",
           "val": "  101"
@@ -6541,7 +6541,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009011416  "
+            "text": "202009011416  "
           },
           "tide": "LW",
           "val": "  -85"
@@ -6549,7 +6549,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009011704  "
+            "text": "202009011704  "
           },
           "tide": "HW",
           "val": "   79"
@@ -6557,7 +6557,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009020217  "
+            "text": "202009020217  "
           },
           "tide": "LW",
           "val": "  -77"
@@ -6565,7 +6565,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009020523  "
+            "text": "202009020523  "
           },
           "tide": "HW",
           "val": "  103"
@@ -6573,7 +6573,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009021501  "
+            "text": "202009021501  "
           },
           "tide": "LW",
           "val": "  -85"
@@ -6581,7 +6581,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009021737  "
+            "text": "202009021737  "
           },
           "tide": "HW",
           "val": "   81"
@@ -6589,7 +6589,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009030252  "
+            "text": "202009030252  "
           },
           "tide": "LW",
           "val": "  -79"
@@ -6597,7 +6597,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009030553  "
+            "text": "202009030553  "
           },
           "tide": "HW",
           "val": "  103"
@@ -6605,7 +6605,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009031536  "
+            "text": "202009031536  "
           },
           "tide": "LW",
           "val": "  -79"
@@ -6613,7 +6613,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009031809  "
+            "text": "202009031809  "
           },
           "tide": "HW",
           "val": "   82"
@@ -6621,7 +6621,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009040315  "
+            "text": "202009040315  "
           },
           "tide": "LW",
           "val": "  -81"
@@ -6629,7 +6629,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009040624  "
+            "text": "202009040624  "
           },
           "tide": "HW",
           "val": "  103"
@@ -6637,7 +6637,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009041609  "
+            "text": "202009041609  "
           },
           "tide": "LW",
           "val": "  -72"
@@ -6645,7 +6645,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009041841  "
+            "text": "202009041841  "
           },
           "tide": "HW",
           "val": "   85"
@@ -6653,7 +6653,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009050340  "
+            "text": "202009050340  "
           },
           "tide": "LW",
           "val": "  -84"
@@ -6661,7 +6661,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009050659  "
+            "text": "202009050659  "
           },
           "tide": "HW",
           "val": "  102"
@@ -6669,7 +6669,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009051626  "
+            "text": "202009051626  "
           },
           "tide": "LW",
           "val": "  -68"
@@ -6677,7 +6677,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009051915  "
+            "text": "202009051915  "
           },
           "tide": "HW",
           "val": "   87"
@@ -6685,7 +6685,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009060410  "
+            "text": "202009060410  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -6693,7 +6693,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009060734  "
+            "text": "202009060734  "
           },
           "tide": "HW",
           "val": "   99"
@@ -6701,7 +6701,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009061651  "
+            "text": "202009061651  "
           },
           "tide": "LW",
           "val": "  -65"
@@ -6709,7 +6709,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009061947  "
+            "text": "202009061947  "
           },
           "tide": "HW",
           "val": "   88"
@@ -6717,7 +6717,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009070435  "
+            "text": "202009070435  "
           },
           "tide": "LW",
           "val": "  -83"
@@ -6725,7 +6725,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009070806  "
+            "text": "202009070806  "
           },
           "tide": "HW",
           "val": "   95"
@@ -6733,7 +6733,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009071705  "
+            "text": "202009071705  "
           },
           "tide": "LW",
           "val": "  -60"
@@ -6741,7 +6741,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009072019  "
+            "text": "202009072019  "
           },
           "tide": "HW",
           "val": "   88"
@@ -6749,7 +6749,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009080448  "
+            "text": "202009080448  "
           },
           "tide": "LW",
           "val": "  -77"
@@ -6757,7 +6757,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009080835  "
+            "text": "202009080835  "
           },
           "tide": "HW",
           "val": "   91"
@@ -6765,7 +6765,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009081657  "
+            "text": "202009081657  "
           },
           "tide": "LW",
           "val": "  -57"
@@ -6773,7 +6773,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009082055  "
+            "text": "202009082055  "
           },
           "tide": "HW",
           "val": "   87"
@@ -6781,7 +6781,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009090508  "
+            "text": "202009090508  "
           },
           "tide": "LW",
           "val": "  -72"
@@ -6789,7 +6789,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009090914  "
+            "text": "202009090914  "
           },
           "tide": "HW",
           "val": "   88"
@@ -6797,7 +6797,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009091714  "
+            "text": "202009091714  "
           },
           "tide": "LW",
           "val": "  -57"
@@ -6805,7 +6805,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009092126  "
+            "text": "202009092126  "
           },
           "tide": "HW",
           "val": "   85"
@@ -6813,7 +6813,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009100549  "
+            "text": "202009100549  "
           },
           "tide": "LW",
           "val": "  -66"
@@ -6821,7 +6821,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009100945  "
+            "text": "202009100945  "
           },
           "tide": "HW",
           "val": "   82"
@@ -6829,7 +6829,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009101809  "
+            "text": "202009101809  "
           },
           "tide": "LW",
           "val": "  -54"
@@ -6837,7 +6837,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009102209  "
+            "text": "202009102209  "
           },
           "tide": "HW",
           "val": "   77"
@@ -6845,7 +6845,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009110645  "
+            "text": "202009110645  "
           },
           "tide": "LW",
           "val": "  -59"
@@ -6853,7 +6853,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009111045  "
+            "text": "202009111045  "
           },
           "tide": "HW",
           "val": "   70"
@@ -6861,7 +6861,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009111854  "
+            "text": "202009111854  "
           },
           "tide": "LW",
           "val": "  -50"
@@ -6869,7 +6869,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009112343  "
+            "text": "202009112343  "
           },
           "tide": "HW",
           "val": "   65"
@@ -6877,7 +6877,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009120742  "
+            "text": "202009120742  "
           },
           "tide": "LW",
           "val": "  -52"
@@ -6885,7 +6885,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009121214  "
+            "text": "202009121214  "
           },
           "tide": "HW",
           "val": "   58"
@@ -6893,7 +6893,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009122009  "
+            "text": "202009122009  "
           },
           "tide": "LW",
           "val": "  -45"
@@ -6901,7 +6901,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009130118  "
+            "text": "202009130118  "
           },
           "tide": "HW",
           "val": "   63"
@@ -6909,7 +6909,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009130905  "
+            "text": "202009130905  "
           },
           "tide": "LW",
           "val": "  -49"
@@ -6917,7 +6917,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009131413  "
+            "text": "202009131413  "
           },
           "tide": "HW",
           "val": "   55"
@@ -6925,7 +6925,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009132139  "
+            "text": "202009132139  "
           },
           "tide": "LW",
           "val": "  -45"
@@ -6933,7 +6933,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009140235  "
+            "text": "202009140235  "
           },
           "tide": "HW",
           "val": "   73"
@@ -6941,7 +6941,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009141035  "
+            "text": "202009141035  "
           },
           "tide": "LW",
           "val": "  -54"
@@ -6949,7 +6949,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009141504  "
+            "text": "202009141504  "
           },
           "tide": "HW",
           "val": "   63"
@@ -6957,7 +6957,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009142305  "
+            "text": "202009142305  "
           },
           "tide": "LW",
           "val": "  -55"
@@ -6965,7 +6965,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009150317  "
+            "text": "202009150317  "
           },
           "tide": "HW",
           "val": "   86"
@@ -6973,7 +6973,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009151148  "
+            "text": "202009151148  "
           },
           "tide": "LW",
           "val": "  -63"
@@ -6981,7 +6981,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009151549  "
+            "text": "202009151549  "
           },
           "tide": "HW",
           "val": "   72"
@@ -6989,7 +6989,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009160015  "
+            "text": "202009160015  "
           },
           "tide": "LW",
           "val": "  -64"
@@ -6997,7 +6997,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009160403  "
+            "text": "202009160403  "
           },
           "tide": "HW",
           "val": "   99"
@@ -7005,7 +7005,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009161336  "
+            "text": "202009161336  "
           },
           "tide": "LW",
           "val": "  -70"
@@ -7013,7 +7013,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009161626  "
+            "text": "202009161626  "
           },
           "tide": "HW",
           "val": "   80"
@@ -7021,7 +7021,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009170107  "
+            "text": "202009170107  "
           },
           "tide": "LW",
           "val": "  -68"
@@ -7029,7 +7029,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009170441  "
+            "text": "202009170441  "
           },
           "tide": "HW",
           "val": "  110"
@@ -7037,7 +7037,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009171439  "
+            "text": "202009171439  "
           },
           "tide": "LW",
           "val": "  -82"
@@ -7045,7 +7045,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009171705  "
+            "text": "202009171705  "
           },
           "tide": "HW",
           "val": "   88"
@@ -7053,7 +7053,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009180247  "
+            "text": "202009180247  "
           },
           "tide": "LW",
           "val": "  -74"
@@ -7061,7 +7061,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009180519  "
+            "text": "202009180519  "
           },
           "tide": "HW",
           "val": "  118"
@@ -7069,7 +7069,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009181528  "
+            "text": "202009181528  "
           },
           "tide": "LW",
           "val": "  -91"
@@ -7077,7 +7077,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009181745  "
+            "text": "202009181745  "
           },
           "tide": "HW",
           "val": "   94"
@@ -7085,7 +7085,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009190336  "
+            "text": "202009190336  "
           },
           "tide": "LW",
           "val": "  -85"
@@ -7093,7 +7093,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009190602  "
+            "text": "202009190602  "
           },
           "tide": "HW",
           "val": "  121"
@@ -7101,7 +7101,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009191614  "
+            "text": "202009191614  "
           },
           "tide": "LW",
           "val": "  -95"
@@ -7109,7 +7109,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009191825  "
+            "text": "202009191825  "
           },
           "tide": "HW",
           "val": "   97"
@@ -7117,7 +7117,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009200423  "
+            "text": "202009200423  "
           },
           "tide": "LW",
           "val": "  -92"
@@ -7125,7 +7125,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009200643  "
+            "text": "202009200643  "
           },
           "tide": "HW",
           "val": "  120"
@@ -7133,7 +7133,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009201656  "
+            "text": "202009201656  "
           },
           "tide": "LW",
           "val": "  -92"
@@ -7141,7 +7141,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009201906  "
+            "text": "202009201906  "
           },
           "tide": "HW",
           "val": "   99"
@@ -7149,7 +7149,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009210506  "
+            "text": "202009210506  "
           },
           "tide": "LW",
           "val": "  -93"
@@ -7157,7 +7157,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009210726  "
+            "text": "202009210726  "
           },
           "tide": "HW",
           "val": "  114"
@@ -7165,7 +7165,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009211736  "
+            "text": "202009211736  "
           },
           "tide": "LW",
           "val": "  -81"
@@ -7173,7 +7173,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009211949  "
+            "text": "202009211949  "
           },
           "tide": "HW",
           "val": "   99"
@@ -7181,7 +7181,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009220545  "
+            "text": "202009220545  "
           },
           "tide": "LW",
           "val": "  -88"
@@ -7189,7 +7189,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009220815  "
+            "text": "202009220815  "
           },
           "tide": "HW",
           "val": "  105"
@@ -7197,7 +7197,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009221812  "
+            "text": "202009221812  "
           },
           "tide": "LW",
           "val": "  -65"
@@ -7205,7 +7205,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009222037  "
+            "text": "202009222037  "
           },
           "tide": "HW",
           "val": "   96"
@@ -7213,7 +7213,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009230617  "
+            "text": "202009230617  "
           },
           "tide": "LW",
           "val": "  -78"
@@ -7221,7 +7221,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009230906  "
+            "text": "202009230906  "
           },
           "tide": "HW",
           "val": "   93"
@@ -7229,7 +7229,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009231710  "
+            "text": "202009231710  "
           },
           "tide": "LW",
           "val": "  -55"
@@ -7237,7 +7237,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009232129  "
+            "text": "202009232129  "
           },
           "tide": "HW",
           "val": "   90"
@@ -7245,7 +7245,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009240649  "
+            "text": "202009240649  "
           },
           "tide": "LW",
           "val": "  -67"
@@ -7253,7 +7253,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009241005  "
+            "text": "202009241005  "
           },
           "tide": "HW",
           "val": "   79"
@@ -7261,7 +7261,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009241800  "
+            "text": "202009241800  "
           },
           "tide": "LW",
           "val": "  -51"
@@ -7269,7 +7269,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009242234  "
+            "text": "202009242234  "
           },
           "tide": "HW",
           "val": "   81"
@@ -7277,7 +7277,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009250718  "
+            "text": "202009250718  "
           },
           "tide": "LW",
           "val": "  -58"
@@ -7285,7 +7285,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009251120  "
+            "text": "202009251120  "
           },
           "tide": "HW",
           "val": "   65"
@@ -7293,7 +7293,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009251858  "
+            "text": "202009251858  "
           },
           "tide": "LW",
           "val": "  -46"
@@ -7301,7 +7301,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009260015  "
+            "text": "202009260015  "
           },
           "tide": "HW",
           "val": "   75"
@@ -7309,7 +7309,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009260817  "
+            "text": "202009260817  "
           },
           "tide": "LW",
           "val": "  -52"
@@ -7317,7 +7317,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009261255  "
+            "text": "202009261255  "
           },
           "tide": "HW",
           "val": "   54"
@@ -7325,7 +7325,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009262020  "
+            "text": "202009262020  "
           },
           "tide": "LW",
           "val": "  -44"
@@ -7333,7 +7333,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009270139  "
+            "text": "202009270139  "
           },
           "tide": "HW",
           "val": "   77"
@@ -7341,7 +7341,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009271001  "
+            "text": "202009271001  "
           },
           "tide": "LW",
           "val": "  -55"
@@ -7349,7 +7349,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009271414  "
+            "text": "202009271414  "
           },
           "tide": "HW",
           "val": "   56"
@@ -7357,7 +7357,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009272208  "
+            "text": "202009272208  "
           },
           "tide": "LW",
           "val": "  -51"
@@ -7365,7 +7365,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009280249  "
+            "text": "202009280249  "
           },
           "tide": "HW",
           "val": "   89"
@@ -7373,7 +7373,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009281120  "
+            "text": "202009281120  "
           },
           "tide": "LW",
           "val": "  -65"
@@ -7381,7 +7381,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009281515  "
+            "text": "202009281515  "
           },
           "tide": "HW",
           "val": "   66"
@@ -7389,7 +7389,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009282323  "
+            "text": "202009282323  "
           },
           "tide": "LW",
           "val": "  -65"
@@ -7397,7 +7397,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009290345  "
+            "text": "202009290345  "
           },
           "tide": "HW",
           "val": "  100"
@@ -7405,7 +7405,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009291255  "
+            "text": "202009291255  "
           },
           "tide": "LW",
           "val": "  -75"
@@ -7413,7 +7413,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009291559  "
+            "text": "202009291559  "
           },
           "tide": "HW",
           "val": "   75"
@@ -7421,7 +7421,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009300014  "
+            "text": "202009300014  "
           },
           "tide": "LW",
           "val": "  -73"
@@ -7429,7 +7429,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009300424  "
+            "text": "202009300424  "
           },
           "tide": "HW",
           "val": "  105"
@@ -7437,7 +7437,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009301349  "
+            "text": "202009301349  "
           },
           "tide": "LW",
           "val": "  -81"
@@ -7445,7 +7445,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202009301639  "
+            "text": "202009301639  "
           },
           "tide": "HW",
           "val": "   81"
@@ -7453,7 +7453,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010010139  "
+            "text": "202010010139  "
           },
           "tide": "LW",
           "val": "  -75"
@@ -7461,7 +7461,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010010455  "
+            "text": "202010010455  "
           },
           "tide": "HW",
           "val": "  106"
@@ -7469,7 +7469,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010011432  "
+            "text": "202010011432  "
           },
           "tide": "LW",
           "val": "  -78"
@@ -7477,7 +7477,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010011711  "
+            "text": "202010011711  "
           },
           "tide": "HW",
           "val": "   85"
@@ -7485,7 +7485,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010020225  "
+            "text": "202010020225  "
           },
           "tide": "LW",
           "val": "  -75"
@@ -7493,7 +7493,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010020528  "
+            "text": "202010020528  "
           },
           "tide": "HW",
           "val": "  106"
@@ -7501,7 +7501,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010021503  "
+            "text": "202010021503  "
           },
           "tide": "LW",
           "val": "  -71"
@@ -7509,7 +7509,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010021741  "
+            "text": "202010021741  "
           },
           "tide": "HW",
           "val": "   89"
@@ -7517,7 +7517,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010030256  "
+            "text": "202010030256  "
           },
           "tide": "LW",
           "val": "  -75"
@@ -7525,7 +7525,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010030558  "
+            "text": "202010030558  "
           },
           "tide": "HW",
           "val": "  106"
@@ -7533,7 +7533,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010031532  "
+            "text": "202010031532  "
           },
           "tide": "LW",
           "val": "  -66"
@@ -7541,7 +7541,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010031812  "
+            "text": "202010031812  "
           },
           "tide": "HW",
           "val": "   94"
@@ -7549,7 +7549,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010040315  "
+            "text": "202010040315  "
           },
           "tide": "LW",
           "val": "  -76"
@@ -7557,7 +7557,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010040628  "
+            "text": "202010040628  "
           },
           "tide": "HW",
           "val": "  105"
@@ -7565,7 +7565,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010041555  "
+            "text": "202010041555  "
           },
           "tide": "LW",
           "val": "  -64"
@@ -7573,7 +7573,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010041845  "
+            "text": "202010041845  "
           },
           "tide": "HW",
           "val": "   97"
@@ -7581,7 +7581,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010050345  "
+            "text": "202010050345  "
           },
           "tide": "LW",
           "val": "  -76"
@@ -7589,7 +7589,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010050701  "
+            "text": "202010050701  "
           },
           "tide": "HW",
           "val": "  102"
@@ -7597,7 +7597,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010051614  "
+            "text": "202010051614  "
           },
           "tide": "LW",
           "val": "  -63"
@@ -7605,7 +7605,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010051915  "
+            "text": "202010051915  "
           },
           "tide": "HW",
           "val": "   98"
@@ -7613,7 +7613,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010060404  "
+            "text": "202010060404  "
           },
           "tide": "LW",
           "val": "  -74"
@@ -7621,7 +7621,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010060735  "
+            "text": "202010060735  "
           },
           "tide": "HW",
           "val": "   97"
@@ -7629,7 +7629,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010061620  "
+            "text": "202010061620  "
           },
           "tide": "LW",
           "val": "  -61"
@@ -7637,7 +7637,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010061945  "
+            "text": "202010061945  "
           },
           "tide": "HW",
           "val": "   98"
@@ -7645,7 +7645,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010070418  "
+            "text": "202010070418  "
           },
           "tide": "LW",
           "val": "  -70"
@@ -7653,7 +7653,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010070801  "
+            "text": "202010070801  "
           },
           "tide": "HW",
           "val": "   95"
@@ -7661,7 +7661,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010071629  "
+            "text": "202010071629  "
           },
           "tide": "LW",
           "val": "  -60"
@@ -7669,7 +7669,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010072012  "
+            "text": "202010072012  "
           },
           "tide": "HW",
           "val": "  100"
@@ -7677,7 +7677,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010080450  "
+            "text": "202010080450  "
           },
           "tide": "LW",
           "val": "  -65"
@@ -7685,7 +7685,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010080831  "
+            "text": "202010080831  "
           },
           "tide": "HW",
           "val": "   94"
@@ -7693,7 +7693,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010081659  "
+            "text": "202010081659  "
           },
           "tide": "LW",
           "val": "  -58"
@@ -7701,7 +7701,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010082047  "
+            "text": "202010082047  "
           },
           "tide": "HW",
           "val": "  101"
@@ -7709,7 +7709,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010090514  "
+            "text": "202010090514  "
           },
           "tide": "LW",
           "val": "  -60"
@@ -7717,7 +7717,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010090913  "
+            "text": "202010090913  "
           },
           "tide": "HW",
           "val": "   89"
@@ -7725,7 +7725,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010091734  "
+            "text": "202010091734  "
           },
           "tide": "LW",
           "val": "  -55"
@@ -7733,7 +7733,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010092127  "
+            "text": "202010092127  "
           },
           "tide": "HW",
           "val": "   95"
@@ -7741,7 +7741,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010100608  "
+            "text": "202010100608  "
           },
           "tide": "LW",
           "val": "  -53"
@@ -7749,7 +7749,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010100955  "
+            "text": "202010100955  "
           },
           "tide": "HW",
           "val": "   75"
@@ -7757,7 +7757,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010101820  "
+            "text": "202010101820  "
           },
           "tide": "LW",
           "val": "  -50"
@@ -7765,7 +7765,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010102224  "
+            "text": "202010102224  "
           },
           "tide": "HW",
           "val": "   78"
@@ -7773,7 +7773,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010110719  "
+            "text": "202010110719  "
           },
           "tide": "LW",
           "val": "  -47"
@@ -7781,7 +7781,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010111134  "
+            "text": "202010111134  "
           },
           "tide": "HW",
           "val": "   57"
@@ -7789,7 +7789,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010111925  "
+            "text": "202010111925  "
           },
           "tide": "LW",
           "val": "  -44"
@@ -7797,7 +7797,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010120026  "
+            "text": "202010120026  "
           },
           "tide": "HW",
           "val": "   71"
@@ -7805,7 +7805,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010120839  "
+            "text": "202010120839  "
           },
           "tide": "LW",
           "val": "  -45"
@@ -7813,7 +7813,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010121304  "
+            "text": "202010121304  "
           },
           "tide": "HW",
           "val": "   50"
@@ -7821,7 +7821,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010122058  "
+            "text": "202010122058  "
           },
           "tide": "LW",
           "val": "  -42"
@@ -7829,7 +7829,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010130154  "
+            "text": "202010130154  "
           },
           "tide": "HW",
           "val": "   79"
@@ -7837,7 +7837,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010131010  "
+            "text": "202010131010  "
           },
           "tide": "LW",
           "val": "  -53"
@@ -7845,7 +7845,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010131424  "
+            "text": "202010131424  "
           },
           "tide": "HW",
           "val": "   57"
@@ -7853,7 +7853,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010132229  "
+            "text": "202010132229  "
           },
           "tide": "LW",
           "val": "  -51"
@@ -7861,7 +7861,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010140249  "
+            "text": "202010140249  "
           },
           "tide": "HW",
           "val": "   93"
@@ -7869,7 +7869,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010141138  "
+            "text": "202010141138  "
           },
           "tide": "LW",
           "val": "  -64"
@@ -7877,7 +7877,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010141515  "
+            "text": "202010141515  "
           },
           "tide": "HW",
           "val": "   69"
@@ -7885,7 +7885,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010142340  "
+            "text": "202010142340  "
           },
           "tide": "LW",
           "val": "  -62"
@@ -7893,7 +7893,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010150335  "
+            "text": "202010150335  "
           },
           "tide": "HW",
           "val": "  106"
@@ -7901,7 +7901,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010151306  "
+            "text": "202010151306  "
           },
           "tide": "LW",
           "val": "  -72"
@@ -7909,7 +7909,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010151557  "
+            "text": "202010151557  "
           },
           "tide": "HW",
           "val": "   83"
@@ -7917,7 +7917,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010160049  "
+            "text": "202010160049  "
           },
           "tide": "LW",
           "val": "  -66"
@@ -7925,7 +7925,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010160415  "
+            "text": "202010160415  "
           },
           "tide": "HW",
           "val": "  117"
@@ -7933,7 +7933,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010161412  "
+            "text": "202010161412  "
           },
           "tide": "LW",
           "val": "  -80"
@@ -7941,7 +7941,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010161637  "
+            "text": "202010161637  "
           },
           "tide": "HW",
           "val": "   94"
@@ -7949,7 +7949,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010170216  "
+            "text": "202010170216  "
           },
           "tide": "LW",
           "val": "  -72"
@@ -7957,7 +7957,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010170456  "
+            "text": "202010170456  "
           },
           "tide": "HW",
           "val": "  124"
@@ -7965,7 +7965,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010171503  "
+            "text": "202010171503  "
           },
           "tide": "LW",
           "val": "  -86"
@@ -7973,7 +7973,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010171717  "
+            "text": "202010171717  "
           },
           "tide": "HW",
           "val": "  103"
@@ -7981,7 +7981,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010180316  "
+            "text": "202010180316  "
           },
           "tide": "LW",
           "val": "  -81"
@@ -7989,7 +7989,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010180538  "
+            "text": "202010180538  "
           },
           "tide": "HW",
           "val": "  125"
@@ -7997,7 +7997,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010181546  "
+            "text": "202010181546  "
           },
           "tide": "LW",
           "val": "  -87"
@@ -8005,7 +8005,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010181800  "
+            "text": "202010181800  "
           },
           "tide": "HW",
           "val": "  109"
@@ -8013,7 +8013,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010190402  "
+            "text": "202010190402  "
           },
           "tide": "LW",
           "val": "  -88"
@@ -8021,7 +8021,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010190622  "
+            "text": "202010190622  "
           },
           "tide": "HW",
           "val": "  121"
@@ -8029,7 +8029,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010191630  "
+            "text": "202010191630  "
           },
           "tide": "LW",
           "val": "  -81"
@@ -8037,7 +8037,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010191843  "
+            "text": "202010191843  "
           },
           "tide": "HW",
           "val": "  111"
@@ -8045,7 +8045,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010200444  "
+            "text": "202010200444  "
           },
           "tide": "LW",
           "val": "  -89"
@@ -8053,7 +8053,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010200706  "
+            "text": "202010200706  "
           },
           "tide": "HW",
           "val": "  112"
@@ -8061,7 +8061,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010201706  "
+            "text": "202010201706  "
           },
           "tide": "LW",
           "val": "  -71"
@@ -8069,7 +8069,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010201925  "
+            "text": "202010201925  "
           },
           "tide": "HW",
           "val": "  110"
@@ -8077,7 +8077,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010210522  "
+            "text": "202010210522  "
           },
           "tide": "LW",
           "val": "  -83"
@@ -8085,7 +8085,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010210755  "
+            "text": "202010210755  "
           },
           "tide": "HW",
           "val": "  100"
@@ -8093,7 +8093,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010211611  "
+            "text": "202010211611  "
           },
           "tide": "LW",
           "val": "  -59"
@@ -8101,7 +8101,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010212014  "
+            "text": "202010212014  "
           },
           "tide": "HW",
           "val": "  105"
@@ -8109,7 +8109,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010220555  "
+            "text": "202010220555  "
           },
           "tide": "LW",
           "val": "  -73"
@@ -8117,7 +8117,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010220845  "
+            "text": "202010220845  "
           },
           "tide": "HW",
           "val": "   87"
@@ -8125,7 +8125,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010221654  "
+            "text": "202010221654  "
           },
           "tide": "LW",
           "val": "  -59"
@@ -8133,7 +8133,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010222106  "
+            "text": "202010222106  "
           },
           "tide": "HW",
           "val": "   97"
@@ -8141,7 +8141,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010230620  "
+            "text": "202010230620  "
           },
           "tide": "LW",
           "val": "  -62"
@@ -8149,7 +8149,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010230945  "
+            "text": "202010230945  "
           },
           "tide": "HW",
           "val": "   72"
@@ -8157,7 +8157,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010231740  "
+            "text": "202010231740  "
           },
           "tide": "LW",
           "val": "  -56"
@@ -8165,7 +8165,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010232214  "
+            "text": "202010232214  "
           },
           "tide": "HW",
           "val": "   88"
@@ -8173,7 +8173,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010240704  "
+            "text": "202010240704  "
           },
           "tide": "LW",
           "val": "  -53"
@@ -8181,7 +8181,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010241055  "
+            "text": "202010241055  "
           },
           "tide": "HW",
           "val": "   58"
@@ -8189,7 +8189,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010241838  "
+            "text": "202010241838  "
           },
           "tide": "LW",
           "val": "  -50"
@@ -8197,7 +8197,7 @@
         {
           "datetime": {
             "-summertime": "yes",
-            "#text": "202010242349  "
+            "text": "202010242349  "
           },
           "tide": "HW",
           "val": "   82"
