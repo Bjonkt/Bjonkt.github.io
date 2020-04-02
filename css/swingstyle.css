@@ -1,0 +1,60 @@
+:root{
+  /* light */
+  --color-title: white;
+  --color-text: white;
+}
+
+body,html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-main{
+  /* The image used */
+  background-image: url("mojave.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-items{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  width: 450px;
+  margin-left: 100px;
+}
+.container-title-1{
+  font-size: 80px;
+  color: var(--color-title);
+  font-weight: 100;
+}
+.container-title-2{
+  font-size: 80px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-title);
+  font-weight: 900;
+}
+.container-subtitle{
+  font-size: 40px;
+  color: var(--color-title);
+  font-weight: 300;
+}
+.container-text{
+  font-size: 20px;
+  color: var(--color-text);
+  font-weight: 300;
+}
+
+@media (max-width: 550px){
+
+}
