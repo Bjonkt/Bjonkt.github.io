@@ -23,15 +23,24 @@ body,html {
   background-size: cover;
 }
 
-.container-items{
+.container-center{
+  display: flex;
   margin: 0;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
 
-  width: 450px;
-  margin-left: 100px;
+.wrapper{
+  flex: 1;
+}
+.wrapper:first-child {
+    margin-right: 20px;
+}
+.container-items{
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .container-title-1{
   font-size: 80px;
@@ -54,6 +63,47 @@ body,html {
   color: var(--color-text);
   font-weight: 300;
 }
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+
+  border-radius: 32px;
+  width: 33%;
+
+  font-size: 20px;
+  color: var(--color-text);
+  font-weight: 300;
+}
+
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 6px 12px;
+  border-top: none;
+
+  font-size: 20px;
+  color: var(--color-text);
+  font-weight: 300;
+}
+
 
 @media (max-width: 550px){
 
