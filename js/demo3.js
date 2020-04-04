@@ -19,7 +19,7 @@ function openExtra() {
   });
   renderer.setPixelRatio(window.devicePixelRatio > 1 ? 2 : 1);
   renderer.setSize(width, height);
-  renderer.setClearColor(0xA9E7DA);
+  renderer.setClearColor(0x212121);
 
   var scene = new THREE.Scene();
 
