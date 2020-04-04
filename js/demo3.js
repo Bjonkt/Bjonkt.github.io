@@ -49,6 +49,10 @@ function openExtra() {
   var shape = new THREE.Mesh(geometry, material);
   scene.add(shape);
 
+  // probe
+	//lightProbe = new THREE.LightProbe();
+	//scene.add( lightProbe );
+
   function updateVertices (a) {
       for(var i = 0; i < geometry.vertices.length; i++) {
           var vector = geometry.vertices[i];
@@ -70,15 +74,7 @@ function openExtra() {
       renderer.render(scene, camera);
   }
 
-  function onResize() {
-      canvas.style.width = '';
-      canvas.style.height = '';
-      width = canvas.offsetWidth;
-      height = canvas.offsetHeight;
-      camera.aspect = width / height;
-      camera.updateProjectionMatrix();
-      renderer.setSize(width, height);
-  }
+
 
   var mouse = new THREE.Vector2(0.8, 0.5);
   function onMouseMove(e) {
@@ -94,6 +90,5 @@ function openExtra() {
   var resizeTm;
   window.addEventListener("resize", function(){
       resizeTm = clearTimeout(resizeTm);
-      resizeTm = setTimeout(onResize, 200);
   });
 }
