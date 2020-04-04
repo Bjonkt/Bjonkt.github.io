@@ -259,17 +259,18 @@ table{
   border: none;
   border-radius: var(--borderradius);
 }
+.wrapper-extra-desktop{
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: var(--borderradius);
+}
 .container-table-portrait{
   display: none;
 }
 .container-forecast{
-  margin: 0;
-	font-family: "Exo", sans-serif;
-	color: #fff;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradientBG 15s ease infinite;
-  font-size: 14px;
+  height: 100%;
+  width: 100%;
 }
 @keyframes gradientBG {
 	0% {
@@ -482,5 +483,11 @@ i {
   .container-control{
     height: 18%;
     width: 100%;
+  }
+  .wrapper-extra-portrait{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: var(--borderradius);
   }
 }
