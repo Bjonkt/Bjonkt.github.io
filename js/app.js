@@ -318,6 +318,8 @@ function createCam(selection){
     document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/hUxbpx431zk";
     document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/hUxbpx431zk";
   }else if (selection='Cadzand') {
+    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/AKRSXvKEMXg";
+    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/AKRSXvKEMXg";
   }
 }
 
