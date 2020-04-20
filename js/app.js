@@ -309,8 +309,8 @@ function createCam(selection){
     document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/BTYXpHelk8M";
     document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/BTYXpHelk8M";
   }else if (selection=='Noordwijk') {
-    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/59hkhfukuTA";
-    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/59hkhfukuTA";
+    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/8u-QGZvUiiY";
+    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/8u-QGZvUiiY";
   }else if (selection=='Scheveningen') {
     document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/J9t__YygUJk";
     document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/J9t__YygUJk";
