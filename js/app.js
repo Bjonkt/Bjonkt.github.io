@@ -366,12 +366,16 @@ function getRealTime(selection) {
   var windforceurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windsnelheid___20Lucht___20t.o.v.___20Mean___20Sea___20Level___20in___20m___2Fs&locationSlug=' + windlocation + '&user=publiek';
   var winddirectionurl = 'https://waterinfo.rws.nl/api/detail?expertParameter=Windrichting___20Lucht___20t.o.v.___20ware___20Noorden___20in___20graad&locationSlug='+windlocation+'&user=expert';
 
+  function round(value, precision) {
+    var multiplier = Math.pow(10, precision || 0);
+    return Math.round(value * multiplier) / multiplier;
+  }
   function getWaveHeight(url) {
     $.ajax({
       type: "GET",
       url: url,
       success: function(result) {
-        golfhoogte = "" + Math.round(result.latest.data) + " cm";
+        golfhoogte = "" + round(result.latest.data*0.01,1) + " m";
         updateRealTime();
       },
       error: function(error){
@@ -384,7 +388,7 @@ function getRealTime(selection) {
       type: "GET",
       url: url,
       success: function(result) {
-        golfperiode = "" + result.latest.data + " s";
+        golfperiode = "" + round(result.latest.data,1) + " s";
         updateRealTime();
       }
     });
@@ -394,7 +398,6 @@ function getRealTime(selection) {
       type: "GET",
       url: url,
       success: function(result) {
-        console.log(result);
         golfrichting = "" + result.latest.data + "°";
         updateRealTime();
       }
