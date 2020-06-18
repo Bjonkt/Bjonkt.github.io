@@ -70,7 +70,7 @@
           </div>
         </div>
         <div class="gap-data"></div>
-        <div class="container-chart-portrait">
+        <div class="container-chart-portrait" id="content-side-portrait">
           <div class="wrapper">
             <div id="tide-portrait" class="tabcontent">
               <div class="wrapper-tabcontent" id="content-chart-portrait">
@@ -84,7 +84,7 @@
             </div>
             <div id="forecast-portrait" class="tabcontent" style="display:none">
               <div class="wrapper-extra-portrait">
-                <canvas style="border-radius:4px" id="scene-portrait"></canvas>
+                <script src='js/subredditportrait.js' data-subreddit='SurfNetherlands' data-sort='new' data-theme='dark' data-show-submit='true'></script>
                 </div>
               </div>
           </div>
@@ -152,7 +152,7 @@
               <div class="tab">
                 <button class="tablinks active tabtide" onclick="openTab(event, 'tide-desktop','tide-portrait')">Tide</button>
                 <button class="tablinks tabcam" onclick="openTab(event, 'cam-desktop', 'cam-portrait')">Cam</button>
-                <button class="tablinks tabforecast" onclick="openTab(event, 'forecast-desktop','forecast-portrait');openExtra();">Forecast</button>
+                <button class="tablinks tabforecast" onclick="openTab(event, 'forecast-desktop','forecast-portrait')">Forecast</button>
               </div>
             </div>
             <div class="container-location">
@@ -249,7 +249,7 @@
         </div>
        </div>
       <div class="gap"></div>
-      <div class="container-chart-desktop">
+      <div class="container-chart-desktop" id="content-side-desktop">
         <div class="wrapper">
           <div id="tide-desktop" class="tabcontent">
             <div class="wrapper-tabcontent" id="content-chart-desktop">
@@ -261,8 +261,8 @@
             <div class="container-cam-not-available-desktop">Helaas heb ik geen live cam kunnen vinden van deze locatie. Jij wel? Je kan het mij laten weten via prahprahpro@gmail.com</div>
           </div>
           <div id="forecast-desktop" class="tabcontent" style="display:none">
-            <div class="wrapper-extra-desktop">
-              <canvas style="border-radius:4px" id="scene-desktop"></canvas>
+            <div class="wrapper-extra-desktop" id="forecast-src-desktop">
+              <script src='js/subredditdesktop.js' data-subreddit='SurfNetherlands' data-sort='new' data-theme='dark' data-show-submit='true'></script>
               </div>
       		  </div>
           </div>
@@ -275,10 +275,5 @@
   <script src="js/highstock.js"></script>
   <script src="js/flatpickr.min.js"></script>
   <script src="js/app.js"></script>
-
-  <script src="js/three.min.js"></script>
-  <script src="js/perlin.js"></script>
-  <script src="js/TweenMax.min.js"></script>
-  <script src="js/demo3.js"></script>
   </body>
 </html>
