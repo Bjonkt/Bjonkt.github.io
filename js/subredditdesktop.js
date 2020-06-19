@@ -134,10 +134,10 @@
 		function addIframeCss(ifrm) {
 
 			var borderColor = '';
-			if (cssTheme === 'dark') {
-				borderColor = '#460000'
+			if (cssTheme === 'dark ') {
+				borderColor = '#121212'
 			} else {
-				borderColor = '#5f99cf'
+				borderColor = '#121212'
 			}
 			ifrm.style.border = '2px ' + borderColor + ' solid'
 			ifrm.style.overflow = 'auto';
