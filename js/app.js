@@ -398,7 +398,7 @@ function getRealTime(selection) {
       type: "GET",
       url: url,
       success: function(result) {
-        golfrichting = "" + result.latest.data + "°";
+        golfrichting = "" + result.latest.data + "";
         updateRealTime();
       }
     });
@@ -418,7 +418,7 @@ function getRealTime(selection) {
       type: "GET",
       url: url,
       success: function(result) {
-        windrichting = "" + Math.round(result.latest.data) + "°";
+        windrichting = "" + Math.round(result.latest.data) + "";
         updateRealTime();
       }
     });
@@ -426,9 +426,9 @@ function getRealTime(selection) {
   function updateRealTime(){
     document.getElementById('waveheight').innerHTML = golfhoogte;
     document.getElementById('waveperiod').innerHTML = golfperiode;
-    document.getElementById('wavedirection').innerHTML = golfrichting;
+    document.getElementById('wavevane').setAttribute("transform", "rotate("+golfrichting+",10,10)");
     document.getElementById('windspeed').innerHTML = windkracht;
-    document.getElementById('winddirection').innerHTML = windrichting;
+    document.getElementById('windvane').setAttribute("transform", "rotate("+windrichting+",10,10)");
   }
 
   getWaveHeight(waveheighturl);
