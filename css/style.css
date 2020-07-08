@@ -125,14 +125,14 @@ table{
 .container-main {
   margin: auto;
   display: flex;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 .container-main:before {
   content: "";
   display: block;
   height: 0;
   width: 0;
-  padding-bottom: calc(9/19 * 100%);
+  padding-bottom: calc(9/22 * 100%);
 }
 .container-left{
   height: inherit;
