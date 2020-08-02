@@ -334,6 +334,7 @@ table{
   -ms-transform: translateY(-75%);
   transform: translateY(-75%);
   position: relative;
+  display: contents;
 }
 .container-select select{
   width: 100%;
