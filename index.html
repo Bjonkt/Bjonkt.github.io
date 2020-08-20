@@ -91,8 +91,20 @@
               </div>
             </div>
             <div id="forecast-portrait" class="tabcontent" style="display:none">
-              <div class="wrapper-extra-portrait">
-                <script src='js/subredditportrait.js' data-subreddit='SurfNetherlands' data-sort='new' data-theme='dark' data-show-submit='true'></script>
+              <div class="wrapper-extra-portrait" style="height:100%">
+                <script id="wg_fwdg_572_3_1597913707934">
+                  (function (window, document) {
+                    var loader = function () {
+                      var arg = ["s=572","m=3","uid=wg_fwdg_572_3_1597913707934","wj=knots","tj=c","odh=0","doh=24","fhours=96","vt=forecasts","lng=en",
+                     "p=WINDSPD,GUST,MWINDSPD,SMER,HTSGW,PERPW,DIRPW,SWELL1,SWPER1,SWDIR1,TMP,FLHGT,TCDC,APCP1s"];
+                      var script = document.createElement("script");
+                      var tag = document.getElementsByTagName("script")[0];
+                      script.src = "https://www.windguru.cz/js/widget.php?"+(arg.join("&"));
+                      tag.parentNode.insertBefore(script, tag);
+                    };
+                    window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+                  })(window, document);
+                  </script>
                 </div>
               </div>
           </div>
@@ -269,8 +281,8 @@
             <div class="container-cam-not-available-desktop">Helaas heb ik geen live cam kunnen vinden van deze locatie. Jij wel? Je kan het mij laten weten via prahprahpro@gmail.com</div>
           </div>
           <div id="forecast-desktop" class="tabcontent" style="display:none">
-            <div class="wrapper-extra-desktop" id="forecast-src-desktop">
-              <script src='js/subredditdesktop.js' data-subreddit='SurfNetherlands' data-sort='new' data-theme='dark' data-show-submit='true'></script>
+            <div class="wrapper-extra-desktop" id="forecast-src-desktop" style="height:100%">
+
               </div>
       		  </div>
           </div>
