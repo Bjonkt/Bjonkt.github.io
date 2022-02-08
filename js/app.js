@@ -26,8 +26,8 @@ function createChart(selection,title,day) {
   var waterstand = [];
   $.getJSON(url, function(json) {
     var suntimes = SunCalc.getTimes(day,json.series[0].location[0].latitude,json.series[0].location[0].longitude);
-    var begin = 12;
-    var ending = 157;
+    var begin = 7;
+    var ending = 152;
     for (i = 0; i < json.series[0].data.length; i++){
 
 
