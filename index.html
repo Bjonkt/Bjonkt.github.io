@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="nl" dir="ltr">
   <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TM6K28K');</script>
+  <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="theme-color" content="#212121">
     <meta name="description" content="Astronomisch Getij Nederland: Scheveningen, Wijk aan Zee, Noordwijk, Zandvoort, Hoek van Holland, Domburg, Surfweer">
@@ -22,6 +29,10 @@
     </noscript>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TM6K28K"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
     <div class="container-main">
       <div class="container-left">
         <div class="container-data-wave">
@@ -84,29 +95,6 @@
               <div class="wrapper-tabcontent" id="content-chart-portrait">
               </div>
             </div>
-            <div id="cam-portrait" class="tabcontent" style="display:none">
-              <iframe class="wrapper-cam" id="cam-src-portrait" src="https://www.youtube.com/embed/J9t__YygUJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-              </iframe>
-              <div class="container-cam-not-available-desktop">Helaas heb ik geen live cam kunnen vinden van deze locatie. Jij wel? Je kan het mij laten weten via prahprahpro@gmail.com
-              </div>
-            </div>
-            <div id="forecast-portrait" class="tabcontent" style="display:none">
-              <div class="wrapper-extra-portrait" style="height:100%">
-                <script id="wg_fwdg_572_3_1597913707934">
-                  (function (window, document) {
-                    var loader = function () {
-                      var arg = ["s=572","m=3","uid=wg_fwdg_572_3_1597913707934","wj=knots","tj=c","odh=0","doh=24","fhours=96","vt=forecasts","lng=en",
-                     "p=WINDSPD,GUST,MWINDSPD,SMER,HTSGW,PERPW,DIRPW,SWELL1,SWPER1,SWDIR1,TMP,FLHGT,TCDC,APCP1s"];
-                      var script = document.createElement("script");
-                      var tag = document.getElementsByTagName("script")[0];
-                      script.src = "https://www.windguru.cz/js/widget.php?"+(arg.join("&"));
-                      tag.parentNode.insertBefore(script, tag);
-                    };
-                    window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
-                  })(window, document);
-                  </script>
-                </div>
-              </div>
           </div>
         </div>
         <div class="gap-chart-portrait"></div>
@@ -171,8 +159,6 @@
             <div class="container-tab">
               <div class="tab">
                 <button class="tablinks active tabtide" onclick="openTab(event, 'tide-desktop','tide-portrait')">Tide</button>
-                <button class="tablinks tabcam" onclick="openTab(event, 'cam-desktop', 'cam-portrait')">Cam</button>
-                <button class="tablinks tabforecast" onclick="openTab(event, 'forecast-desktop','forecast-portrait')">Forecast</button>
               </div>
             </div>
             <div class="container-location">
@@ -180,10 +166,7 @@
                 <select id="selectedLocation" onchange="changeLocation()">
                   <option value="scheveningen">Scheveningen</option>
                   <option value="ijmuiden">IJmuiden</option>
-                  <option value="noordwijk">Noordwijk</option>
-                  <option value="pettenzuid">Petten</option>
                   <option value="hoekvanholland">Hoek van Holland</option>
-                  <option value="cadzand">Cadzand</option>
                   <option value="denhelder">Den Helder</option>
                 </select>
               </div>
@@ -275,16 +258,6 @@
             <div class="wrapper-tabcontent" id="content-chart-desktop">
             </div>
           </div>
-          <div id="cam-desktop" class="tabcontent" style="display:none">
-            <iframe class="wrapper-cam" id="cam-src-desktop" src="https://www.youtube.com/embed/J9t__YygUJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-            <div class="container-cam-not-available-desktop">Helaas heb ik geen live cam kunnen vinden van deze locatie. Jij wel? Je kan het mij laten weten via prahprahpro@gmail.com</div>
-          </div>
-          <div id="forecast-desktop" class="tabcontent" style="display:none">
-            <div class="wrapper-extra-desktop" id="forecast-src-desktop" style="height:100%">
-
-              </div>
-      		  </div>
           </div>
         </div>
       </div>

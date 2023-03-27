@@ -26,8 +26,8 @@ function createChart(selection,title,day) {
   var waterstand = [];
   $.getJSON(url, function(json) {
     var suntimes = SunCalc.getTimes(day,json.series[0].location[0].latitude,json.series[0].location[0].longitude);
-    var begin = 7;
-    var ending = 152;
+    var begin = 12;
+    var ending = 157;
     for (i = 0; i < json.series[0].data.length; i++){
 
 
@@ -299,30 +299,6 @@ function createTable(selection,day) {
   });
 };
 
-// create cam view
-function createCam(selection){
-  if (selection=='Den Helder') {
-  } else if (selection=='Petten') {
-    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/QcurPcHwX6U";
-    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/QcurPcHwX6U";
-  }else if (selection=='IJmuiden') {
-    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/BTYXpHelk8M";
-    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/BTYXpHelk8M";
-  }else if (selection=='Noordwijk') {
-    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/8u-QGZvUiiY";
-    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/8u-QGZvUiiY";
-  }else if (selection=='Scheveningen') {
-    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/J9t__YygUJk";
-    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/J9t__YygUJk";
-  } else if (selection=='Hoek van Holland') {
-    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/hUxbpx431zk";
-    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/hUxbpx431zk";
-  }else if (selection='Cadzand') {
-    document.getElementById('cam-src-portrait').src = "https://www.youtube.com/embed/AKRSXvKEMXg";
-    document.getElementById('cam-src-desktop').src = "https://www.youtube.com/embed/AKRSXvKEMXg";
-  }
-}
-
 function getRealTime(selection) {
   var windrichting = "-°";
   var windkracht = "- kts";
@@ -460,8 +436,6 @@ function update(day) {
 
   createChart("getij"+selection.value,selection.text,day);
   createTable("getij"+selection.value,day);
-
-  createCam(selection.text);
 
 }
 
